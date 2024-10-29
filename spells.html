@@ -68,7 +68,7 @@
 							<th>Duration</th>
 							<th>Components</th>
 						</tr>
-						<tr>
+						<tr class="spell null">
 							<td colspan="6">None Available</td>
 						</tr>
 					</tbody>
@@ -85,7 +85,7 @@
 							<th>Duration</th>
 							<th>Components</th>
 						</tr>
-						<tr>
+						<tr class="spell null">
 							<td colspan="6">None Available</td>
 						</tr>
 					</tbody>
@@ -102,7 +102,7 @@
 							<th>Duration</th>
 							<th>Components</th>
 						</tr>
-						<tr>
+						<tr class="spell null">
 							<td colspan="6">None Available</td>
 						</tr>
 					</tbody>
@@ -119,13 +119,8 @@
 							<th>Duration</th>
 							<th>Components</th>
 						</tr>
-						<tr>
-							<td><a href="spells/summon_lesser_devils.html">Summon Lesser Devils</a></td>
-							<td><em>Conjuration</em></td>
-							<td>1 Action</td>
-							<td>60 feet</td>
-							<td>Concentration, up to 1 hour</td>
-							<td>V, S, M</td>
+						<tr class="spell null">
+							<td colspan="6">None Available</td>
 						</tr>
 					</tbody>
 				</table>
@@ -141,7 +136,15 @@
 							<th>Duration</th>
 							<th>Components</th>
 						</tr>
-						<tr>
+						<tr class="spell all conjuration wizard warlock">
+							<td><a href="spells/summon_lesser_devils.html">Summon Lesser Devils</a></td>
+							<td><em>Conjuration</em></td>
+							<td>1 Action</td>
+							<td>60 feet</td>
+							<td>Concentration, up to 1 hour</td>
+							<td>V, S, M</td>
+						</tr>
+						<tr class="spell null">
 							<td colspan="6">None Available</td>
 						</tr>
 					</tbody>
@@ -158,7 +161,7 @@
 							<th>Duration</th>
 							<th>Components</th>
 						</tr>
-						<tr>
+						<tr class="spell null">
 							<td colspan="6">None Available</td>
 						</tr>
 					</tbody>
@@ -175,7 +178,7 @@
 							<th>Duration</th>
 							<th>Components</th>
 						</tr>
-						<tr>
+						<tr class="spell null">
 							<td colspan="6">None Available</td>
 						</tr>
 					</tbody>
@@ -192,7 +195,7 @@
 							<th>Duration</th>
 							<th>Components</th>
 						</tr>
-						<tr>
+						<tr class="spell null">
 							<td colspan="6">None Available</td>
 						</tr>
 					</tbody>
@@ -209,7 +212,7 @@
 							<th>Duration</th>
 							<th>Components</th>
 						</tr>
-						<tr>
+						<tr class="spell null">
 							<td colspan="6">None Available</td>
 						</tr>
 					</tbody>
@@ -226,14 +229,94 @@
 							<th>Duration</th>
 							<th>Components</th>
 						</tr>
-						<tr>
+						<tr class="spell null">
 							<td colspan="6">None Available</td>
 						</tr>
 					</tbody>
 				</table>
 			  </div>
 			</div>
+			<div id="myBtnContainer">
+				<div>
+					<button class="btn active" onclick="filterSelection('all')">Show All</button>
+					<button class="btn" onclick="filterSelection('cleric')">Cleric</button>
+					<button class="btn" onclick="filterSelection('bard')">Bard</button>
+					<button class="btn" onclick="filterSelection('druid')">Druid</button>
+					<button class="btn" onclick="filterSelection('paladin')">Paladin</button>
+					<button class="btn" onclick="filterSelection('ranger')">Ranger</button>
+					<button class="btn" onclick="filterSelection('sorcerer')">Sorcerer</button>
+					<button class="btn" onclick="filterSelection('warlock')">Warlock</button>
+					<button class="btn" onclick="filterSelection('wizard')">Wizard</button>
+				</div>
+				<div>
+					<button class="btn" onclick="filterSelection('abjuration')">Abjuration</button>
+					<button class="btn" onclick="filterSelection('conjuration')">Conjuration</button>
+					<button class="btn" onclick="filterSelection('divination')">Divination</button>
+					<button class="btn" onclick="filterSelection('enchantment')">Enchantment</button>
+					<button class="btn" onclick="filterSelection('evocation')">Evocation</button>
+					<button class="btn" onclick="filterSelection('illusion')">Illusion</button>
+					<button class="btn" onclick="filterSelection('necromancy')">Necromancy</button>
+					<button class="btn" onclick="filterSelection('transmutation')">Transmutation</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
+<footer>
+	<script type="text/javascript">
+		filterSelection("all")
+		function filterSelection(c) {
+			var x, i, j, p;
+			p = document.getElementsByClassName("tab-pane")
+			for (j = 0; j < p.length; j++) {
+				x = p[j].getElementsByClassName("spell");
+				// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+		  		for (i = 0; i < x.length; i++) {
+		    		w3RemoveClass(x[i], "show");
+		    		if (p[j].getElementsByClassName(c).length > 0) {
+		    			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+		    		} else {
+		    			if (x[i].className.indexOf("null") > -1) w3AddClass(x[i], "show");
+		    		}
+				}
+		  	}
+		}
+
+		// Show filtered elements
+		function w3AddClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+		    if (arr1.indexOf(arr2[i]) == -1) {
+		      element.className += " " + arr2[i];
+		    }
+		  }
+		}
+
+		// Hide elements that are not selected
+		function w3RemoveClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+		    while (arr1.indexOf(arr2[i]) > -1) {
+		      arr1.splice(arr1.indexOf(arr2[i]), 1);
+		    }
+		  }
+		  element.className = arr1.join(" ");
+		}
+
+		// Add active class to the current control button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		    var current = btnContainer.getElementsByClassName("active");
+		    current[0].className = current[0].className.replace(" active", "");
+		    this.className += " active";
+		  });
+		}
+	</script>
+</footer>
 </html>

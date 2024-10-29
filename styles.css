@@ -88,3 +88,18 @@ th, td {
 	color: #908149;
 	text-decoration: none;
 }
+
+.spell {
+	display: none;
+}
+
+.show {
+	display: table-row;
+}
+
+.btn {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: #908149;
+}
