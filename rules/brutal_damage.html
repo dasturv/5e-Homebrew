@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Brutal Damage - DND 5th Edition</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="../styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+	<header class="header-wrap">
+		<div class="header-color"></div>
+		<div class="row justify-content-center">
+			<div class="col-md-9 col-sm-12 header-text">
+				<h1>Laec's DND 5e Homebrew</h1>
+				<h3><a href="../index.html">Home</a></h3>
+			</div>
+		</div>
+	</header>
+	<div class="row justify-content-center">
+		<div class="col-md-9 col-sm-12 main-content">
+			<div class="page-title">
+				Variant Rule: Brutal Damage
+			</div>
+			<p><em>In standard 5e DnD, damage and death are very forgiving. Being knocked unconsious is only 1 hp away from getting back into the fight, none the worse off, with only focused aggression from multiple enemies, a truly absurd damaging attack or a drawn out gamble of death saving throws truly putting a player down. Such mechanics allow and even at times prioritize reckless play, with little to no consequences and tension for the players. With the following rules, you can make combat encounters more intense, and smart play far more important.</em></p>
+			<p><em>Inspiration: previous editions.</em></p>
+			<h3>Negative Hit Points</h3>
+			<p>When using this variant rule, a player's hit points can be reduced to negative numbers, not just 0. A creature does not gain consciousness until it has more than 0 hit points. If a creature ever has less than half it's maximum hit points in negative hit points, it dies.</p>
+			<h3>Injuries</h3>
+			<p>Additionally, while using this variant rule, taking massive damage or being reduced to 0 hit points leaves lasting effects, and sometimes even permanent ones. Whenever a player takes massive damage (a instance of damage equal to or greater than half their maximum hit points) or is reduced to 0 hit points, they recieve a short term injury. You can either roll on the table below or select a fitting injury from it. Whenever a player with an injury recovers hit points, they can spend 10 of those hit points to instead remove one injury. The spent hit points are not restored.</p>
+			<h3>Scars</h3>
+			<p>Whenever a player removes a short term injury caused by them being reduced to 0 hit points, they replace it with a long term injury. You can either roll on the table below or select a fitting injury from it. A long term injury can only be removed by casting regenerate on a player character once a day for a week or via the wish spell.</p>
+			<br>
+			<div class="row">
+
+				<!-- Acid Damage -->
+				<div class="col-md-6 col-sm-12">
+					<table class="content-table">
+						<tbody>
+							<tr>
+								<th colspan="3">Acid Injuries</th>
+							</tr>
+							<tr>
+								<th>d4</th>
+								<th>Short Term</th>
+								<th>Long Term</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>You have a vulnerability to acid damage.</td>
+								<td>Whenever you take acid damage, you take an additional 1d4 acid damage.</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Your AC is reduced by 3.</td>
+								<td>You have a -2 penalty on Dexterity(Sleight of Hand) and Dexterity(Stealth) checks.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>You take 1d6 acid damage at the start of each of your turns.</td>
+								<td>You have a -2 penalty on Charisma(Persuasion) and Charisma(Performance) checks.</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>You are blinded.</td>
+								<td>You have a -2 penalty on Wisdom(Perception) checks that rely on sight.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Bludgeoning Damage -->
+				<div class="col-md-6 col-sm-12">
+					<table class="content-table">
+						<tbody>
+							<tr>
+								<th colspan="3">Bludgeoning Injuries</th>
+							</tr>
+							<tr>
+								<th>d4</th>
+								<th>Short Term</th>
+								<th>Long Term</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>At the start of your turn, you automatically lose concentration on spells.</td>
+								<td>You have a -2 penalty on Constitution saving throws to maintain concentration on a spell.</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>You are Stunned.</td>
+								<td>You have disadvantage on Intelligence checks to recall information.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Your movement speed is reduced to 10 feet.</td>
+								<td>You have a -2 penalty on Strength(Athletics) and Dexterity(Acrobatics) checks.</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>You begin suffocating.</td>
+								<td>You can hold your breath for only 1 minute.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Cold Damage -->
+				<div class="col-md-6 col-sm-12">
+					<table class="content-table">
+						<tbody>
+							<tr>
+								<th colspan="3">Cold Injuries</th>
+							</tr>
+							<tr>
+								<th>d4</th>
+								<th>Short Term</th>
+								<th>Long Term</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>You have a vulnerability to cold damage.</td>
+								<td>Whenever you take cold damage, you take an additional 1d4 cold damage.</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Your movement speed is halved and you cannot take the dash action.</td>
+								<td>Whenever you take the dash action, your movement speed is reduced by 10 feet for that action.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>You have disadvantage on ability checks, attack rolls and Constitution saving throws.</td>
+								<td>You have a -1 penalty on Constitution saving throws.</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>You are blinded.</td>
+								<td>You have a -2 penalty on Wisdom(Perception) checks that rely on sight.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Fire Damage -->
+				<div class="col-md-6 col-sm-12">
+					<table class="content-table">
+						<tbody>
+							<tr>
+								<th colspan="3">Fire Injuries</th>
+							</tr>
+							<tr>
+								<th>d4</th>
+								<th>Short Term</th>
+								<th>Long Term</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>You have a vulnerability to fire damage.</td>
+								<td>Whenever you take fire damage, you take an additional 1d4 fire damage.</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>You automatically fail Dexterity saving throws.</td>
+								<td>You have a -1 penalty on Dexterity saving throws.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>You take 1d6 fire damage at the start of each of your turns.</td>
+								<td>You have a -2 penalty on Charisma(Persuasion) and Charisma(Performance) checks.</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>You have disadvantage on ability checks, attack rolls and saving throws.</td>
+								<td>You have a -2 penalty on Strength(Athletics) and Dexterity(Acrobatics) checks.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Force Damage -->
+				<div class="col-md-6 col-sm-12">
+					<table class="content-table">
+						<tbody>
+							<tr>
+								<th colspan="3">Force Injuries</th>
+							</tr>
+							<tr>
+								<th>d4</th>
+								<th>Short Term</th>
+								<th>Long Term</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>At the start of your turn, you automatically lose concentration on spells.</td>
+								<td>You have a -2 penalty on Constitution saving throws to maintain concentration on a spell.</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Whenever you cast or are targeted by a spell, roll on the Wild Magic Surge table in the player's handbook.</td>
+								<td>You have a -1 penalty on saving throws against spells.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>You are stunned.</td>
+								<td>You gain one form of long-term madness.</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>You are poisoned. Whenever you are targeted by a spell or drink a potion, you take 1d6 force damage.</td>
+								<td>Whenever you take damage as result of a spell, you take an additional 1 force damage.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Lightning Damage -->
+				<div class="col-md-6 col-sm-12">
+					<table class="content-table">
+						<tbody>
+							<tr>
+								<th colspan="3">Lightning Injuries</th>
+							</tr>
+							<tr>
+								<th>d4</th>
+								<th>Short Term</th>
+								<th>Long Term</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Your movement speed is halved and you cannot take the dash action.</td>
+								<td>Whenever you take the dash action, your movement speed is reduced by 10 feet for that action.</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>At the start of your turn you must make a DC 15 Dexterity saving throw or drop all items you are holding.</td>
+								<td>You have a -2 penalty on Dexterity(Sleight of Hand) and Dexterity(Acrobatics) checks.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>You gain a level of exhaustion that cannot be removed while you have this injury.</td>
+								<td>You must complete two long rests to remove a level of exhaustion instead of one.</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>You have disadvantage on ability checks, attack rolls and saving throws.</td>
+								<td>You have a -2 penalty on Strength(Athletics) and Dexterity(Acrobatics) checks.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Necrotic Damage -->
+				<div class="col-md-6 col-sm-12">
+					<table class="content-table">
+						<tbody>
+							<tr>
+								<th colspan="3">Necrotic Injuries</th>
+							</tr>
+							<tr>
+								<th>d4</th>
+								<th>Short Term</th>
+								<th>Long Term</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>You have a vulnerability to necrotic damage.</td>
+								<td>Whenever you take necrotic damage, you take an additional 1d4 necrotic damage.</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>At the start of each of your turns, your maximum hit points are reduced by 3. You die if you have 0 maximum hit points. This reduction lasts until you complete a long rest and the injury is removed.</td>
+								<td>Your maximum hit points are reduced by 3.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>You take 1d6 necrotic damage at the start of each of your turns.</td>
+								<td>You have a -2 penalty on Charisma(Persuasion) and Charisma(Performance) checks.</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>You are poisoned.</td>
+								<td>You have a -1 penalty on Constitution saving throws.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Piercing Damage -->
+				<div class="col-md-6 col-sm-12">
+					<table class="content-table">
+						<tbody>
+							<tr>
+								<th colspan="3">Piercing Injuries</th>
+							</tr>
+							<tr>
+								<th>d4</th>
+								<th>Short Term</th>
+								<th>Long Term</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>You are blinded.</td>
+								<td>You have a -2 penalty on Wisdom(Perception) checks that rely on sight.</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>At the start of each of your turns, your maximum hit points are reduced by 3. You die if you have 0 maximum hit points. This reduction lasts until you complete a long rest and the injury is removed.</td>
+								<td>Your maximum hit points are reduced by 3.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>You have disadvantage on ability checks, attack rolls and Constitution saving throws.</td>
+								<td>You have a -1 penalty on Constitution saving throws.</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>You begin suffocating.</td>
+								<td>You can hold your breath for only 1 minute.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Poison Damage -->
+				<div class="col-md-6 col-sm-12">
+					<table class="content-table">
+						<tbody>
+							<tr>
+								<th colspan="3">Poison Injuries</th>
+							</tr>
+							<tr>
+								<th>d4</th>
+								<th>Short Term</th>
+								<th>Long Term</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>You are poisoned.</td>
+								<td>You have a -1 penalty on Constitution saving throws.</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>You have a vulnerability to poison damage.</td>
+								<td>Whenever you take poison damage, you take an additional 1d4 poison damage.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>At the start of each of your turns, your maximum hit points are reduced by 3. You die if you have 0 maximum hit points. This reduction lasts until you complete a long rest and the injury is removed.</td>
+								<td>Your maximum hit points are reduced by 3.</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>You have disadvantage on ability checks, attack rolls and saving throws.</td>
+								<td>You have a -2 penalty on Strength(Athletics) and Dexterity(Acrobatics) checks.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Psychic Damage -->
+				<div class="col-md-6 col-sm-12">
+					<table class="content-table">
+						<tbody>
+							<tr>
+								<th colspan="3">Psychic Injuries</th>
+							</tr>
+							<tr>
+								<th>d4</th>
+								<th>Short Term</th>
+								<th>Long Term</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>At the start of your turn, you automatically lose concentration on spells.</td>
+								<td>You have a -2 penalty on Constitution saving throws to maintain concentration on a spell.</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>You cannot speak and automatically fail Intelligence and Wisdom saving throws.</td>
+								<td>You have a -1 penalty on Wisdom and Intelligence saving throws.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>You are stunned.</td>
+								<td>You gain one form of long-term madness.</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>At the start of each of your turns, you become frightened by a random creature you can see until the end of your turn.</td>
+								<td>you must spend your entire long rest sleeping in order to benefit from it.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Radiant Damage -->
+				<div class="col-md-6 col-sm-12">
+					<table class="content-table">
+						<tbody>
+							<tr>
+								<th colspan="3">Radiant Injuries</th>
+							</tr>
+							<tr>
+								<th>d4</th>
+								<th>Short Term</th>
+								<th>Long Term</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>You are blinded.</td>
+								<td>If you have darkvision, its range is reduced by 10 feet.</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>You have a vulnerability to radiant damage.</td>
+								<td>Whenever you take radiant damage, you take an additional 1d4 radiant damage.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>At the start of each of your turns you take 1d6 radiant damage. You emit bright light in a 10 foot radius and dim light an additional 10 foot radius.</td>
+								<td>You have a -2 penalty to Dexterity(Stealth) and Dexterity(Sleight of Hand) checks.</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>You cannot knowingly do harm to another creature.</td>
+								<td>You have a -2 penalty to Charisma(Deception) and Charisma(Intimidation) checks.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Slashing Damage -->
+				<div class="col-md-6 col-sm-12">
+					<table class="content-table">
+						<tbody>
+							<tr>
+								<th colspan="3">Slashing Injuries</th>
+							</tr>
+							<tr>
+								<th>d4</th>
+								<th>Short Term</th>
+								<th>Long Term</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Your movement speed is halved and you cannot take the dash action.</td>
+								<td>Whenever you take the dash action, your movement speed is reduced by 10 feet for that action.</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>At the start of each of your turns, your maximum hit points are reduced by 3. You die if you have 0 maximum hit points. This reduction lasts until you complete a long rest and the injury is removed.</td>
+								<td>Your maximum hit points are reduced by 3.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>You take 1d6 necrotic damage at the start of each of your turns.</td>
+								<td>You have a -2 penalty on Charisma(Persuasion) and Charisma(Performance) checks.</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>You have disadvantage on ability checks, attack rolls and saving throws.</td>
+								<td>You have a -2 penalty on Strength(Athletics) and Dexterity(Acrobatics) checks.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Thunder Damage -->
+				<div class="col-md-6 col-sm-12">
+					<table class="content-table">
+						<tbody>
+							<tr>
+								<th colspan="3">Thunder Injuries</th>
+							</tr>
+							<tr>
+								<th>d4</th>
+								<th>Short Term</th>
+								<th>Long Term</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>You have a vulnerability to thunder damage.</td>
+								<td>Whenever you take thunder damage, you take an additional 1d4 thunder damage.</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>You are Stunned.</td>
+								<td>You have disadvantage on Intelligence checks to recall information.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>You are Deafened.</td>
+								<td>You have a -2 penalty on Wisdom(Perception) checks that rely on hearing.</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>At the start of your turn, you automatically lose concentration on spells.</td>
+								<td>You have a -2 penalty on Constitution saving throws to maintain concentration on a spell.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
