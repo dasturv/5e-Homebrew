@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NPC Attitudes - DND 5th Edition</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="../styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+	<header class="header-wrap">
+		<div class="header-color"></div>
+		<div class="row justify-content-center">
+			<div class="col-md-9 col-sm-12 header-text">
+				<h1>Laec's DND 5e Homebrew</h1>
+				<h3><a href="../index.html">Home</a></h3>
+			</div>
+		</div>
+	</header>
+	<div class="row justify-content-center">
+		<div class="col-md-9 col-sm-12 main-content">
+			<div class="page-title">
+				Variant Rule: NPC Attitudes
+			</div>
+			<p><em>In standard 5e DnD, the social aspects of NPCs are mostly kept vague, with little to no system to keep track of NPC's attitudes towards the players besides the potential notes taken by the DM. Using these variant rules, NPC attitudes can be standardized, and as such, can be used in other mechanics as well.</em></p>
+			<p><em>Inspiration: Fallout New Vegas.</em></p>
+			<h3>Attitude Score</h3>
+			<p>When using this variant rule, each NPC has an attitude score, represented by a number. You can choose to have one score for the whole party, or can choose to have a seperate score for one or all of the party members. This score represents how the NPC feels about the player character or party, with higher numbers showing a strong liking and negative numbers showing active distrust or even open hostility. An NPC's attitude provides bonuses or penalties to checks when interacting with them. These effects are shown below.</p>
+
+			<!-- Attitudes -->
+			<p><strong>Idolized.</strong> <em>(Attitude score of 51 or above)</em> This character sees the party or player as more than a friend, and may even see them as more than a person. Such an NPC is fanatically loyal to the player or party, and is willing to sacrifice everything to help them. Such a level of attitude can only occur if the DM allows it, and if the NPC ever drops to a lower attitude, they can never again rise to this attitude, as the illusion had been shattered. The player or party has a +10 bonus on Charisma(Persuasion) and Charisma(Deception) checks when interacting with this NPC.</p>
+			<p><strong>Beloved.</strong> <em>(Attitude score from 21 to 50)</em> This character sees the party or player as more than a friend. Such an NPC is deeply loyal to the player or party, and is willing to stick with them through thick and thin. The player or party has a +5 bonus on Charisma(Persuasion) and Charisma(Deception) checks when interacting with this NPC.</p>
+			<p><strong>Friendly.</strong> <em>(Attitude score from 6 to 20)</em> This character respects and likes the party or player. Such an NPC is helpful to the player or party, and is willing to support them if they are in danger. The player or party has a +2 bonus on Charisma(Persuasion) and Charisma(Deception) checks when interacting with this NPC.</p>
+			<p><strong>Indifferent.</strong> <em>(Attitude score from -5 to 5)</em> This character doesn't really have much of an opinion party or player. Such an NPC treats the player or party the way they would treat any stranger. The player or party has no bonuses or penalties when interacting with this NPC.</p>
+			<p><strong>Unfriendly.</strong> <em>(Attitude score from -6 to -20)</em> This character distrusts and dislikes the party or player. Such an NPC will resist helping the player or party, though is unlikely to go out of their way to cause issues for them. The player or party has a -2 penalty on Charisma(Persuasion) and Charisma(Deception) checks when interacting with this NPC.</p>
+			<p><strong>Antagonistic.</strong> <em>(Attitude score from -21 to -50)</em> This character despises the party or player. Such an NPC will do everything they can to avoid helping the player or party, and will go out of their way to cause issues for them. The player or party has a -5 penalty on Charisma(Persuasion) and Charisma(Deception) checks when interacting with this NPC.</p>
+			<p><strong>Hated.</strong> <em>(Attitude score of -51 or below)</em> This character hates the party or player with their whole being, and sees them as a stain on the world. Such an NPC will never help the player or party, even if it is actively detrimental to the NPC. Depending on their personality, they may even attempt to kill the player or party if they think they can. The player or party has a -10 penalty on Charisma(Persuasion) and Charisma(Deception) checks when interacting with this NPC.</p>
+			<h3>Initial Attitude</h3>
+			<p>First impressions are important, and starting off on the right foot can make great strides in securing an ally. While an NPC's attitude initially starts at 0, there are many modifiers that are applied when first meeting, or even before. Using the table below you can fine tune the starting attitude of an NPC. When the table notes a ability score modifier, use the player's ability score if the attitude is for a single player, or the average ability score if for a party.</p>
+
+			<!-- Initial Attitude -->
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="3">Inital Attitude</th>
+					</tr>
+					<tr>
+						<th>Action</th>
+						<th>Modifier</th>
+						<th>Examples</th>
+					</tr>
+					<tr>
+						<td>First Impressions</td>
+						<td>+Charisma modifier</td>
+						<td><em>First meeting someone</em></td>
+					</tr>
+					<tr>
+						<td>Mutual Friend</td>
+						<td>+1 per friend's attitude level above indifferent</td>
+						<td><em>The duke sending a letter of recommendation, a friendly musician putting in a good word to a bartender</em></td>
+					</tr>
+					<tr>
+						<td>Mutual Enemy</td>
+						<td>+1 per enemy's attitude level below indifferent</td>
+						<td><em>A revolutionary knowing of your exploits against the king, an orc chief who shares concern about an encroaching dragon</em></td>
+					</tr>
+					<tr>
+						<td>Shared Culture</td>
+						<td>+1 to +5</td>
+						<td><em>A dwarf merchant meeting a fellow dwarf out in the world, two bards who went to the same college bumping into each other, running into someone from your home town, two warriors from military cultures sharing a drink</em></td>
+					</tr>
+					<tr>
+						<td>Smack Talk</td>
+						<td>-2 per enemy's attitude level below indifferent</td>
+						<td><em>A loyal vizier who's lord you have worked against, the lover of a bitter rival</em></td>
+					</tr>
+					<tr>
+						<td>Guilty by association</td>
+						<td>-2 per friend's attitude level above indifferent</td>
+						<td><em>A local constable who knows your relationship with a local thief, a merchant who saw you helping a beggar who has been stealing from them</em></td>
+					</tr>
+					<tr>
+						<td>Culture Clash</td>
+						<td>-1 to -5</td>
+						<td><em>A snobby noble meeting a farm boy turned adventurer, an orc warrior meeting an elf, a devote cleric meeting a priest of an opposing faith, two soldiers who fought on differing sides of a conflict coming to blows</em></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>Improving Attitudes</h3>
+			<p>There are many ways to improve an NPC's attitude towards a player or the party, as shown below. Whenever a player or party completes an action, increase their attitude score with applicable NPCs by the amount noted. Do note that it is usually harder to increase attitude than decrease it.</p>
+			<p>The DM can limit how often any actions can be taken, and may require an ability score check to take an action, depending on the NPC.</p>
+			
+			<!-- Improving Attitude -->
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="3">Improving Attitudes</th>
+					</tr>
+					<tr>
+						<th>Action</th>
+						<th>Modifier</th>
+						<th>Examples</th>
+					</tr>
+					<tr>
+						<td>Socializing</td>
+						<td>+1</td>
+						<td><em>Sharing a drink with a stranger, two wizards discussing arcane theory, checking in with an old friend</em></td>
+					</tr>
+					<tr>
+						<td>Flattery</td>
+						<td>+2</td>
+						<td><em>Complementing a king on his kingdom, gushing over a bard's looks, giving a nod of approval to an old halfling's garden</em></td>
+					</tr>
+					<tr>
+						<td>Minor Help</td>
+						<td>+5 (+3 after the first)</td>
+						<td><em>Delivering a letter for someone the town over, helping a woodsman stock up on firewood for the winter, donating a small sum of gold to a temple</em></td>
+					</tr>
+					<tr>
+						<td>Major Help</td>
+						<td>+10 (+5 after the first)</td>
+						<td><em>Saving an errant knight's life, finding an old farmer's lost child, taking the fall for a friendly thief</em></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>Harming Attitudes</h3>
+			<p>Just as there are many ways to improve an NPC's attitude, there are just as many ways to harm it, as shown below. Whenever a player or party completes an action, decrease their attitude score with applicable NPCs by the amount noted.</p>
+			
+			<!-- Harming Attitude -->
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="3">Harming Attitudes</th>
+					</tr>
+					<tr>
+						<th>Action</th>
+						<th>Modifier</th>
+						<th>Examples</th>
+					</tr>
+					<tr>
+						<td>Time Away</td>
+						<td>-1 each month (this only applies if the NPC's attitude is positive)</td>
+						<td><em>A friendly bartender forgetting the bard who played in his tavern, a distant lover slowly losing faith on their love returning, an old friend growing up into someone new</em></td>
+					</tr>
+					<tr>
+						<td>Insulting</td>
+						<td>-2</td>
+						<td><em>Calling a merchant's store tacky, accidently bringing up a noble's embarassing past in front of guests, calling a warrior weak</em></td>
+					</tr>
+					<tr>
+						<td>Minor Harm</td>
+						<td>-5</td>
+						<td><em>Threatening a guard to let you into the city, stealing a small item from a merchant's store, crashing a noble's party you weren't invited to</em></td>
+					</tr>
+					<tr>
+						<td>Major Harm</td>
+						<td>-10</td>
+						<td><em>Getting in a non-lethal brawl with a drunkard, taking credit for a fellow wizard's discovery, convincing a noble to follow their dreams of becoming a musician against the wishes of their family</em></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
