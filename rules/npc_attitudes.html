@@ -115,12 +115,12 @@
 					</tr>
 					<tr>
 						<td>Minor Help</td>
-						<td>+5 (+3 after the first)</td>
+						<td>+5</td>
 						<td><em>Delivering a letter for someone the town over, helping a woodsman stock up on firewood for the winter, donating a small sum of gold to a temple</em></td>
 					</tr>
 					<tr>
 						<td>Major Help</td>
-						<td>+10 (+5 after the first)</td>
+						<td>+10</td>
 						<td><em>Saving an errant knight's life, finding an old farmer's lost child, taking the fall for a friendly thief</em></td>
 					</tr>
 				</tbody>
@@ -153,12 +153,64 @@
 					<tr>
 						<td>Minor Harm</td>
 						<td>-5</td>
-						<td><em>Threatening a guard to let you into the city, stealing a small item from a merchant's store, crashing a noble's party you weren't invited to</em></td>
+						<td><em>Threatening a guard to let you into the city, stealing a small item from a merchant's store, crashing a noble's party you weren't invited to, getting caught lying to the npc</em></td>
 					</tr>
 					<tr>
 						<td>Major Harm</td>
 						<td>-10</td>
-						<td><em>Getting in a non-lethal brawl with a drunkard, taking credit for a fellow wizard's discovery, convincing a noble to follow their dreams of becoming a musician against the wishes of their family</em></td>
+						<td><em>Getting in a non-lethal brawl with a drunkard, taking credit for a fellow wizard's discovery, convincing a noble to follow their dreams of becoming a musician against the wishes of their family, getting caught secretly working against the npc</em></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>Betrayal and Redemption</h3>
+			<p>The worst pain is from those closest to you, and grace from a hated enemy is certain to change minds. When an action would bring an NPC's attitude closer to 0 (so improving a negative attitude or harming a positive attitude), an additional modifier is added to show these extremes, as shown on the table below. These modifiers are only applied if the original modifier equals or surpasses the threshold.</p>
+
+			<!-- Betrayal and Redemption -->
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="3">Betrayal and Redemption</th>
+					</tr>
+					<tr>
+						<th>Attitude</th>
+						<th>Modifier</th>
+						<th>Threshold</th>
+					</tr>
+					<tr>
+						<td>Idolized</td>
+						<td>x3</td>
+						<td>-10</td>
+					</tr>
+					<tr>
+						<td>Beloved</td>
+						<td>x2</td>
+						<td>-5</td>
+					</tr>
+					<tr>
+						<td>Friendly</td>
+						<td>-1</td>
+						<td>-2</td>
+					</tr>
+					<tr>
+						<td>Indifferent</td>
+						<td>+0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Unfriendly</td>
+						<td>+1</td>
+						<td>+2</td>
+					</tr>
+					<tr>
+						<td>Antagonistic</td>
+						<td>x2</td>
+						<td>+5</td>
+					</tr>
+					<tr>
+						<td>Hated</td>
+						<td>x3</td>
+						<td>+10</td>
 					</tr>
 				</tbody>
 			</table>
