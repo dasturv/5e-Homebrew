@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Making a One-Shot - DND 5th Edition</title>
+	<title>Making Encounters - DND 5th Edition</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link rel="stylesheet" href="../styles.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -21,11 +21,207 @@
 	<div class="row justify-content-center">
 		<div class="col-md-9 col-sm-12 main-content">
 			<div class="page-title">
-				Guide: Making a One-Shot
+				Guide: Making Encounters
 			</div>
-			<p><em>A one-shot is a self enclosed adventure that usual takes one to three sessions (any more than that and I'd recommend checking out my guide on <a href="campaign_guide">Making a Campaign.</a>)</em></p>
-			<h3>Character Creation</h3>
-			<p>While using this variant rule, players do not choose a background, instead creating one. Each player gains the following benefits upon character creation:</p>
+			<p><em>Encounters are moments in a session where you switch from narration to interaction between the players and the game world. While usually combative in nature, encounters also include traps, puzzles and tense social situations. Anything that provides a significant barrier to the party and their goals could be used as an encounter. Encounters are also the primary way that players gain experience points and progress their character.</em></p>
+
+			<div id="calculated_stuff">
+				<!--
+				<h3>Encounter Difficulty</h3>
+				<p>Before you can get going 
+				<h5>Experience Limits</h5>
+				<p>Every character has their limits, everyone eventually runs out of resources. The experience limit is a rough guideline to just what those limits are for player characters. The total experience limit for a party shows how muck experience points worth of encounters they can handle before they must take a long rest. To calculate the party's total experience limit take the sum of the associated daily limits for each player from the Difficulty and Limits table.</p>
+				<p>Do note that experience limits are the exact same as adventuring days, simply renamed to be less confusing. You can easily plan a session with less encounters than the experience limit dictates, just be aware it will be easier for the players as they will have plenty of resources to utilize.</p>
+
+				<h5>Difficulty Levels</h5>
+				<p>Every encounter has a level of challenge to it. In DnD that level is shown through how many experience points the encounter provides once it is completed. Challenge is split into five categories:</p>
+				<p><strong>Trivial.</strong> A trivial encounter is unlikely to cost the party any resources, time or effort. Barely more than a speed bump, such encounters in my opinion should be avoided most of the time, as they provide little for the effort required.</p>
+				<p><strong>Easy.</strong> An easy encounter may cost a few hit points, but victory is essentially guaranteed. Barely any serious threat to the players. I still generally avoid these encounters.</p>
+				<p><strong>Medium.</strong> A medium encounter usually have one or two moments of threat to the players, but the party should emerg victorious with no casualties (barring some truly horrid luck.) This is the easiest encounters I usually run.</p>
+				<p><strong>Hard.</strong> A hard encounter could go badly for the party. There is a chance of weaker characters getting taken out of the fight, and a party seriously depleted on resources could even lose a character or two. This is my go to level of difficulty, providing in my opinion a good balance between challenging battles and not requiring half a dozen encounters.</p>
+				<p><strong>Deadly.</strong> A deadly encounter could be lethal for one or more characters. Survival often requires good tactics and quick thinking, and there is a serious risk of defeat.</p>
+				<p>To calculate the experience thresholds for each difficulty, add up the total experience of that difficulty for each player character on Difficulty and Limits table. An encounter is considered a specific difficulty if it is above it's threshold but lower than the next difficulty.</p>
+				<table class="content-table">
+					<tbody>
+						<tr>
+							<th colspan="6">Difficulty and Limits</th>
+						</tr>
+						<tr>
+							<th>Player Level</th>
+							<th>Easy</th>
+							<th>Medium</th>
+							<th>Hard</th>
+							<th>Deadly</th>
+							<th>Daily Limit</th>
+						</tr>
+						<tr>
+							<td>1st</td>
+							<td>25</td>
+							<td>50</td>
+							<td>75</td>
+							<td>100</td>
+							<td>300</td>
+						</tr>
+						<tr>
+							<td>2nd</td>
+							<td>50</td>
+							<td>100</td>
+							<td>150</td>
+							<td>200</td>
+							<td>600</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>75</td>
+							<td>150</td>
+							<td>225</td>
+							<td>400</td>
+							<td>1,200</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>125</td>
+							<td>250</td>
+							<td>375</td>
+							<td>500</td>
+							<td>1,700</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>250</td>
+							<td>500</td>
+							<td>750</td>
+							<td>1,100</td>
+							<td>3,500</td>
+						</tr>
+						<tr>
+							<td>6th</td>
+							<td>300</td>
+							<td>600</td>
+							<td>900</td>
+							<td>1,400</td>
+							<td>4,000</td>
+						</tr>
+						<tr>
+							<td>7th</td>
+							<td>350</td>
+							<td>750</td>
+							<td>1,100</td>
+							<td>1,700</td>
+							<td>5,000</td>
+						</tr>
+						<tr>
+							<td>8th</td>
+							<td>450</td>
+							<td>900</td>
+							<td>1,400</td>
+							<td>2,100</td>
+							<td>6,000</td>
+						</tr>
+						<tr>
+							<td>9th</td>
+							<td>550</td>
+							<td>1,100</td>
+							<td>1,600</td>
+							<td>2,400</td>
+							<td>7,500</td>
+						</tr>
+						<tr>
+							<td>10th</td>
+							<td>600</td>
+							<td>1,200</td>
+							<td>1,900</td>
+							<td>2,800</td>
+							<td>9,000</td>
+						</tr>
+						<tr>
+							<td>11th</td>
+							<td>800</td>
+							<td>1,600</td>
+							<td>2,400</td>
+							<td>3,600</td>
+							<td>10,500</td>
+						</tr>
+						<tr>
+							<td>12th</td>
+							<td>1,000</td>
+							<td>2,000</td>
+							<td>3,000</td>
+							<td>4,500</td>
+							<td>11,500</td>
+						</tr>
+						<tr>
+							<td>13th</td>
+							<td>1,100</td>
+							<td>2,200</td>
+							<td>3,400</td>
+							<td>5,100</td>
+							<td>13,500</td>
+						</tr>
+						<tr>
+							<td>14th</td>
+							<td>1,250</td>
+							<td>2,500</td>
+							<td>3,800</td>
+							<td>5,700</td>
+							<td>15,000</td>
+						</tr>
+						<tr>
+							<td>15th</td>
+							<td>1,400</td>
+							<td>2,800</td>
+							<td>4,300</td>
+							<td>6,400</td>
+							<td>18,000</td>
+						</tr>
+						<tr>
+							<td>16th</td>
+							<td>1,600</td>
+							<td>3,200</td>
+							<td>4,800</td>
+							<td>7,200</td>
+							<td>20,000</td>
+						</tr>
+						<tr>
+							<td>17th</td>
+							<td>2,000</td>
+							<td>3,900</td>
+							<td>5,900</td>
+							<td>8,800</td>
+							<td>25,000</td>
+						</tr>
+						<tr>
+							<td>18th</td>
+							<td>2,100</td>
+							<td>4,200</td>
+							<td>6,300</td>
+							<td>9,500</td>
+							<td>27,000</td>
+						</tr>
+						<tr>
+							<td>19th</td>
+							<td>2,400</td>
+							<td>4,900</td>
+							<td>7,300</td>
+							<td>10,900</td>
+							<td>30,000</td>
+						</tr>
+						<tr>
+							<td>20th</td>
+							<td>2,800</td>
+							<td>5,700</td>
+							<td>8,500</td>
+							<td>12,700</td>
+							<td>40,000</td>
+						</tr>
+					</tbody>
+				</table>
+				-->
+			</div>
+
+			<h3>Blueprinting Your Encounter</h3>
+			<p>Before you start drawing up battlemaps and making stat blocks you need to think about what you want you encounter to be. </p>
+			<p><em>There are tons of tools to make calculating encounter experience and daily limits far easier. My go-to is <a href="https://koboldplus.club">Kobold Fight Club.</a></em></p>
 		</div>
 	</div>
 </body>
