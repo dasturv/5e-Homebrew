@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Critical Effects - DND 5th Edition</title>
+	<title>Lifestyles - DND 5th Edition</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link rel="stylesheet" href="../styles.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -27,6 +27,608 @@
 			<p><em>Inspiration: Shadowrun.</em></p>
 			<h3>Lifestyles</h3>
 			<p>When using this variant rule you must spend coin in order to maintain your lifestyle. Choose one of the lifestyle levels below. Each lifestyle level has a daily cost you must spend in order to maintain it. At the end of a long rest, you gain the effects of your maintained lifestyle level, provided you have maintained it for at least a week. If you have maintained multiple lifestyles in the past week, you gain the benefit of their average level (rounded down.)</p>
+			
+			<!-- Lifestyle Table -->
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="5">Lifestyles</th>
+					</tr>
+					<tr>
+						<th>Level</th>
+						<th>Lifestyle</th>
+						<th>Daily Cost</th>
+						<th>Description</th>
+						<th>Effect</th>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>Wretched</td>
+						<td>Free</td>
+						<td><em>You live in inhumane conditions. With no place to call home, you take shelter where you can find it. Poor access to food and clean water leaves you begging for scraps. Disease, violence and hunger are all commonplace for you.</em></td>
+						<td>Make a DC 20 Constitution saving throw. On a failure you gain 1 level of exhaustion.</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Squalid</td>
+						<td>1 sp</td>
+						<td><em>You have some shelter, such as a leaky stable, mud floored hut or a vermin infested boarding house. Hunger, disease and violence are still commonplace for you.</em></td>
+						<td>Make a DC 15 Constitution saving throw. On a failure you gain 1 level of exhaustion.</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Poor</td>
+						<td>5 sp</td>
+						<td><em>You live in sufficient, if uncomfortable, conditions. With access to simple food and lodging such as a flophouse or a common room above a tavern, you are protected from the elements and starvation, but poor nutrition and disease still impact you regularly.</em></td>
+						<td>Make a DC 10 Constitution saving throw. On a failure you gain 1 level of exhaustion.</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Modest</td>
+						<td>1 gp</td>
+						<td><em>You can ensure you are out of the slums and that you can maintain your equipment. You live in an older part of town renting a room in a boarding house, inn or temple. You get enough food and your living conditions are clean if simple.</em></td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Comfortable</td>
+						<td>5 gp</td>
+						<td><em>You can afford nicer living conditions, food and clothing. You live in a small cottage in a middle class neighborhood or a private room in an inn.</em></td>
+						<td>You gain a number of temporary hit points equal to your proficiency bonus.</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Wealthy</td>
+						<td>10 gp</td>
+						<td><em>You live in luxury, though not quite to the point of nobility. You have access to high quality food and respectable lodgings such as a spacious home in a good part of town or a suite in a fine inn. You likely have a small staff of servants.</em></td>
+						<td>You gain a number of temporary hit points equal to twice your proficiency bonus.</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Aristocratic</td>
+						<td>50 gp</td>
+						<td><em>You live a life of plenty and comfort. You never go hungry nor thirsty, and have access to the best food and lodging your community can provide. Large homes, fine dining, skilled tailors, expansive retinues of servants attending your every need. You have access to the richest and most powerful people around, such as politicians, guild leaders, high priests and nobility (and all the treachery that comes with them.)</em></td>
+						<td>You gain a number of temporary hit points equal to three times your proficiency bonus.</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>Working and Foraging</h3>
+			<p>Sometimes, you have time between adventures where your character has some downtime. During that time, your character can work or forage to help maintain the costs of a certain lifestyle. If a result of working or foraging is a lower lifestyle level than you want, you can pay the difference to maintain a higher lifestyle level.</p>
+			
+			<h5>Working</h5>
+			<p>In order to work, you must spend at least 5 workdays a week plying your trade. To work you must have access to a large enough settlement to warrant someone requiring your trade. At the end of downtime, make an ability check using a set of artisan tools, a musical instrument or a game set (the DM may allow you to use different proficiencies as part of your work.) You have disadvantage on this check in an impoverished community, and advantage in a richer community. Depending on the result of the check, you gain one of the following benefits as shown on the table below.</p>
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="2">Working Results</th>
+					</tr>
+					<tr>
+						<th>DC</th>
+						<th>Effects</th>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>You gain the benefits of a squalid lifestyle for the time you worked.</td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>You gain the benefits of a poor lifestyle for the time you worked.</td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>You gain the benefits of a modest lifestyle for the time you worked. Additionally, you gain 1 sp for each week you worked.</td>
+					</tr>
+					<tr>
+						<td>25</td>
+						<td>You gain the benefits of a comfortable lifestyle for the time you worked. Additionally, you gain 1 gp for each week you worked.</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h5>Foraging</h5>
+			<p>In order to forage, you must spend every day of a week foraging, fishing and hunting. At the end of downtime, make a Wisdom(Survival) check. You have disadvantage on this check if the region you are in is low in natural resources, and advantage if it is abundant. Depending on the result of the check, you gain one of the following benefits as shown on the table below.</p>
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="2">Foraging Results</th>
+					</tr>
+					<tr>
+						<th>DC</th>
+						<th>Effects</th>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>You gain the benefits of a squalid lifestyle for the time you foraged.</td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>You gain the benefits of a poor lifestyle for the time you foraged.</td>
+					</tr>
+					<tr>
+						<td>25</td>
+						<td>You gain the benefits of a modest lifestyle for the time you foraged.</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>Travelling</h3>
+			<p>Oftentimes you have to leave your home and lifestyle and travel, which is never as comfortable. While travelling you must have access to shelter, food, sleep and water. Below are several tables showing options for each of these categories. To calculate your lifestyle while travelling, select the lowest lifestyle level you have from all of the categories.</p>
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="5">Shelter</th>
+					</tr>
+					<tr>
+						<th>Shelter</th>
+						<th>Cost</th>
+						<th>Capacity</th>
+						<th>Weight</th>
+						<th>Lifestyle</th>
+					</tr>
+					<tr>
+						<td>None</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>Wretched</td>
+					</tr>
+					<tr>
+						<td colspan="5"><strong>Tents</strong></td>
+					</tr>
+					<tr>
+						<td>Tent, Small</td>
+						<td>1 gp</td>
+						<td>1</td>
+						<td>10 lbs</td>
+						<td>Squalid</td>
+					</tr>
+					<tr>
+						<td>Tent, Large</td>
+						<td>5 gp</td>
+						<td>2</td>
+						<td>20 lbs</td>
+						<td>Poor</td>
+					</tr>
+					<tr>
+						<td>Tent, Pavilion</td>
+						<td>50 gp</td>
+						<td>4</td>
+						<td>100 lbs</td>
+						<td>Modest</td>
+					</tr>
+					<tr>
+						<td colspan="5"><strong>Land Vehicles</strong></td>
+					</tr>
+					<tr>
+						<td>Cart</td>
+						<td>15 gp</td>
+						<td>1</td>
+						<td>200 lbs</td>
+						<td>Squalid</td>
+					</tr>
+					<tr>
+						<td>Sled</td>
+						<td>20 gp</td>
+						<td>1</td>
+						<td>300 lbs</td>
+						<td>Squalid</td>
+					</tr>
+					<tr>
+						<td>Wagon</td>
+						<td>35 gp</td>
+						<td>2</td>
+						<td>400 lbs</td>
+						<td>Poor</td>
+					</tr>
+					<tr>
+						<td>Carriage</td>
+						<td>100 gp</td>
+						<td>4</td>
+						<td>600 lbs</td>
+						<td>Modest</td>
+					</tr>
+					<tr>
+						<td>Luxury Carriage</td>
+						<td>500 gp</td>
+						<td>4</td>
+						<td>800 lbs</td>
+						<td>Comfortable</td>
+					</tr>
+					<tr>
+						<td colspan="5"><strong>Waterborne Vehicles</strong></td>
+					</tr>
+					<tr>
+						<td>Rowboat</td>
+						<td>50 gp</td>
+						<td>1</td>
+						<td>-</td>
+						<td>Squalid</td>
+					</tr>
+					<tr>
+						<td>Keelboat</td>
+						<td>3,000 gp</td>
+						<td>8</td>
+						<td>-</td>
+						<td>Poor</td>
+					</tr>
+					<tr>
+						<td>Longship</td>
+						<td>10,000 gp</td>
+						<td>40</td>
+						<td>-</td>
+						<td>Squalid</td>
+					</tr>
+					<tr>
+						<td>Sailing Ship</td>
+						<td>10,000 gp</td>
+						<td>30 Crew</td>
+						<td>-</td>
+						<td>Poor</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>1 Captain</td>
+						<td>-</td>
+						<td>Modest</td>
+					</tr>
+					<tr>
+						<td>Warship</td>
+						<td>25,000 gp</td>
+						<td>40 Crew</td>
+						<td>-</td>
+						<td>Poor</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>5 Officers</td>
+						<td>-</td>
+						<td>Modest</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>1 Captain</td>
+						<td>-</td>
+						<td>Comfortable</td>
+					</tr>
+					<tr>
+						<td>Galley</td>
+						<td>30,000 gp</td>
+						<td>80 Crew</td>
+						<td>-</td>
+						<td>Poor</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>10 Officers</td>
+						<td>-</td>
+						<td>Modest</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>2 Captain</td>
+						<td>-</td>
+						<td>Comfortable</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="4">Sleeping</th>
+					</tr>
+					<tr>
+						<th>Item</th>
+						<th>Cost</th>
+						<th>Weight</th>
+						<th>Lifestyle</th>
+					</tr>
+					<tr>
+						<td>None</td>
+						<td>-</td>
+						<td>-</td>
+						<td>Wretched</td>
+					</tr>
+					<tr>
+						<td>Blanket</td>
+						<td>5 sp</td>
+						<td>1 lb.</td>
+						<td>Squalid</td>
+					</tr>
+					<tr>
+						<td>Bedroll</td>
+						<td>1 gp</td>
+						<td>2 lb.</td>
+						<td>Poor</td>
+					</tr>
+					<tr>
+						<td>Cot</td>
+						<td>5 gp</td>
+						<td>10 lb.</td>
+						<td>Modest</td>
+					</tr>
+					<tr>
+						<td>Full Bed</td>
+						<td>25 gp</td>
+						<td>75 lb.</td>
+						<td>Comfortable</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="4">Food</th>
+					</tr>
+					<tr>
+						<th>Item</th>
+						<th>Cost</th>
+						<th>Weight</th>
+						<th>Lifestyle</th>
+					</tr>
+					<tr>
+						<td>None</td>
+						<td>-</td>
+						<td>-</td>
+						<td>Wretched</td>
+					</tr>
+					<tr>
+						<td>Meager Ration (1 day)</td>
+						<td>5 cp</td>
+						<td>1 lb.</td>
+						<td>Squalid</td>
+					</tr>
+					<tr>
+						<td>Ration (1 day)</td>
+						<td>5 sp</td>
+						<td>2 lb.</td>
+						<td>Poor</td>
+					</tr>
+					<tr>
+						<td>Travelling Food (1 day)</td>
+						<td>1 gp</td>
+						<td>4 lb.</td>
+						<td>Modest</td>
+					</tr>
+					<tr>
+						<td>Gourmet Food (1 day)</td>
+						<td>10 gp</td>
+						<td>8 lb.</td>
+						<td>Comfortable</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="4">Water</th>
+					</tr>
+					<tr>
+						<th>Item</th>
+						<th>Cost</th>
+						<th>Weight</th>
+						<th>Lifestyle</th>
+					</tr>
+					<tr>
+						<td>None</td>
+						<td>-</td>
+						<td>-</td>
+						<td>Wretched</td>
+					</tr>
+					<tr>
+						<td>Dirty Water (1 day)</td>
+						<td>-</td>
+						<td>5 lb.</td>
+						<td>Squalid</td>
+					</tr>
+					<tr>
+						<td>Clear Water (1 day)</td>
+						<td>-</td>
+						<td>5 lb.</td>
+						<td>Poor</td>
+					</tr>
+					<tr>
+						<td>Purified Water (1 day)</td>
+						<td>1 cp</td>
+						<td>5 lb.</td>
+						<td>Modest</td>
+					</tr>
+					<tr>
+						<td>Clean Water (1 day)</td>
+						<td>1 sp</td>
+						<td>5 lb.</td>
+						<td>Comfortable</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>Homeowning</h3>
+			<p>Up to this point it is assumed you are renting a space to live as part of your lifestyle cost. However, owning a home can drastically save money, if you can make the upfront cost. While you live in a house, it reduces the daily cost of it's lifestyle level or lower, as shown in the New Daily cost column of the Homes table.</p> 
+			<p>When buying a house, you can either purchase one or build one, provided there is a house or land for sale (this may also be limited by a local lord or other authority.) When building, the cost is reduced but house cannot be lived in until the construction time elapses. This time is paused during winters or other periods where construction cannot happen.</p>
+			<p>Each house has a capacity. A number of humanoids can live in a house equal to this capacity. All creatures who live in a house gain the reduced cost benefit the house provides.</p>
+			<p>Additionally, houses require maintanence. For every two upgrade slots a house has, it requires at least one work week a month in order to maintain. Failure to do so causes the house to fall into disrepair, and its lifestyle and daily cost benefits are reduced by one level. A house returns to its base benefits after a month of proper maintanence. If a house's benefits are ever reduced below squalid lifestyle, it is condemned and requires an amount of gold equal to half of its total value and half its build time in order to restore it to its base benefits. You can hire servants to maintain your house for you. Each servant increases costs 2 sp per day, and reduces the effective number of upgrade slots your house has for the purposes of calculating maintanence by 2.</p>
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="8">Homes</th>
+					</tr>
+					<tr>
+						<th>House</th>
+						<th>Cost (Purchase)</th>
+						<th>Cost (Build)</th>
+						<th>Build Time</th>
+						<th>Upgrade Slots</th>
+						<th>Capacity</th>
+						<th>Lifestyle</th>
+						<th>New Daily Cost</th>
+					</tr>
+					<tr>
+						<td>Hovel</td>
+						<td>15 gp</td>
+						<td>10 gp</td>
+						<td>2 weeks</td>
+						<td>-</td>
+						<td>1</td>
+						<td>Squalid</td>
+						<td>3 cp</td>
+					</tr>
+					<tr>
+						<td>Shack</td>
+						<td>75 gp</td>
+						<td>50 gp</td>
+						<td>6 weeks</td>
+						<td>-</td>
+						<td>2</td>
+						<td>Poor</td>
+						<td>2 sp</td>
+					</tr>
+					<tr>
+						<td>Cottage</td>
+						<td>125 gp</td>
+						<td>100 gp</td>
+						<td>3 months</td>
+						<td>1</td>
+						<td>2</td>
+						<td>Modest</td>
+						<td>5 sp</td>
+					</tr>
+					<tr>
+						<td>Small House</td>
+						<td>250 gp</td>
+						<td>200 gp</td>
+						<td>6 months</td>
+						<td>2</td>
+						<td>2</td>
+						<td>Comfortable</td>
+						<td>3 gp</td>
+					</tr>
+					<tr>
+						<td>Large House</td>
+						<td>1000 gp</td>
+						<td>800 gp</td>
+						<td>1 year</td>
+						<td>4</td>
+						<td>2</td>
+						<td>Wealthy</td>
+						<td>6 gp</td>
+					</tr>
+					<tr>
+						<td>Manor</td>
+						<td>5000 gp</td>
+						<td>4000 gp</td>
+						<td>2 years</td>
+						<td>8</td>
+						<td>2</td>
+						<td>Aristocratic</td>
+						<td>30 gp</td>
+					</tr>
+					<tr>
+						<td>Yard*</td>
+						<td>Half of House Price</td>
+						<td>-</td>
+						<td>-</td>
+						<td>Same as House</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><em>*Check Yard house upgrade for details</em></p>
+
+			<h3>House Upgrades</h3>
+			<p>Upon purchasing, each house contains a common room and a bedroom (except a hovel, which only contains a bedroom.) The rest of the house is made up of unfurnished rooms, represented by the house's upgrade slots. House upgrades are specialized rooms that you can put into a house, provided it meets the upgrade's requirements and you pay the costs. Each upgrade takes up a number of upgrade slots, if you do not have enough upgrade slots, you cannot select an upgrade. Each upgrade can only be used once it is completed, which takes the amount of time specified.</p>
+
+			<div id="house_upgrades">
+				<h5>Additional Room</h5>
+				<p><em>
+				<strong>Preresiquites:</strong> The base house must be a small house or larger. You must have the yard upgrade<br>
+				<strong>Cost:</strong> One fifth the cost of the base house.<br>
+				<strong>Slots Required:</strong> 1 yard upgrade slot<br>
+				<strong>Build Time:</strong> 1 month<br>
+				<strong>Special:</strong> You can have a number of additional rooms equal to half the base house's upgrade slots.<br></em>
+				You build an additional room into your house. The house gains 1 additional upgrade slot.</p><br>
+
+				<h5>Ballroom</h5>
+				<p><em>
+				<strong>Cost:</strong> 250 gp<br>
+				<strong>Slots Required:</strong> 2 upgrade slots<br>
+				<strong>Build Time:</strong> 2 months<br></em>
+				You have built a grand room to host parties and gatherings. Using your ballroom you can host parties, when you do so select a lifestyle level. A party costs an amount equal to ten times the daily cost of the chosen lifestyle and takes one week of preparation for each level of lifestyle it is above wretched. A party can serve up to twenty guests, and lasts for 12 hours. During the party, you have advantage on Charisma checks when interacting with guests of the chosen lifestyle level or lower. Additionally, you gain a further +2 bonus on Charisma checks for each lifestyle level the party is above the guest.</p><br>
+
+				<h5>Bedroom</h5>
+				<p><em>
+				<strong>Cost:</strong> One tenth the cost of the base house.<br>
+				<strong>Slots Required:</strong> 1 upgrade slot<br>
+				<strong>Build Time:</strong> 1 week<br></em>
+				You have another room made to accommodate sleeping. The house gains an additional 2 capacity.</p><br>
+
+				<h5>Bunkroom</h5>
+				<p><em>
+				<strong>Cost:</strong> One tenth the cost of the base house.<br>
+				<strong>Slots Required:</strong> 1 upgrade slot<br>
+				<strong>Build Time:</strong> 1 week<br></em>
+				You have another room made to accommodate sleeping, though a bit more cramped than preferred. The house gains an additional 4 capacity. Any creature that fills one of these capacity slots has its lifestyle level reduced by one while living in the house (the creature still pays for the level higher.)</p><br>
+
+				<h5>Garden</h5>
+				<p><em>
+				<strong>Cost:</strong> 10 gp<br>
+				<strong>Slots Required:</strong> 1 yard upgrade slot<br>
+				<strong>Build Time:</strong> 1 month<br></em>
+				You own a small garden that grows produce. Your daily cost to maintain your lifestyle in the house is reduced by 1 sp, to a minimum of 0.</p><br>
+
+				<h5>Library</h5>
+				<p><em>
+				<strong>Cost:</strong> 250 gp<br>
+				<strong>Slots Required:</strong> 1 upgrade slot<br>
+				<strong>Build Time:</strong> 2 weeks<br></em>
+				You have a room dedicated to study and research. While in this room, you have advantage on Intelligence checks to research information on a topic.</p><br>
+
+				<h5>Servant Quarters</h5>
+				<p><em>
+				<strong>Cost:</strong> 50 gp<br>
+				<strong>Slots Required:</strong> 1 upgrade slot<br>
+				<strong>Build Time:</strong> 2 weeks<br></em>
+				You have built a room specifically to house your servants, who help you maintain your house. The room can house up to 4 servants. Each of those servants only cost 1 sp per day to hire.</p><br>
+
+				<h5>Stables</h5>
+				<p><em>
+				<strong>Cost:</strong> 75 gp<br>
+				<strong>Slots Required:</strong> 1 yard upgrade slot<br>
+				<strong>Build Time:</strong> 1 month<br></em>
+				You own a set of stables to hold your animals and their feed. A stable can house up to 8 horses or similar sized animals, as well as a carriage or 2 wagons.</p><br>
+
+				<h5>Vault</h5>
+				<p><em>
+				<strong>Cost:</strong> 100 gp<br>
+				<strong>Slots Required:</strong> 1 upgrade slot<br>
+				<strong>Build Time:</strong> 1 month<br></em>
+				You have built a secure room to house your valuables or other items you wish protected. The room is a 10 feet cube and securely locked. An individual trying to enter the room without the proper code or key must make a DC 10 check with thieve's tools or a DC 16 Strenght(Athletics) check. When you built this upgrade, you can spend an additional 50 gp to increase both DCs by 2, to a max of 30 and 36 respectively. Furthermore, you can spend an additional 100 gp to ward the room, preventing the room from being targeted by divination magic, percieved through magical scrying sensor and prevents magical teleportation within its borders.</p><br>
+
+				<h5>Workshop</h5>
+				<p><em>
+				<strong>Cost:</strong> 50 gp<br>
+				<strong>Slots Required:</strong> 1 upgrade slot<br>
+				<strong>Build Time:</strong> 1 week<br></em>
+				You have a specialized room for plying a trade. When you construct this upgrade, choose one artisan tool. Checks made in this room with the chosen tool are made with advantage.</p><br>
+
+				<h5>Yard</h5>
+				<p><em>
+				<strong>Preresiquites:</strong> The base house must be a cottage or larger.<br>
+				<strong>Cost:</strong> Half the cost of the base house.<br>
+				<strong>Slots Required:</strong> -<br>
+				<strong>Build Time:</strong> 1 week per upgrade slot gained<br>
+				<strong>Special:</strong> You can only have one yard per house.</em><br>
+				You own the land immediately around your house, which has been cleared for use. You gain a number of yard upgrade slots that can be spent on certain upgrades. The yard must be maintained, using the same rules as a house except that when a yard falls into disrepair, it instead loses one of its upgrade slots to overgrowth. While an upgrade slot is overgrown, any upgrades on it cannot be used until the yard is maintained. If a yard loses its last upgrade slot to overgrowth, itself and all of its upgrades are lost permanently and you must purchase and build the yard again.</p>
+			</div>
 		</div>
 	</div>
 </body>
