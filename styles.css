@@ -21,6 +21,10 @@ body {
 	padding: 10px 10px 10px 10px;
 }
 
+.sub_toc {
+	margin-left: 20px;
+}
+
 .header-text{
 	padding: 25px 25px 0px 25px;
 }
