@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Spells - DND 5th Edition</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="../../styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="header-wrap">
+		<div class="header-color"></div>
+		<div class="row justify-content-center">
+			<div class="col-md-9 col-sm-12 header-text">
+				<h1>Laec's DND 5e Homebrew</h1>
+				<h3><a href="../../index.html">Home</a></h3>
+			</div>
+		</div>
+	</header>
+	<div class="row justify-content-center">
+		<div class="col-md-9 col-sm-12 main-content">
+			<div class="page-title">
+				Spells
+			</div>
+
+			<!-- Spell Level Navigation Tabs -->
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+			  <li class="nav-item" role="presentation">
+			    <button class="nav-link active" id="cantrip" data-bs-toggle="tab" data-bs-target="#cantrip-pane" type="button" role="tab" aria-controls="cantrip-pane" aria-selected="true"><em>Cantrip</em></button>
+			  </li>
+			  <li class="nav-item" role="presentation">
+			    <button class="nav-link" id="1st-level" data-bs-toggle="tab" data-bs-target="#1st-level-pane" type="button" role="tab" aria-controls="1st-level-pane" aria-selected="false"><em>1st Level</em></button>
+			  </li>
+			  <li class="nav-item" role="presentation">
+			    <button class="nav-link" id="2nd-level" data-bs-toggle="tab" data-bs-target="#2nd-level-pane" type="button" role="tab" aria-controls="2nd-level-pane" aria-selected="false"><em>2nd Level</em></button>
+			  </li>
+			  <li class="nav-item" role="presentation">
+			    <button class="nav-link" id="3rd-level" data-bs-toggle="tab" data-bs-target="#3rd-level-pane" type="button" role="tab" aria-controls="3rd-level-pane" aria-selected="false"><em>3rd Level</em></button>
+			  </li>
+			  <li class="nav-item" role="presentation">
+			    <button class="nav-link" id="4th-level" data-bs-toggle="tab" data-bs-target="#4th-level-pane" type="button" role="tab" aria-controls="4th-level-pane" aria-selected="false"><em>4th Level</em></button>
+			  </li>
+			  <li class="nav-item" role="presentation">
+			    <button class="nav-link" id="5th-level" data-bs-toggle="tab" data-bs-target="#5th-level-pane" type="button" role="tab" aria-controls="5th-level-pane" aria-selected="false"><em>5th Level</em></button>
+			  </li>
+			</ul>
+
+			<!-- Spell Tables -->
+			<div class="tab-content" id="myTabContent">
+			  <!-- 0th Level Spells -->
+			  <div class="tab-pane show active" id="cantrip-pane" role="tabpanel" aria-labelledby="cantrip" tabindex="0">
+			  	<table class="content-table">
+					<tbody>
+						<tr>
+							<th>Spell Name</th>
+							<th>School</th>
+							<th>Casting Time</th>
+							<th>Range</th>
+							<th>Duration</th>
+							<th>Components</th>
+						</tr>
+
+						<!-- 0th Level Spells -->
+						<tr class="spell all conjuration">
+							<td><a href="https://dnd5e.wikidot.com/spell:acid-splash">Acid Splash</a></td>
+							<td><em>Conjuration</em></td>
+							<td>1 Action</td>
+							<td>60 feet</td>
+							<td>Instantaneous</td>
+							<td>V, S</td>
+						</tr>
+						<tr class="spell all abjuration">
+							<td><a href="https://dnd5e.wikidot.com/spell:blade-ward">Blade Ward</a></td>
+							<td><em>Abjuration</em></td>
+							<td>1 Action</td>
+							<td>Self</td>
+							<td>1 Round</td>
+							<td>V, S</td>
+						</tr>
+						<tr class="spell all necromancy">
+							<td><a href="https://dnd5e.wikidot.com/spell:chill-touch">Chill Touch</a></td>
+							<td><em>Necromancy</em></td>
+							<td>1 Action</td>
+							<td>120 feet</td>
+							<td>1 Round</td>
+							<td>V, S</td>
+						</tr>
+						<tr class="spell all evocation">
+							<td><a href="https://dnd5e.wikidot.com/spell:dancing-lights">Dancing Lights</a></td>
+							<td><em>Evocation</em></td>
+							<td>1 Action</td>
+							<td>120 feet</td>
+							<td>Concentration, up to 1 minute</td>
+							<td>V, S, M</td>
+						</tr>
+						<tr class="spell all evocation">
+							<td><a href="https://dnd5e.wikidot.com/spell:fire-bolt">Fire Bolt</a></td>
+							<td><em>Evocation</em></td>
+							<td>1 Action</td>
+							<td>120 feet</td>
+							<td>Instantaneous</td>
+							<td>V, S</td>
+						</tr>
+						<tr class="spell all divination">
+							<td><a href="https://dnd5e.wikidot.com/spell:guidance">Guidance</a></td>
+							<td><em>Divination</em></td>
+							<td>1 Action</td>
+							<td>Touch</td>
+							<td>Concentration, up to 1 minute</td>
+							<td>V, S</td>
+						</tr>
+						<tr class="spell all conjuration">
+							<td><a href="https://dnd5e.wikidot.com/spell:infestation">Infestation</a></td>
+							<td><em>Conjuration</em></td>
+							<td>1 Action</td>
+							<td>30 feet</td>
+							<td>Instantaneous</td>
+							<td>V, S, M</td>
+						</tr>
+						<tr class="spell all evocation">
+							<td><a href="https://dnd5e.wikidot.com/spell:light">Light</a></td>
+							<td><em>Evocation</em></td>
+							<td>1 Action</td>
+							<td>Touch</td>
+							<td>1 hour</td>
+							<td>V, M</td>
+						</tr>
+						<tr class="spell all conjuration">
+							<td><a href="https://dnd5e.wikidot.com/spell:mage-hand">Mage Hand</a></td>
+							<td><em>Conjuration</em></td>
+							<td>1 Action</td>
+							<td>30 feet</td>
+							<td>1 minute</td>
+							<td>V, S</td>
+						</tr>
+						<tr class="spell all transmutation">
+							<td><a href="https://dnd5e.wikidot.com/spell:mending">Mending</a></td>
+							<td><em>Transmutation</em></td>
+							<td>1 minute</td>
+							<td>Touch</td>
+							<td>Instantaneous</td>
+							<td>V, S, M</td>
+						</tr>
+						<tr class="spell all transmutation">
+							<td><a href="https://dnd5e.wikidot.com/spell:message">Message</a></td>
+							<td><em>Transmutation</em></td>
+							<td>1 Action</td>
+							<td>120 feet</td>
+							<td>1 Round</td>
+							<td>V, S, M</td>
+						</tr>
+						<tr class="spell all enchantment">
+							<td><a href="https://dnd5e.wikidot.com/spell:mind-sliver">Mind Sliver</a></td>
+							<td><em>Enchantment</em></td>
+							<td>1 Action</td>
+							<td>60 feet</td>
+							<td>1 Round</td>
+							<td>V</td>
+						</tr>
+						<tr class="spell all illusion">
+							<td><a href="https://dnd5e.wikidot.com/spell:minor-illusion">Minor Illusion</a></td>
+							<td><em>Illusion</em></td>
+							<td>1 Action</td>
+							<td>30 feet</td>
+							<td>1 minute</td>
+							<td>S, M</td>
+						</tr>
+						<tr class="spell all conjuration">
+							<td><a href="https://dnd5e.wikidot.com/spell:poison-spray">Poison Spray</a></td>
+							<td><em>Conjuration</em></td>
+							<td>1 Action</td>
+							<td>10 feet</td>
+							<td>Instantaneous</td>
+							<td>V, S</td>
+						</tr>
+						<tr class="spell all transmutation">
+							<td><a href="https://dnd5e.wikidot.com/spell:prestidigitation">Prestidigitation</a></td>
+							<td><em>Transmutation</em></td>
+							<td>1 Action</td>
+							<td>10 feet</td>
+							<td>Up to 1 hour</td>
+							<td>V, S</td>
+						</tr>
+						<tr class="spell all evocation">
+							<td><a href="https://dnd5e.wikidot.com/spell:ray-of-frost">Ray of Frost</a></td>
+							<td><em>Evocation</em></td>
+							<td>1 Action</td>
+							<td>60 feet</td>
+							<td>Instantaneous</td>
+							<td>V, S</td>
+						</tr>
+						<tr class="spell all abjuration">
+							<td><a href="https://dnd5e.wikidot.com/spell:resistance">Resistance</a></td>
+							<td><em>Abjuration</em></td>
+							<td>1 Action</td>
+							<td>Touch</td>
+							<td>Concentration, up to 1 minute</td>
+							<td>V, S, M</td>
+						</tr>
+						<tr class="spell all evocation">
+							<td><a href="https://dnd5e.wikidot.com/spell:sacred-flame">Sacred Flame</a></td>
+							<td><em>Evocation</em></td>
+							<td>1 Action</td>
+							<td>60 feet</td>
+							<td>Instantaneous</td>
+							<td>V, S</td>
+						</tr>
+						<tr class="spell all evocation">
+							<td><a href="https://dnd5e.wikidot.com/spell:shocking-grasp">Shocking Grasp</a></td>
+							<td><em>Evocation</em></td>
+							<td>1 Action</td>
+							<td>Touch</td>
+							<td>Instantaneous</td>
+							<td>V, S</td>
+						</tr>
+						<tr class="spell all evocation">
+							<td><a href="https://dnd5e.wikidot.com/spell:thunderclap">Thunderclap</a></td>
+							<td><em>Evocation</em></td>
+							<td>1 Action</td>
+							<td>Self (5-foot radius)</td>
+							<td>Instantaneous</td>
+							<td>S</td>
+						</tr>
+						<tr class="spell all divination">
+							<td><a href="https://dnd5e.wikidot.com/spell:true-strike">True Strike</a></td>
+							<td><em>Divination</em></td>
+							<td>1 Action</td>
+							<td>30 feet</td>
+							<td>Concentration, up to 1 round</td>
+							<td>S</td>
+						</tr>
+						<tr class="spell null">
+							<td colspan="6">None Available</td>
+						</tr>
+					</tbody>
+				</table>
+			  </div>
+
+			  <!-- 1st Level Spells -->
+			  <div class="tab-pane" id="1st-level-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="1">
+			  	<table class="content-table">
+					<tbody>
+						<tr>
+							<th>Spell Name</th>
+							<th>School</th>
+							<th>Casting Time</th>
+							<th>Range</th>
+							<th>Duration</th>
+							<th>Components</th>
+						</tr>
+
+						<!-- 1st Level Spells -->
+						<tr class="spell null">
+							<td colspan="6">None Available</td>
+						</tr>
+					</tbody>
+				</table>
+			  </div>
+
+			  <!-- 2nd Level Spells -->
+			  <div class="tab-pane" id="2nd-level-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="2">
+			  	<table class="content-table">
+					<tbody>
+						<tr>
+							<th>Spell Name</th>
+							<th>School</th>
+							<th>Casting Time</th>
+							<th>Range</th>
+							<th>Duration</th>
+							<th>Components</th>
+						</tr>
+
+						<!-- 2nd Level Spells -->
+						<tr class="spell null">
+							<td colspan="6">None Available</td>
+						</tr>
+					</tbody>
+				</table>
+			  </div>
+
+			  <!-- 3rd Level Spells -->
+			  <div class="tab-pane" id="3rd-level-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="3">
+			  	<table class="content-table">
+					<tbody>
+						<tr>
+							<th>Spell Name</th>
+							<th>School</th>
+							<th>Casting Time</th>
+							<th>Range</th>
+							<th>Duration</th>
+							<th>Components</th>
+						</tr>
+
+						<!-- 3rd Level Spells -->
+						<tr class="spell all conjuration wizard warlock">
+							<td><a href="3rd/summon_lesser_devils.html">Summon Lesser Devils</a></td>
+							<td><em>Conjuration</em></td>
+							<td>1 Action</td>
+							<td>60 feet</td>
+							<td>Concentration, up to 1 hour</td>
+							<td>V, S, M</td>
+						</tr>
+						<tr class="spell null">
+							<td colspan="6">None Available</td>
+						</tr>
+					</tbody>
+				</table>
+			  </div>
+
+			  <!-- 4th Level Spells -->
+			  <div class="tab-pane" id="4th-level-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="4">
+			  	<table class="content-table">
+					<tbody>
+						<tr>
+							<th>Spell Name</th>
+							<th>School</th>
+							<th>Casting Time</th>
+							<th>Range</th>
+							<th>Duration</th>
+							<th>Components</th>
+						</tr>
+
+						<!-- 4th Level Spells -->
+						<tr class="spell null">
+							<td colspan="6">None Available</td>
+						</tr>
+					</tbody>
+				</table>
+			  </div>
+
+			  <!-- 5th Level Spells -->
+			  <div class="tab-pane" id="5th-level-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="5">
+			  	<table class="content-table">
+					<tbody>
+						<tr>
+							<th>Spell Name</th>
+							<th>School</th>
+							<th>Casting Time</th>
+							<th>Range</th>
+							<th>Duration</th>
+							<th>Components</th>
+						</tr>
+
+						<!-- 5th Level Spells -->
+						<tr class="spell all conjuration wizard warlock">
+							<td><a href="5th/cthonic_calling.html">Cthonic Calling</a></td>
+							<td><em>Conjuration</em></td>
+							<td>1 Minute</td>
+							<td>90 feet</td>
+							<td>Concentration, up to 1 hour</td>
+							<td>V, S, M</td>
+						</tr>
+						<tr class="spell null">
+							<td colspan="6">None Available</td>
+						</tr>
+					</tbody>
+				</table>
+			  </div>
+
+			<!-- Filter Buttons -->
+			<div id="myBtnContainer">
+				<div>
+					<button class="btn abjuration" onclick="filterSelection('abjuration')">Abjuration</button>
+					<button class="btn conjuration" onclick="filterSelection('conjuration')">Conjuration</button>
+					<button class="btn divination" onclick="filterSelection('divination')">Divination</button>
+					<button class="btn enchantment" onclick="filterSelection('enchantment')">Enchantment</button>
+					<button class="btn evocation" onclick="filterSelection('evocation')">Evocation</button>
+					<button class="btn illusion" onclick="filterSelection('illusion')">Illusion</button>
+					<button class="btn necromancy" onclick="filterSelection('necromancy')">Necromancy</button>
+					<button class="btn transmutation" onclick="filterSelection('transmutation')">Transmutation</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<footer>
+	<script type="text/javascript">
+		const queryString = window.location.search;
+		console.log(queryString)
+		const urlParams = new URLSearchParams(queryString);
+		console.log(urlParams)
+		const param = urlParams.get('spellfilter')
+		console.log(param)
+
+		if (param != null) {
+			filterSelection(param)
+			var bc = document.getElementById("myBtnContainer");
+			var fb = bc.getElementsByClassName(param);
+			fb[0].className += " active";
+		} else {
+			filterSelection("all")
+			var bc = document.getElementById("myBtnContainer");
+			var fb = bc.getElementsByClassName('all');
+			fb[0].className += " active";
+		}
+
+		function filterSelection(c) {
+			var x, i, j, p;
+			p = document.getElementsByClassName("tab-pane")
+			for (j = 0; j < p.length; j++) {
+				x = p[j].getElementsByClassName("spell");
+				// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+		  		for (i = 0; i < x.length; i++) {
+		    		w3RemoveClass(x[i], "show");
+		    		if (p[j].getElementsByClassName(c).length > 0) {
+		    			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+		    		} else {
+		    			if (x[i].className.indexOf("null") > -1) w3AddClass(x[i], "show");
+		    		}
+				}
+		  	}
+		}
+
+		// Show filtered elements
+		function w3AddClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+		    if (arr1.indexOf(arr2[i]) == -1) {
+		      element.className += " " + arr2[i];
+		    }
+		  }
+		}
+
+		// Hide elements that are not selected
+		function w3RemoveClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+		    while (arr1.indexOf(arr2[i]) > -1) {
+		      arr1.splice(arr1.indexOf(arr2[i]), 1);
+		    }
+		  }
+		  element.className = arr1.join(" ");
+		}
+
+		// Add active class to the current control button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		    var current = btnContainer.getElementsByClassName("active");
+		    current[0].className = current[0].className.replace(" active", "");
+		    this.className += " active";
+		  });
+		}
+	</script>
+</footer>
+</html>
