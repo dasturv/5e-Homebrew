@@ -38,12 +38,39 @@
 			<p><strong>Augment Upgrades</strong><br>
 			Many augments can be further customized beyond their stock forms. Each augment can have a number of upgrades equal to its capacity, and contain a number of default upgrades (default upgrades cannot be removed and do not count against an augment's capacity).</p>
 			<p><strong>Neural Load</strong><br>
-			Using augments can put strain on the minds of people who use them, as the brain struggles to coordinate with an artificial extension of itself. Each augment increases a character's neural load by an amount shown on the tables below. Each character can have a maximum neural load equal to 2 plus either their Intelligence, Wisdom or Charisma modifier (whichever is highest, with a minimum of 1). Attempting to install an augment when you are already at your limit deals 4d10 psychic damage to the recipient and the installation automatically fails.</p>
+			Using augments can put strain on the minds of people who use them, as the brain struggles to coordinate with an artificial extension of itself. Each augment increases a character's neural load by an amount depending on its type, as shown on the table below. Each character can have a maximum neural load equal to 2 plus either their Intelligence, Wisdom or Charisma modifier (whichever is highest, with a minimum of 1). Attempting to install an augment when you are already at your limit deals 4d10 psychic damage to the recipient and the installation automatically fails.</p>
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="2">Neural Load by Augment</th>
+					</tr>
+					<tr>
+						<th>Augment Type</th>
+						<th>Base Neural Load</th>
+					</tr>
+					<tr>
+						<td>Organic Augments</td>
+						<td>0.5</td>
+					</tr>
+					<tr>
+						<td>External Augments</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>Internal Augments</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>Sensory Augments</td>
+						<td>0.5</td>
+					</tr>
+				</tbody>
+			</table>
 			<p><strong>Augments and Magic</strong><br>
 			Augmenting one's body makes many forms of spellcasting far more difficult, as they interfere with the natural flow of magic through the body. As long as a spellcaster or monk has at least one augment, the gain a penalty to their spell and ki attack bonus and save DCs. The penalty is equal to one half their current neural load (rounded up). Additionally, an augmented creature who recieves magically healing, such as by the <a href="https://dnd5e.wikidot.com/spell:cure-wounds">Cure Wounds</a> spell, recovers a reduced amount of hit points. This reduction is equal to their current neural load (rounded up).</p>
 
 			<h5>External Augmentations</h5>
-			<p>Including prosthetic arms and legs, as well as torso and skull shells, external augmentations are some of the most obvious and common types of augments in Valastar. Arm and leg augments have their own Strength and Dexterity scores, seperate from your own. When a d20 roll requires one of these scores while using two or more limbs, you use the average score between the limbs for the roll. Arm and leg augments replace a limb unless otherwise stated, whereas skull and torso augments only replace the outer layers, keeping bones and organs intact.</p>
+			<p>Including prosthetic arms and legs, as well as torso and skull carapaces, external augmentations are some of the most obvious and common types of augments in Valastar. Arm and leg augments have their own Strength and Dexterity scores, seperate from your own. When a d20 roll requires one of these scores while using two or more limbs, you use the average score between the limbs for the roll. Arm and leg augments replace a limb unless otherwise stated, whereas skull and torso augments only replace the outer layers, keeping bones and organs intact.</p>
 
 			<table class="content-table">
 				<tbody>
@@ -71,12 +98,22 @@
 						<td>60</td>
 					</tr>
 					<tr>
+						<td>Argentum Sparrow Carapace</td>
+						<td>175 gp</td>
+						<td>Torso or Head</td>
+						<td>-</td>
+						<td>-</td>
+						<td>4</td>
+						<td>Light</td>
+						<td>75</td>
+					</tr>
+					<tr>
 						<td>Argentum Ultralight Prosthetic</td>
 						<td>150 gp</td>
 						<td>Limb</td>
 						<td>8</td>
 						<td>16</td>
-						<td>4</td>
+						<td>2</td>
 						<td>Light</td>
 						<td>55</td>
 					</tr>
@@ -111,6 +148,16 @@
 						<td>80</td>
 					</tr>
 					<tr>
+						<td>Osysteel Carapace</td>
+						<td>75 gp</td>
+						<td>Torso or Head</td>
+						<td>-</td>
+						<td>-</td>
+						<td>3</td>
+						<td>-</td>
+						<td>50</td>
+					</tr>
+					<tr>
 						<td>Osysteel Prosthesis</td>
 						<td>50 gp</td>
 						<td>Limb</td>
@@ -143,6 +190,33 @@
 				</tbody>
 			</table>
 
+			<h5>Internal Augmentations</h5>
+			<p>Including artificial organs, skeletal reinforcement, lung filters and other such augments. Internal augments replace or enhance internal bodily systems. Unless otherwise stated, an internal augment replaces the body part detailed in the table below.</p>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="6">Internal Augments</th>
+					</tr>
+					<tr>
+						<th>Augment</th>
+						<th>Cost</th>
+						<th>Body Part</th>
+						<th>Capacity</th>
+						<th>Default Upgrades</th>
+						<th>DC</th>
+					</tr>
+					<tr>
+						<td>Scrapper Limb</td>
+						<td>25 gp</td>
+						<td>Limb</td>
+						<td>2</td>
+						<td>-</td>
+						<td>30</td>
+					</tr>
+				</tbody>
+			</table>
+
 			<table class="content-table">
 				<tbody>
 					<tr>
@@ -153,6 +227,12 @@
 						<th>Cost</th>
 						<th>Augment Type</th>
 						<th>Effect</th>
+					</tr>
+					<tr>
+						<td>Agility Enchancement</td>
+						<td>100 gp</td>
+						<td>Limbs</td>
+						<td>An augment with this upgrade increases its Dexterity score by 2, to a maximum of 22.</td>
 					</tr>
 					<tr>
 						<td>Arcane Conduitizer<sup><em>R</em></sup></td>
@@ -213,6 +293,12 @@
 						<td>250 gp</td>
 						<td>Any</td>
 						<td>An augment with this upgrade reduces its Neural Load by 50%.</td>
+					</tr>
+					<tr>
+						<td>Power Enchancement</td>
+						<td>100 gp</td>
+						<td>Limbs</td>
+						<td>An augment with this upgrade increases its Strength score by 2, to a maximum of 22.</td>
 					</tr>
 					<tr>
 						<td>Shock Absorbers</td>
