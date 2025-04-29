@@ -25,12 +25,11 @@
 			</div>
 			<div class="floatright">
 				<h6>Table of Contents</h6>
-				<p><a href="#currency">Currency</a><br>
-				<a href="#foodanddrink">Food and Drink</a><br>
-				<a href="#services">Services</a><br>
-				<a href="#transportation">Transportation</a><br>
-				<a href="#tech">Technology</a><br>
-				<a href="#augments">Augments</a></p>
+				<p><a href="#carapace">Carapace Augments</a><br>
+				<a href="#internal">Internal Augments</a><br>
+				<a href="#limb">Limb Augments</a><br>
+				<a href="#sensory">Sensory Augments</a><br>
+				<a href="#upgrades">Augment Upgrades</a></p>
 			</div>
 			<p>Life in Valastar is often brutal and dangerous, with industrial accidents and gang warfare leading to many injuries throughout the city. Fortunately, the progress of medical sciences and magical craft has made prosthetic limbs, eyes and even organs available to those fortunate enough to be able to afford them, or at least useful enough to a factory that they are deemed worthy of getting a replacement. Despite strict legal codes, some unscrupulous factories actually require mandatory augments in their workers, both to boost productivity and cement their control over organic workers.</p>
 			<p><strong>Installing Augments</strong><br>
@@ -49,15 +48,15 @@
 						<th>Base Neural Load</th>
 					</tr>
 					<tr>
-						<td>Organic Augments</td>
-						<td>0.5</td>
-					</tr>
-					<tr>
-						<td>External Augments</td>
-						<td>1</td>
+						<td>Carapace Augments</td>
+						<td>1 (Complete), 0.5 (Partial)</td>
 					</tr>
 					<tr>
 						<td>Internal Augments</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>Limb Augments</td>
 						<td>1</td>
 					</tr>
 					<tr>
@@ -69,128 +68,66 @@
 			<p><strong>Augments and Magic</strong><br>
 			Augmenting one's body makes many forms of spellcasting far more difficult, as they interfere with the natural flow of magic through the body. As long as a spellcaster or monk has at least one augment, the gain a penalty to their spell and ki attack bonus and save DCs. The penalty is equal to one half their current neural load (rounded up). Additionally, an augmented creature who recieves magically healing, such as by the <a href="https://dnd5e.wikidot.com/spell:cure-wounds">Cure Wounds</a> spell, recovers a reduced amount of hit points. This reduction is equal to their current neural load (rounded up).</p>
 
-			<h5>External Augmentations</h5>
-			<p>Including prosthetic arms and legs, as well as torso and skull carapaces, external augmentations are some of the most obvious and common types of augments in Valastar. Arm and leg augments have their own Strength and Dexterity scores, seperate from your own. When a d20 roll requires one of these scores while using two or more limbs, you use the average score between the limbs for the roll. Arm and leg augments replace a limb unless otherwise stated, whereas skull and torso augments only replace the outer layers, keeping bones and organs intact.</p>
+			<h5 id="carapace">Carapace Augmentations</h5>
+			<p>Carapace augments are shells of metal and connectiion points installed on the outer layers of the body, keeping bones, muscles and organs intact. Partial carapaces only replace part of the skin, allowing skin augments, whereas complete carapaces replace the outer layers entirely.</p>
 
 			<table class="content-table">
 				<tbody>
 					<tr>
-						<th colspan="8">Limb Augments</th>
+						<th colspan="6">Carapace Augments</th>
 					</tr>
 					<tr>
 						<th>Augment</th>
 						<th>Cost</th>
-						<th>Type</th>
-						<th>Str</th>
-						<th>Dex</th>
+						<th>Carapace Type</th>
 						<th>Capacity</th>
 						<th>Default Upgrades</th>
 						<th>DC</th>
 					</tr>
 					<tr>
-						<td>Antioc's Hex-Limb<sup><em>R</em></sup></td>
-						<td>125 gp</td>
-						<td>Limb</td>
-						<td>10</td>
-						<td>10</td>
-						<td>3</td>
-						<td>Arcane Conduitizer</td>
-						<td>60</td>
-					</tr>
-					<tr>
 						<td>Argentum Sparrow Carapace</td>
-						<td>175 gp</td>
-						<td>Torso or Head</td>
-						<td>-</td>
-						<td>-</td>
-						<td>4</td>
-						<td>Light</td>
-						<td>75</td>
-					</tr>
-					<tr>
-						<td>Argentum Ultralight Prosthetic</td>
 						<td>150 gp</td>
-						<td>Limb</td>
-						<td>8</td>
-						<td>16</td>
+						<td>Complete</td>
 						<td>2</td>
 						<td>Light</td>
-						<td>55</td>
-					</tr>
-					<tr>
-						<td>BnA Faux-Limb</td>
-						<td>250 gp</td>
-						<td>Limb</td>
-						<td>14</td>
-						<td>14</td>
-						<td>2</td>
-						<td>Neural Attunement, Synthetic Skin</td>
-						<td>60</td>
-					</tr>
-					<tr>
-						<td>Dalako Prosthetic "Eagle"<sup><em>R</em></sup></td>
-						<td>450 gp</td>
-						<td>Limb</td>
-						<td>14</td>
-						<td>18</td>
-						<td>3</td>
-						<td>Integrated Weapon - Claws (arms), Shock Absorbers (legs)</td>
-						<td>80</td>
-					</tr>
-					<tr>
-						<td>Dalako Prosthetic "Tiger"<sup><em>R</em></sup></td>
-						<td>450 gp</td>
-						<td>Limb</td>
-						<td>18</td>
-						<td>14</td>
-						<td>3</td>
-						<td>Integrated Weapon - Claws (arms), Impulse Hydraulics (legs)</td>
-						<td>80</td>
-					</tr>
-					<tr>
-						<td>Osysteel Carapace</td>
-						<td>75 gp</td>
-						<td>Torso or Head</td>
-						<td>-</td>
-						<td>-</td>
-						<td>3</td>
-						<td>-</td>
-						<td>50</td>
-					</tr>
-					<tr>
-						<td>Osysteel Prosthesis</td>
-						<td>50 gp</td>
-						<td>Limb</td>
-						<td>10</td>
-						<td>10</td>
-						<td>4</td>
-						<td>-</td>
 						<td>45</td>
 					</tr>
 					<tr>
-						<td>RJ Industrial Prosthetic</td>
-						<td>100 gp</td>
-						<td>Limb</td>
-						<td>16</td>
-						<td>8</td>
-						<td>3</td>
-						<td>Crude Manipulator (arms), Stabilizers (legs), Heavy</td>
-						<td>55</td>
+						<td>BnA Second Skin</td>
+						<td>250 gp</td>
+						<td>Complete</td>
+						<td>1</td>
+						<td>Neural Attunement, Synthetic Skin</td>
+						<td>50</td>
 					</tr>
 					<tr>
-						<td>Scrapper Limb</td>
-						<td>25 gp</td>
-						<td>Limb</td>
-						<td>8</td>
-						<td>8</td>
+						<td>Dalako Dragonhide<sup><em>R</em></sup></td>
+						<td>500 gp</td>
+						<td>Complete</td>
+						<td>2</td>
+						<td>Armored</td>
+						<td>70</td>
+					</tr>
+					<tr>
+						<td>Osysteel Carapace</td>
+						<td>50 gp</td>
+						<td>Partial</td>
 						<td>2</td>
 						<td>-</td>
-						<td>30</td>
+						<td>40</td>
+					</tr>
+					<tr>
+						<td>Xandrite Technohide</td>
+						<td>150 gp</td>
+						<td>Partial</td>
+						<td>1</td>
+						<td>Interface Ports</td>
+						<td>40</td>
 					</tr>
 				</tbody>
 			</table>
 
-			<h5>Internal Augmentations</h5>
+			<h5 id="internal">Internal Augmentations</h5>
 			<p>Including artificial organs, skeletal reinforcement, lung filters and other such augments. Internal augments replace or enhance internal bodily systems. Unless otherwise stated, an internal augment replaces the body part detailed in the table below.</p>
 
 			<table class="content-table">
@@ -203,19 +140,194 @@
 						<th>Cost</th>
 						<th>Body Part</th>
 						<th>Capacity</th>
+						<th>Effect</th>
+						<th>DC</th>
+					</tr>
+					<tr>
+						<td>Bone Lacing</td>
+						<td>250 gp</td>
+						<td>Skeletal</td>
+						<td>1</td>
+						<td>You have installed a series of reinforcing beams and coatings into your skeletal structure. You gain a +1 bonus to your unarmed strike damage rolls.</td>
+						<td>75</td>
+					</tr>
+					<tr>
+						<td>Cognitive Extension</td>
+						<td>1,000 gp</td>
+						<td>Brain</td>
+						<td>-</td>
+						<td>You have installed a cognigem into your mind, effectively extending your mental abilities. Your Intelligence score increases by 2, to a maximum of 22. This augment has a base neural load of 3.</td>
+						<td>85</td>
+					</tr>
+					<tr>
+						<td>Flesh Scultping</td>
+						<td>1,000 gp</td>
+						<td>Skin</td>
+						<td>-</td>
+						<td>You have undergone surgery to enhance your physical attractiveness and boost your confidence. Your Charisma score increases by 2, to a maximum of 22. This augment has a base neural load of 3.</td>
+						<td>85</td>
+					</tr>
+					<tr>
+						<td>Immune Synthesis</td>
+						<td>1,000 gp</td>
+						<td>Immune System</td>
+						<td>-</td>
+						<td>You have installed a series of artificial organs, sensors and filters to enhance your physical toughness and resilience. Your Constitution score increases by 2, to a maximum of 22. This augment has a base neural load of 2.</td>
+						<td>85</td>
+					</tr>
+					<tr>
+						<td>Iron Gut</td>
+						<td>250 gp</td>
+						<td>Digestive Tract</td>
+						<td>1</td>
+						<td>You have installed a series of mechanized organs that allow you to eat almost any organic matter. You can eat any organic matter as food. Normally non-edible matter count as Squalid rations for the purposes of lifestyles. You suffer no ill effects from eating toxic, rotten or diseased matter. You must eat twice as much food each day in order to not begin starving.</td>
+						<td>75</td>
+					</tr>
+					<tr>
+						<td>Mechanical Heart</td>
+						<td>500 gp</td>
+						<td>Heart</td>
+						<td>1</td>
+						<td>You have installed an artificial heart. Your maximum number of hit dice increases by one half of your total levels (rounded down).</td>
+						<td>80</td>
+					</tr>
+					<tr>
+						<td>Sensory Optimization</td>
+						<td>1,000 gp</td>
+						<td>Brain</td>
+						<td>-</td>
+						<td>You have installed a series of augments into your lower brain, enhancing your senses and intuition. Your Wisdom score increases by 2, to a maximum of 22. This augment has a base neural load of 3.</td>
+						<td>85</td>
+					</tr>
+					<tr>
+						<td>Subdermal Plating</td>
+						<td>350 gp</td>
+						<td>Skin</td>
+						<td>1</td>
+						<td>You have installed a series of plates and reinforcements beneath your skin. While unarmored, you gain a +1 bonus to your AC.</td>
+						<td>75</td>
+					</tr>
+					<tr>
+						<td>Synthetic Muscles</td>
+						<td>1,000 gp</td>
+						<td>Muscles</td>
+						<td>-</td>
+						<td>You have installed artificial, mechanical muscles alongside your organic ones. Your Strength score increases by 2, to a maximum of 22. This augment has a base neural load of 2.</td>
+						<td>85</td>
+					</tr>
+					<tr>
+						<td>Tracheal Filter</td>
+						<td>175 gp</td>
+						<td>Throat</td>
+						<td>1</td>
+						<td>You have installed a mechanized filter into your airway. You have advantage on saving throws against airborn poisons or similar toxins, such as the <a href="https://dnd5e.wikidot.com/spell:cloudkill">Cloudkill</a> spell. You suffer no ill effects from adverse conditions resulting from airborne pollutants.</td>
+						<td>65</td>
+					</tr>
+					<tr>
+						<td>Wired Reflexes</td>
+						<td>1,000 gp</td>
+						<td>Nervous System</td>
+						<td>-</td>
+						<td>You have installed a series of wires and cables into your nervous system, allowing you finer and quicker control over your body. Your Dexterity score increases by 2, to a maximum of 22. This augment has a base neural load of 2.</td>
+						<td>85</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h5 id="limb">Limb Augmentations</h5>
+			<p>Including prosthetic arms and legs, external augmentations are some of the most obvious and common types of augments in Valastar. Limb augments have their own Strength and Dexterity scores, seperate from your own. When a d20 roll requires one of these scores while using two or more limbs, you use the average score between the limbs for the roll. Limb augments replace a limb unless otherwise stated.</p>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="7">Limb Augments</th>
+					</tr>
+					<tr>
+						<th>Augment</th>
+						<th>Cost</th>
+						<th>Str</th>
+						<th>Dex</th>
+						<th>Capacity</th>
 						<th>Default Upgrades</th>
 						<th>DC</th>
 					</tr>
 					<tr>
+						<td>Antioc's Hex-Limb<sup><em>R</em></sup></td>
+						<td>150 gp</td>
+						<td>10</td>
+						<td>10</td>
+						<td>3</td>
+						<td>Arcane Conduitizer</td>
+						<td>60</td>
+					</tr>
+					<tr>
+						<td>Argentum Ultralight Prosthetic</td>
+						<td>175 gp</td>
+						<td>8</td>
+						<td>16</td>
+						<td>4</td>
+						<td>Light</td>
+						<td>55</td>
+					</tr>
+					<tr>
+						<td>BnA Faux-Limb</td>
+						<td>300 gp</td>
+						<td>14</td>
+						<td>14</td>
+						<td>2</td>
+						<td>Neural Attunement, Synthetic Skin</td>
+						<td>60</td>
+					</tr>
+					<tr>
+						<td>Dalako Prosthetic "Eagle"<sup><em>R</em></sup></td>
+						<td>500 gp</td>
+						<td>14</td>
+						<td>18</td>
+						<td>3</td>
+						<td>Integrated Weapon - Claws (arms), Shock Absorbers (legs)</td>
+						<td>80</td>
+					</tr>
+					<tr>
+						<td>Dalako Prosthetic "Tiger"<sup><em>R</em></sup></td>
+						<td>500 gp</td>
+						<td>18</td>
+						<td>14</td>
+						<td>3</td>
+						<td>Integrated Weapon - Claws (arms), Impulse Hydraulics (legs)</td>
+						<td>80</td>
+					</tr>
+					<tr>
+						<td>Osysteel Prosthesis</td>
+						<td>50 gp</td>
+						<td>10</td>
+						<td>10</td>
+						<td>4</td>
+						<td>-</td>
+						<td>45</td>
+					</tr>
+					<tr>
+						<td>RJ Industrial Prosthetic</td>
+						<td>125 gp</td>
+						<td>16</td>
+						<td>8</td>
+						<td>3</td>
+						<td>Crude Manipulator (arms), Stabilizers (legs), Heavy</td>
+						<td>55</td>
+					</tr>
+					<tr>
 						<td>Scrapper Limb</td>
 						<td>25 gp</td>
-						<td>Limb</td>
+						<td>8</td>
+						<td>8</td>
 						<td>2</td>
 						<td>-</td>
 						<td>30</td>
 					</tr>
 				</tbody>
 			</table>
+
+			<h5 id="upgrades">Augment Upgrades</h5>
+			<p>Below shows the available upgrades for augments, alongside their cost, what type(s) of augments they can be applied to and their effects.</p>
 
 			<table class="content-table">
 				<tbody>
@@ -241,10 +353,28 @@
 						<td>An augment with this upgrade does not count towards your Neural Load for the purposes of calculating the penalty for spell and ki attack bonuses and save DCs.</td>
 					</tr>
 					<tr>
+						<td>Armored<sup><em>R</em></sup></td>
+						<td>200 gp</td>
+						<td>Limbs and Complete Carapace</td>
+						<td>An augment with this upgrade counts as armor, with different bonuses based on how many augments you have with this upgrade, as shown below:<br>
+						<ul>
+							<li><strong>Just Torso.</strong> You have an AC of 14 plus your Dexterity modifier (maximum of +2, this counts as medium armor).</li>
+							<li><strong>Torso with two or more Augments with this upgrade.</strong> You have an AC of 15 plus your Dexterity modifier (maximum of +2, this counts as medium armor). You have disadvantage on Dexterity (stealth) checks to move silently.</li>
+							<li><strong>Torso with five other Augments with this upgrade.</strong> You have an AC of 18 (this counts as heavy armor). You have disadvantage on Dexterity (stealth) checks to move silently.</li>
+						</ul>
+						</td>
+					</tr>
+					<tr>
 						<td>Crude Manipulators</td>
 						<td>25 gp</td>
 						<td>Arms</td>
 						<td>An augment with this upgrade has a robust but unwieldy claw instead of a hand. You gain a claw attack which counts as a simple melee weapon with which you are proficient. It deals 1d6 bludgeoning damage on a hit. You have advantage on Strength (athletics) checks to grapple a target using the claw. The claw cannot be used to finely manipulate small or fragile objects such as keys, crossbow bolts or light switches.</td>
+					</tr>
+					<tr>
+						<td>Elemental Treatment</td>
+						<td>35 gp</td>
+						<td>Limbs or Carapace</td>
+						<td>An augment with this upgrade increases your resistances to a specific element. Choose one of the following damage types: Acid, Cold, Fire, Lightning or Thunder. Whenever you take damage of the chosen type, reduce that damage by 1. If you have four or more augments with this upgrade (and the same chosen damage type), you gain resisatnce to the chosen damage type.</td>
 					</tr>
 					<tr>
 						<td>Fine Manipulators</td>
@@ -281,6 +411,12 @@
 						<td>100 gp</td>
 						<td>Arms</td>
 						<td>An augment with this upgrade has a weapon built into it. The augment can have one light weapon, a wand or up to six darts integrated at a time. An integrated weapon can be revealed as a bonus action, and can be used as normal while revealed. You can unreveal the integrated weapon as a bonus action. If the integrated weapon uses ammunition, it can store up to six pieces of ammunition within the augment. You can change the integrated weapon with one hour of work.</td>
+					</tr>
+					<tr>
+						<td>Interface Ports</td>
+						<td>100 gp</td>
+						<td>Limbs or Carapace</td>
+						<td>An augment with this upgrade has several connection ports and cables for interfacing with technology. As an action you can interface with one piece of compatible technology. While interfaced you gain benefits based on the technology. You must use an action to stop interfacing with tech. If you ever moved 5 feet or more away from the interfaced technology or a creature uses an action to pull exposed cables out, you are forcefully ejected, taking 2d12 psychic damage. You can interface to one piece of technology for each instance of this upgrade you have on your augments.</td>
 					</tr>
 					<tr>
 						<td>Light</td>
@@ -321,7 +457,7 @@
 					<tr>
 						<td>Synthetic Skin</td>
 						<td>100 gp</td>
-						<td>Limbs</td>
+						<td>Limbs and Carapace</td>
 						<td>An augment with this upgrade is nearly indistinguishable from a normal limb. A DC 20 Intelligence (investigation) check is required to recognize it as an augment.</td>
 					</tr>
 				</tbody>
