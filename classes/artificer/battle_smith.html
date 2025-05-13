@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Artificer: Battle Smith Extended - DND 5th Edition</title>
+	<title>Artificer: Battle Smith - DND 5th Edition</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-	<link rel="stylesheet" href="../styles.css">
+	<link rel="stylesheet" href="../../styles.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
@@ -14,26 +14,69 @@
 		<div class="row justify-content-center">
 			<div class="col-md-9 col-sm-12 header-text">
 				<h1>Laec's DND 5e Homebrew</h1>
-				<h3><a href="../index.html">Home</a></h3>
+				<h3><a href="../../index.html">Home</a></h3>
 			</div>
 		</div>
 	</header>
 	<div class="row justify-content-center">
 		<div class="col-md-9 col-sm-12 main-content">
 			<div class="page-title">
-				Artificer: Battle Smith Extended
+				Artificer: Battle Smith
 			</div>
 			<p>
 				<strong><em>
-					This subclass is an extension/rework of the vanilla battlesmith, allowing more options for the artificer to bring it in line with the ranger's beast master conclave. Unless otherwise stated, use the features from the <a href="https://dnd5e.wikidot.com/artificer:battle-smith">Battle Smith</a> specialization.
+					Armies require protection, and someone has to put things back together if defenses fail. A combination of protector and medic, a Battle Smith is an expert at defending others and repairing both materiel and personnel. To aid in their work, Battle Smiths are accompanied by a steel defender, a protective companion of their own creation. Many soldiers tell stories of nearly dying before being saved by a Battle Smith and a steel defender.
 				</em></strong>
 
-				<h3>Steel Companion (Optional)</h3>
-				<p>This 3rd-level feature feature replaces the Steel Defender feature.</p>
-				<p>By 3rd level, your tinkering has borne you a faithful companion, a steel companion. It's friendly to you and your companions, and it obeys your commands. Choose its stat block-Steel Defender, Steel Hunter or Steel Scout-which uses your proficiency bonus (PB) in several places. You determine the creature's appearance. your choice has no effect on its game statistics.</p>
+				<h3>Tool Proficiency</h3>
+				<p>When you adopt this specialization at 3rd level, you gain proficiency with smith's tools. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice.</p>
+
+				<h3>Battle Smith Spells</h3>
+				<table class="content-table">
+					<tbody>
+						<tr>
+							<th colspan="2">Battle Smith Spells</th>
+						</tr>
+						<tr>
+							<th>Artificer Level</th>
+							<th>Spells</th>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td><a href="https://dnd5e.wikidot.com/spell:heroism">Heroism</a>, <a href="https://dnd5e.wikidot.com/spell:shield">Shield</a></td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td><a href="https://dnd5e.wikidot.com/spell:branding-smite">Branding Smite</a>, <a href="https://dnd5e.wikidot.com/spell:warding-bond">Warding Bond</a></td>
+						</tr>
+						<tr>
+							<td>9th</td>
+							<td><a href="https://dnd5e.wikidot.com/spell:aura-of-vitality">Aura of Vitality</a>, <a href="https://dnd5e.wikidot.com/spell:conjure-barrage">Conjure Barrage</a></td>
+						</tr>
+						<tr>
+							<td>13th</td>
+							<td><a href="https://dnd5e.wikidot.com/spell:aura-of-purity">Aura of Purity</a>, <a href="https://dnd5e.wikidot.com/spell:fire-shield">Fire Shield</a></td>
+						</tr>
+						<tr>
+							<td>17th</td>
+							<td><a href="https://dnd5e.wikidot.com/spell:banishing-smite">Banishing Smite</a>, <a href="https://dnd5e.wikidot.com/spell:mass-cure-wounds">Mass Cure Wounds</a></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>Battle Ready</h3>
+				<p>When you reach 3rd level, your combat training and your experiments with magic have paid off in two ways:</p>
+				<ul>
+					<li>You gain proficiency with martial weapons.</li>
+					<li>When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls.</li>
+				</ul>
+
+				<h3>Steel Companion</h3>
+				<p>By 3rd level, your tinkering has borne you a faithful companion, a steel companion. It's friendly to you and your companions, and it obeys your commands. Choose its stat block-Steel Defender, Steel Butcher or Steel Scout-which uses your proficiency bonus (PB) in several places. You determine the creature's appearance. your choice has no effect on its game statistics.</p>
 				<p>In combat, the companion acts during your turn. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the companion can take any action of its choice, not just Dodge.</p>
 				<p>If the Mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith's tools as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The steel companion returns to life after 1 minute with all its hit points restored.</p>
 				<p>At the end of a long rest, you can create a new steel companion if you have smith's tools with you. If you already have a companion from this feature, the first one immediately perishes. The companion also perishes if you die.</p>
+				<h5>Steel Defender</h5>
 				<table class="content-table">
 					<tbody>
 						<tr>
@@ -108,10 +151,11 @@
 						</tr>
 					</tbody>
 				</table>
+				<h5>Steel Butcher</h5>
 				<table class="content-table">
 					<tbody>
 						<tr>
-							<th colspan="6">Steel Hunter</th>
+							<th colspan="6">Steel Butcher</th>
 						</tr>
 						<tr>
 							<td colspan="6"><em>Medium construct</em></td>
@@ -120,10 +164,10 @@
 							<td colspan="6"><strong>Armor Class:</strong> 12 + PB</td>
 						</tr>
 						<tr>
-							<td colspan="6"><strong>Hit Points:</strong> 2 + your Intelligence modifier + 5 times your artificer level (the defender has a number of Hit Dice [d8s] equal to your artificer level)</td>
+							<td colspan="6"><strong>Hit Points:</strong> 2 + your Intelligence modifier + 5 times your artificer level (the butcher has a number of Hit Dice [d8s] equal to your artificer level)</td>
 						</tr>
 						<tr>
-							<td colspan="6"><strong>Speed:</strong> 40 ft.</td>
+							<td colspan="6"><strong>Speed:</strong> 35 ft.</td>
 						</tr>
 						<tr>
 							<th>STR</th>
@@ -160,25 +204,23 @@
 							<td colspan="6"><strong>Proficiency Bonus (PB):</strong> equals your bonus</td>
 						</tr>
 						<tr>
-							<td colspan="6"><strong>Good Programming:</strong> you can add your proficiency bonus to any ability check or saving throw that the hunter makes.</td>
+							<td colspan="6"><strong>Good Programming:</strong> you can add your proficiency bonus to any ability check or saving throw that the butcher makes.</td>
 						</tr>
 						<tr>
-							<td colspan="6"><strong>Violent:</strong> The hunter has advantage on attack rolls against creatures that are bloodied.</td>
-						</tr>
-						<tr>
-							<td colspan="6"><strong>Rampage:</strong> Whenever the hunter reduces a creature to 0 hit points with a melee attack, the hunter can use its reaction to move up to its speed towards a hostile creature.</td>
+							<td colspan="6"><strong>Rampage:</strong> Whenever the butcher reduces a creature to 0 hit points with a melee attack, the butcher can use its reaction to move up to its speed towards a hostile creature.</td>
 						</tr>
 						<tr>
 							<th colspan="6">Actions</th>
 						</tr>
 						<tr>
-							<td colspan="6"><strong>Multiattack.</strong> The hunter makes two Force-Empowered Blade attacks.</td>
+							<td colspan="6"><strong>Multiattack.</strong> The butcher makes two Force-Empowered Claw attacks.</td>
 						</tr>
 						<tr>
-							<td colspan="6"><strong>Force-Empowered Blade.</strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target you can see. <em>Hit:</em> 1d6 + PB force damage.</td>
+							<td colspan="6"><strong>Force-Empowered Claw.</strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target you can see. <em>Hit:</em> 1d4 + PB force damage.</td>
 						</tr>
 					</tbody>
 				</table>
+				<h5>Steel Scout</h5>
 				<table class="content-table">
 					<tbody>
 						<tr>
@@ -191,7 +233,7 @@
 							<td colspan="6"><strong>Armor Class:</strong> 12 + PB (natural armor)</td>
 						</tr>
 						<tr>
-							<td colspan="6"><strong>Hit Points:</strong> 2 + your Intelligence modifier + 4 times your artificer level (the defender has a number of Hit Dice [d6s] equal to your artificer level)</td>
+							<td colspan="6"><strong>Hit Points:</strong> 2 + your Intelligence modifier + 4 times your artificer level (the scout has a number of Hit Dice [d6s] equal to your artificer level)</td>
 						</tr>
 						<tr>
 							<td colspan="6"><strong>Speed:</strong> 25 ft., fly 40 ft.</td>
@@ -219,7 +261,7 @@
 							<td colspan="6"><strong>Condition Immunities:</strong> charmed, exhaustion, poisoned</td>
 						</tr>
 						<tr>
-							<td colspan="6"><strong>Senses:</strong> darkvision 60 ft., passive Perception 12 + PB</td>
+							<td colspan="6"><strong>Senses:</strong> darkvision 90 ft., passive Perception 12 + PB</td>
 						</tr>
 						<tr>
 							<td colspan="6"><strong>Languages:</strong> understands the languages you speak</td>
@@ -234,7 +276,7 @@
 							<td colspan="6"><strong>Good Programming:</strong> you can add your proficiency bonus to any ability check or saving throw that the scout makes.</td>
 						</tr>
 						<tr>
-							<td colspan="6"><strong>Sense Overlay:</strong> While the scout is within 100 feet of you, you can use an action to see through the scout's sensors and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the scout has. During this time, you are deaf and blind with regard to your own senses. While using the scout's senses, you can issue commands to as it, even if it cannot hear you.</td>
+							<td colspan="6"><strong>Sense Overlay:</strong> While the scout is within 500 feet of you, you can use an action to see through your scouts's senses and hear what it hears until you use another action to end this effect, gaining the benefits of any special senses that the scout has. During this time, you are deaf and blind with regard to your own senses. While using the scout's senses, you can issue commands to as it, even if it cannot hear you.</td>
 						</tr>
 						<tr>
 							<td colspan="6"><strong>Vigilant:</strong> The scout can't be surprised.</td>
@@ -243,20 +285,31 @@
 							<th colspan="6">Actions</th>
 						</tr>
 						<tr>
-							<td colspan="6"><strong>Force-Empowered Bolt.</strong> <em>Ranged Weapon Attack:</em> your spell attack modifier to hit, range 30/90 ft., one target you can see. <em>Hit:</em> 1d6 + PB force damage.</td>
+							<td colspan="6"><strong>Force-Empowered Bolt.</strong> <em>Ranged Weapon Attack:</em> your spell attack modifier to hit, range 90/360 ft., one target you can see. <em>Hit:</em> 1d6 + PB force damage.</td>
 						</tr>
 						<tr>
-							<td colspan="6"><strong>Target Lock (3/Day).</strong> The magical mechanisms inside the scout analyze and track a target it can see within 30 feet. For the next minute, until the scout uses this feature again or until the scout is incapacitated, both you and the scout have advantage on attack rolls against that target.</td>
+							<td colspan="6"><strong>Target Lock (3/Day).</strong> The magical mechanisms inside the scout analyze and track a target it can see within 90 feet of itself. For the next minute, until the scout uses this feature again or until the scout is incapacitated, both you and the scout have advantage on attack rolls against that target.</td>
 						</tr>
 					</tbody>
 				</table>
-				<h3>Improved Companion (Optional)</h3>
-				<p>This 15th-level feature feature replaces the Improved Defender feature.</p>
+
+				<h3>Extra Attack</h3>
+				<p>Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn.</p>
+
+				<h3>Arcane Jolt</h3>
+				<p>At 9th level, you've learn new ways to channel arcane energy to harm or heal. When either you hit a target with a magic weapon attack or your steel companion hits a target, you can channel magical energy through the strike to create one of the following effects:</p>
+				<ul>
+					<li>The target takes an extra 2d6 force damage.</li>
+					<li>Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring 2d6 hit points to it.</li>
+				</ul>
+				<p>You can use this energy a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a long rest.</p>
+				
+				<h3>Improved Companion</h3>
 				<p>At 15th level, the extra damage and the healing of your Arcane Jolt both increase to 4d6. Additionally, your steel companion becomes more powerful, based on the form it takes:</p>
 				<ul>
 					<li><strong>Steel Defender.</strong> Your steel defender gains a +2 bonus to Armor Class. Additionally, whenever it uses its Deflect Attack, the attacker takes force damage equal to 1d4 + your Intelligence modifier.</li>
-					<li><strong>Steel Hunter.</strong> Your steel hunter's walk speed is increased by 10 feet. Additionally, whenever it uses its Multiattack, it makes three Force-Empowered Blade attacks instead of two.</li>
-					<li><strong>Steel Scout.</strong> Your steel scout's darkvision range increases by 60 feet (to a total of 120 feet). Additionally, whenever you or your scout deals damage to the target of its Lock Target ability, that target takes an additional 1d6 force damage.</li>
+					<li><strong>Steel Butcher.</strong> Your steel butcher's walk speed is increased by 10 feet. Additionally, whenever it uses its Multiattack, it makes three Force-Empowered Claw attacks instead of two.</li>
+					<li><strong>Steel Scout.</strong> Your steel scout's Force-Empowered Bolt attack ignores the effects of half and three-quarters cover. Additionally, whenever you or your scout deals damage to the target of its Lock Target ability, that target takes an additional 1d6 force damage.</li>
 				</ul>
 			</p>
 		</div>
