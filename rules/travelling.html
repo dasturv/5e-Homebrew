@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lifestyles: Travelling - DND 5th Edition</title>
+	<title>Travelling - DND 5th Edition</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link rel="stylesheet" href="../styles.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -21,12 +21,161 @@
 	<div class="row justify-content-center">
 		<div class="col-md-9 col-sm-12 main-content">
 			<div class="page-title">
-				Lifestyles: Travelling
+				Travelling
 			</div>
-			<p><em>In standard 5e DnD, there is not much incentive to take care of yourself. Why sleep in a castle when roughing it in a tent provides the same benefits? The following variant rule adds a bit more complexity to this system.</em></p>
-			<p><em>Inspiration: Shadowrun.</em></p>
+			<p><em>In standard 5e DnD, travelling is oftentimes down played or even ignored, serving more as a loading screen for the next plot point rather than an actual part of the party's journey. This variant rule seeks to remedy this by standardizing travel.</em></p>
+			
+			<h3>Travel Speed</h3>
+			<p>One of the most important parts of travel is just how quickly you can get from point A to point B. There are many factors to this, so lets go through and apply each portion.</p>
 
-			<h3>Travelling</h3>
+			<p><strong>Base Speed</strong><br>
+			To start, we need our base speed (measured in miles per hour). To find this, take the lowest speed amongst a travelling group and divide it by 10. For example, if the members of a party had movement speeds of 25, 30 and 35, their base speed would be 2.5 miles per hour.</p>
+
+			<p><strong>Travel Pace</strong><br>
+			Next you need to choose a travel pace. Each travel pace has its own pros and cons, and helps decide the actual distance travelled in a day as shown below:</p>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="3">Travel Pace</th>
+					</tr>
+					<tr>
+						<th>Pace</th>
+						<th>Distance Travelled</th>
+						<th>Additional Effects</th>
+					</tr>
+					<tr>
+						<td>Leisurely</td>
+						<td>4 times base speed</td>
+						<td>The party can partake in downtime activities as well as take long rests as if they were not travelling.</td>
+					</tr>
+					<tr>
+						<td>Slow</td>
+						<td>6 times base speed</td>
+						<td>The party can take long rests as if they were not travelling.</td>
+					</tr>
+					<tr>
+						<td>Normal</td>
+						<td>8 times base speed</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Fast</td>
+						<td>10 times base speed</td>
+						<td>Each party member must succeed on a DC 10 Constitution saving throw or gain 1 level of exhaustion. This DC increases by 1 for each consecutive day travelling at a pace faster than normal.</td>
+					</tr>
+					<tr>
+						<td>Very Fast</td>
+						<td>12 times base speed</td>
+						<td>Each party member must succeed on a DC 15 Constitution saving throw or gain 1 level of exhaustion. This DC increases by 2 for each consecutive day travelling at a pace faster than normal.</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p><strong>Travelling Conditions</strong><br>
+			Of course, travel is effected by the environment you are travelling in. Travelling conditions are based on the type of biome being travelled, as well as modifiers such as roads, paths and weather. Once you figure out which condition you are travelling, apply the corresponding multiplier to your travel distance to get your actual travel distance. If the travelling conditions would go lower than Hazardous, travel becomes impossible.</p>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="3">Travel Conditions</th>
+					</tr>
+					<tr>
+						<th>Condition</th>
+						<th>Multiplier</th>
+						<th>Example Terrains</th>
+					</tr>
+					<tr>
+						<td>Normal</td>
+						<td>-</td>
+						<td><em>Grassy plains, gently rolling hills, open savannahs, sparse forests.</em></td>
+					</tr>
+					<tr>
+						<td>Difficult</td>
+						<td>1/2</td>
+						<td><em>Rocky hills, dense forests, sandy deserts, snowy fields.</em></td>
+					</tr>
+					<tr>
+						<td>Hazardous</td>
+						<td>1/4</td>
+						<td><em>Mountains, swamps, thick jungles, sea ice.</em></td>
+					</tr>
+					<tr>
+						<th colspan="3">Condition Modifiers</th>
+					</tr>
+					<tr>
+						<th>Modifier</th>
+						<th>Effect</th>
+						<th>Examples</th>
+					</tr>
+					<tr>
+						<td>Roads</td>
+						<td>Increases condition by two levels</td>
+						<td><em>A well maintained stone brick road</em></td>
+					</tr>
+					<tr>
+						<td>Trail</td>
+						<td>Increases condition by one level</td>
+						<td><em>A packed dirt path</em></td>
+					</tr>
+					<tr>
+						<td>Adverse Weather</td>
+						<td>Decreases condition by one level</td>
+						<td><em>Rain, light snow, strong winds, uncomfortably hot or cold temperatures</em></td>
+					</tr>
+					<tr>
+						<td>Extreme Weather</td>
+						<td>Decreases condition by two levels</td>
+						<td><em>Blizzards, monsoons, hail, scorching heat, intense cold</em></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>Travel Activities</h3>
+			<p>Travel is hardly an idle process. Each day a character travels, they may choose a travel activity from the list below:</p>
+
+			<p><strong>Foraging</strong><br>
+			Living off the land is a viable way to extend one's ability to travel longer distances. At the end of the travel day, you make a Wisdom (Survival) check with a DC based on your travel pace. This check is made at disadvantage if the region you are travelling is low in natural resources, and advantage if it is abundant. If you succeed the check, you do not use any rations for that day. If you succeed the check by 5 or more, you also gain one additional ration.</p>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="2">Foraging</th>
+					</tr>
+					<tr>
+						<th>Pace</th>
+						<th>DC</th>
+					</tr>
+					<tr>
+						<td>Leisurely</td>
+						<td>10</td>
+					</tr>
+					<tr>
+						<td>Slow</td>
+						<td>15</td>
+					</tr>
+					<tr>
+						<td>Normal</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>Fast</td>
+						<td>25</td>
+					</tr>
+					<tr>
+						<td>Very Fast</td>
+						<td>30</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p><strong>Navigating</strong><br>
+			When there are no trails or roads, a party needs to navigate in different ways. A character who is navigating ust succeed on a Wisdom (Survival) or Intelligence (Navigator's tools) check. If you fail the check by five or less, you keep on track but the travel distance that day is halved. If you fail the check by more than five, you become lost. The DC for this check is variable based on terrain, time of day, weather and even magic. As such, I leave the DC up to DM discression.</p>
+
+			<p><strong>Tracking</strong><br>
+			Sometimes, a party needs to follow someone or something. A character who is choosing to track something must succeed on a Wisdom (Survival) check to stay on target. This check is made at disadvantage when travelling at a pace greater than normal, and at advantage when travelling slower than normal. If the player fails the check by five or less, they keep the trail but the travel distance that day is halved. If they fail by more then five, they lose the trail and must find it again to continue. The DC of this check can vary wildly based on weather, terrain, whether or not the target is being stealthy as well as how old the trail is. As such, I leave the DC up to DM discression.</p>
+
+			<h3>Lifestyles on the Road</h3>
 			<p>Oftentimes you have to leave your home and lifestyle and travel, which is never as comfortable. While travelling you must have access to shelter, food, sleep and water. Below are several tables showing options for each of these categories. To calculate your lifestyle while travelling, select the lowest lifestyle level you have from all of the categories.</p>
 			<table class="content-table">
 				<tbody>

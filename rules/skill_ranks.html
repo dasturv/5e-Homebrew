@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Skill Ranks - DND 5th Edition</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="../styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+	<header class="header-wrap">
+		<div class="header-color"></div>
+		<div class="row justify-content-center">
+			<div class="col-md-9 col-sm-12 header-text">
+				<h1>Laec's DND 5e Homebrew</h1>
+				<h3><a href="../index.html">Home</a></h3>
+			</div>
+		</div>
+	</header>
+	<div class="row justify-content-center">
+		<div class="col-md-9 col-sm-12 main-content">
+			<div class="page-title">
+				Variant Rule: Skill Ranks
+			</div>
+			<p><em>In standard 5e DnD, skills are a binary. Either you are proficient, or you are not. This variant rule seeks to remedy this by allowing a more flexible way to show a character's growth and abilities.</em></p>
+			<p><em>Inspiration: DnD 3.5, Fallout New Vegas.</em></p>
+			<h3>Skill Ranks</h3>
+			<p>While using this variant rule, every aspect of skills and proficiency changes drastically. As such, I will explore this rule in three parts: using skills, character creation and skill improvement.</p>
+
+			<h5>Using Skills</h5>
+			<p>Characters no longer gain proficiency with skills and tools. Instead, each skill or tool has a rank. When a player makes a check using a skill or tool, they add the corresponding rank. Ranks start at 0 until increased.</p>
+			<p>Some features require proficiency with skills or tools. For the purposes of those features, a character is considered proficient if they have at least 1 rank in the corresponding skill or tool. Some other features interact with profiency in unique ways and work differently while using this rule, as listed below:</p>
+
+			<p><strong>Expertise</strong><br>
+			For any ability check you make using a skill or tool in which you have expertise, the corresponding rank is doubled.</p>
+
+			<p><strong>Jack of All Trades</strong><br>
+			Whenever you make an ability check, the bonus provided by the corresponding rank(s) cannot be lower than half your proficiency bonus (rounded down). This does not increase the actual rank.</p>
+
+			<p>When making an ability check that could use both a skill and a tool, you may add both of the corresponding ranks to the total, with a maximum bonus equal to your proficiency bonus. If both corresponding ranks are equal to your proficiency bonus, you gain advantage on that roll.</p>
+
+			<h5>Character Creation</h5>
+			<p>When you would assign skill and tool proficiencies to a new character, you instead follow these steps:</p>
+
+			<p><strong>Calculate Skill Points</strong><br>
+			You start with a number of skill points based on your class (as shown on the Class Skills table), plus any bonus skill points from racial features, traits or feats.</p>
+
+			<p><strong>Create your Skill Pool</strong><br>
+			Your skill pool is based on your class (as shown on the Class Skills table), plus any additional skills from racial features, traits or feats.</p>
+
+			<p><strong>Title</strong><br>
+			Filler.</p>
+			<!-- Lifestyle Table -->
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="5">Lifestyles</th>
+					</tr>
+					<tr>
+						<th>Level</th>
+						<th>Lifestyle</th>
+						<th>Daily Cost</th>
+						<th>Description</th>
+						<th>Effect</th>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>Wretched</td>
+						<td>Free</td>
+						<td><em>You live in inhumane conditions. With no place to call home, you take shelter where you can find it. Poor access to food and clean water leaves you begging for scraps. Disease, violence and hunger are all commonplace for you.</em></td>
+						<td>Make a DC 20 Constitution saving throw. On a failure you gain 1 level of exhaustion.</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Squalid</td>
+						<td>1 sp</td>
+						<td><em>You have some shelter, such as a leaky stable, mud floored hut or a vermin infested boarding house. Hunger, disease and violence are still commonplace for you.</em></td>
+						<td>Make a DC 15 Constitution saving throw. On a failure you gain 1 level of exhaustion.</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Poor</td>
+						<td>5 sp</td>
+						<td><em>You live in sufficient, if uncomfortable, conditions. With access to simple food and lodging such as a flophouse or a common room above a tavern, you are protected from the elements and starvation, but poor nutrition and disease still impact you regularly.</em></td>
+						<td>Make a DC 10 Constitution saving throw. On a failure you gain 1 level of exhaustion.</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Modest</td>
+						<td>1 gp</td>
+						<td><em>You can ensure you are out of the slums and that you can maintain your equipment. You live in an older part of town renting a room in a boarding house, inn or temple. You get enough food and your living conditions are clean if simple.</em></td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Comfortable</td>
+						<td>5 gp</td>
+						<td><em>You can afford nicer living conditions, food and clothing. You live in a small cottage in a middle class neighborhood or a private room in an inn.</em></td>
+						<td>You gain a number of temporary hit points equal to your proficiency bonus.</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Wealthy</td>
+						<td>10 gp</td>
+						<td><em>You live in luxury, though not quite to the point of nobility. You have access to high quality food and respectable lodgings such as a spacious home in a good part of town or a suite in a fine inn. You likely have a small staff of servants.</em></td>
+						<td>You gain a number of temporary hit points equal to twice your proficiency bonus.</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Aristocratic</td>
+						<td>25 gp</td>
+						<td><em>You live a life of plenty and comfort. You never go hungry nor thirsty, and have access to the best food and lodging your community can provide. Large homes, fine dining, skilled tailors, expansive retinues of servants attending your every need. You have access to the richest and most powerful people around, such as politicians, guild leaders, high priests and nobility (and all the treachery that comes with them.)</em></td>
+						<td>You gain a number of temporary hit points equal to three times your proficiency bonus.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
