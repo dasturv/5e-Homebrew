@@ -23,92 +23,222 @@
 			<div class="page-title">
 				Variant Rule: Contacts
 			</div>
-			<p><em>In standard 5e DnD, characters from player's backstories tend to be rather, unimpactful outside of key story moments. This variant rule aims to remedy this by adding a new type of npc: contacts.</em></p>
+			<p><em>In standard 5e DnD, player's backgrounds and relationships before a campaign can tend towards feeling a bit empty. This variant rule aims to remedy that by allowing players to create contacts and have a reputation built up during character creation.</em></p>
 			<p><em>Inspiration: Shadowrun.</em></p>
-			<h3>What is a Contact</h3>
-			<p>A contact is someone that the player character knows and that can provide useful services or influence and who can be reasonably gotten a hold of if the playe needs to. Not every person a player has met is a contact, and contacts are not added after character creation (instead, use the normal rules for social interaction). Contacts are solely to flesh out and provide benefits for the player's past connections.</p>
+
+			<h3>Contact Points</h3>
+			<p>Upon character creation, players gain a number of Contact Points (CP) to spend on creating contacts and gain starting reputation. A player gains a number of these points equal to their Charisma score.</p>
+
+			<div class="optional">
+				<h6>Beyond 1st Level</h6>
+				<p>A PC of higher level will naturally have met more people and gained more reputation. When making a new character beyond 1st level, you gain a number of Contact Points equal to your level. In addition, your CP Limit increases by one half of your level (rounded down).</p>
+			</div>
 
 			<h3>Creating Contacts</h3>
-			<p>Upon character creation, players gain a number of Contact Points (CP) to spend on creating contacts. a player gains a number of these points equal to the Charisma score. Each contact has an influence and a loyalty score, and their cost in CP increases with these two scores, as shown on the tables below. A contact's total cost cannot exceed half of the players Charisma score (rounded down).</p> 
+			<p>A contact is an NPC that has already formed a relationship with the player and can provide a useful service to them. Making a new contact consists of deciding on their relationship with the player, what role and services they provide, and if they owe the player any favors. Each part of a contact costs a certain amount of CP, and the maximum number of CP you can spend on a single contact is based on your Charisma score, as seen below.</p>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="5">Contact Cost Limits</th>
+					</tr>
+					<tr>
+						<th>Charisma</th>
+						<th>Limit</th>
+					</tr>
+					<tr>
+						<td>8-9</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>10-13</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>14-17</td>
+						<td>5</td>
+					</tr>
+					<tr>
+						<td>18-20</td>
+						<td>6</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h5>Contact Relationships</h5>
+			<p>A contact may range from reluctant to help you all the way to seeing you as their true love. The more positive a contact sees the player, the higher the cost. Below is a list of costs with some example relationships. You can check out the <a href="reputation_relationships">Reputation and Relationships</a> page for more information.</p>
 			
 			<table class="content-table">
 				<tbody>
 					<tr>
-						<th colspan="5">Contact Influence Scores</th>
+						<th colspan="5">Contact Relationships</th>
 					</tr>
 					<tr>
-						<th>Score</th>
-						<th>Influence</th>
-						<th>Description</th>
 						<th>Cost</th>
-					</tr>
-					<tr>
-						<td>0</td>
-						<td>No Influence</td>
-						<td><em>This character is only useful for their own skills and knowledge. Average citizens fall in this category.</em></td>
-						<td>1</td>
+						<th>Description</th>
+						<th>Examples</th>
 					</tr>
 					<tr>
 						<td>1</td>
-						<td>Local Influence</td>
-						<td><em>This character is a respected leader of a community. Mayors, local guild leaders and minor nobility fall in this category.</em></td>
-						<td>3</td>
+						<td>A contact who is neutral towards or even reluctant to help the player.</td>
+						<td><em>"Reluctant", "Acquaintance", "Peer"</em></td>
 					</tr>
 					<tr>
 						<td>2</td>
-						<td>Wide Influence</td>
-						<td><em>This character has influence across a wide section of the world. National leaders, high priestesses of major gods and famous adventurers fall into this category.</em></td>
-						<td>5</td>
+						<td>A contact who has a positive, if limited, view with the player.</td>
+						<td><em>"Helpful", "Cousin", "Regular Customer"</em></td>
 					</tr>
 					<tr>
 						<td>3</td>
-						<td>Global Influence</td>
-						<td><em>This character influences the entire world, and possibly others as well. This category includes immortal beings such as gods, demon lords and elemental princes.</em></td>
-						<td>7</td>
+						<td>A contact who likes and knows the player. Likely willing to help when asked.</td>
+						<td><em>"Friendly", "Old Pals", "Family"</em></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>A contact who sees the player as a close friend or even a lover. Likely willing to do something dangerous to help the player.</td>
+						<td><em>"Beloved", "Childhood Friends", "Battle Brothers"</em></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>A contact who fanatically loves the player. Almost certainly willing to help the player, no matter the cost.</td>
+						<td><em>"Soulmates", "Obsessed", "Oath-bound"</em></td>
 					</tr>
 				</tbody>
 			</table>
+
+			<h5>Contact Roles</h5>
+			<p>Each contact has a range of benefits and services they can provide. The better (and rarer) the services the contact can provide, the higher the cost. Below is a list of costs with some example roles.</p>
+			
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="5">Contact Roles</th>
+					</tr>
+					<tr>
+						<th>Cost</th>
+						<th>Description</th>
+						<th>Examples</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>A contact with little influence nor skill. Useful only for their knowledge and meager means.</td>
+						<td><em>Laborer, Street Urchin, Farmhand</em></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>A contact with minor influence or skill. At least mildly trained or wealthy.</td>
+						<td><em>Merchant, Blacksmith, Town Guard</em></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>A contact skilled in their field or locally influential. Can provide rarer services or connect with broader populations.</td>
+						<td><em>Minor Noble, Skilled Spellcaster, Guard Captain</em></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>A contact who is an expert in their field or broadly influential. Can provide unique services or influence events on behalf of the player.</td>
+						<td><em>Lord or Lady, Guildmaster, Military General</em></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>A contact who is considered one of the best in their field or incredibly influential. Can provide services no one else can or control events on behalf of the players.</td>
+						<td><em>King or Queen, High Priest, Archmage</em></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h5>Favors</h5>
+			<p>Sometimes its nice to have someone owe you one. While creating a contact you can spend CP to gain favors from them, with each favor costing 1 CP (note that favors still count against the maximum CP you can spend on a contact). Favors can be called upon to get a contact to do something above and beyond what they would do otherwise (though they may still require some convincing, depending on the ask). Once a favor is fulfilled, it is gone forever, though you can always gain favors through play. Below are some example favors contacts of varying roles could do.</p>
+
+			<div class="optional">
+				<h6>What You've Done</h6>
+				<p>Favors aren't normal agreements, they come about because someone has done something big for a contact. When a contact owes you a favor, you should come up with what you did in the first place that warranted such a boon.</p>
+			</div>
 
 			<table class="content-table">
 				<tbody>
 					<tr>
-						<th colspan="5">Contact Loyalty Scores</th>
+						<th colspan="5">Contact Favors</th>
 					</tr>
 					<tr>
-						<th>Score</th>
-						<th>Influence</th>
-						<th>Description</th>
-						<th>Cost</th>
-					</tr>
-					<tr>
-						<td>0</td>
-						<td>Aquaintance</td>
-						<td><em>This character holds no strong feelings towards the player. They are counted as indifferent to start (attitude score 0).</em></td>
-						<td>1</td>
+						<th>Role</th>
+						<th>Favor Cost</th>
+						<th>Examples</th>
 					</tr>
 					<tr>
 						<td>1</td>
-						<td>Friend</td>
-						<td><em>This character likes and respects the player. They are counted as friendly to start (attitude score 10).</em></td>
-						<td>3</td>
+						<td>1</td>
+						<td><em>A sailor risking their job by sneaking the party onto their ship, a pickpocket lifting an magical amulet off the local priest, a farmer sheltering the party from the authorities in their barn.</em></td>
 					</tr>
 					<tr>
 						<td>2</td>
-						<td>Beloved</td>
-						<td><em>This character loves the player and does what they can to help them. They are counted as beloved to start (attitude score 30).</em></td>
-						<td>5</td>
+						<td>1</td>
+						<td><em>A town guard destroying some evidence for a player's crime, a blacksmith crafting a set of full plate for a huge discount, a merchant lending the player a decent sum of money with very generous terms.</em></td>
 					</tr>
 					<tr>
 						<td>3</td>
-						<td>Idol</td>
-						<td><em>This character sees the player as a savior and idolizes them, trusting them wholly. They are counted as idolized to start (attitude score 55).</em></td>
-						<td>7</td>
+						<td>2</td>
+						<td><em>A local priest reviving a fallen party member for no fee, the city mayor stopping a criminal inspection on the party, a scion of a noble house agreeing to cause a humiliating distraction at a big party.</em></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>2</td>
+						<td><em>A Duchess securing an invitation to an exclusive event for the party, a retired adventurer agreeing to one final job, the leader of a crime syndicate housing the party in their personal safe house.</em></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>3</td>
+						<td><em>A King pardoning the party of their crimes, an archmage summoning and binding a powerful demon for the players, an ancient dragon agreeing to let the party ride them for a day.</em></td>
 					</tr>
 				</tbody>
 			</table>
 
-			<h3>Interacting with Contacts</h3>
-			<p>A contact is just like any other character. They have their own wants, needs and goals, with contacts of higher influence being harder to get a hold of and having more complicated needs. If a player betrays the trust given to them, or aids the contact in some way, their attitude score increases and decreases just as any other npc. Failure to maintain a contact can lead them to slip away, losing the benefits they provided.</p>
+			<h3>Starting Reputation</h3>
+			<p>In addition to contacts, you can spend your CP on reputation within organizations or locations. Organizations are groups like guilds, knightly orders, gangs etc. Locations are areas about the size or population of a mid sized city. Regardless of group or location, the more positive a player's reputation is, the higher the cost. Just like contacts, you can only spend up to your CP limit on a single group or location. Below is a list of some example reputations with their associated costs for groups and locations.</p>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="5">Reputations</th>
+					</tr>
+					<tr>
+						<th>Group Cost</th>
+						<th>Location Cost</th>
+						<th>Description</th>
+						<th>Examples</th>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>3</td>
+						<td>The player is known, but doesn't have a particularly good nor bad reputation. They are not an outsider.</td>
+						<td><em>"Associate", "Regular", "Citizen"</em></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>6</td>
+						<td>The player is known and decently well liked. They are seen as part of the group.</td>
+						<td><em>"Member", "Upstanding", "Neighborly"</em></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>9</td>
+						<td>The player is well known and respected. They are seen as an important member of the group.</td>
+						<td><em>"Respected", "Influential", "Popular"</em></td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>12</td>
+						<td>The player is deeply respected and almost universally known. They are seen as irreplacable.</td>
+						<td><em>"Powerful", "Leader", "Famous"</em></td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>15</td>
+						<td>The player is known by everyone and loved dearly. The group cannot imagine the world without the player.</td>
+						<td><em>"Celebrity", "Central", "Worshipped"</em></td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 </body>
