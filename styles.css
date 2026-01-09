@@ -82,6 +82,10 @@ body {
 	}
 }
 
+.icon-big {
+	font-size: 10em !important;
+}
+
 .page-title {
 	font-size: 32px;
 	border-bottom: 3px solid;
