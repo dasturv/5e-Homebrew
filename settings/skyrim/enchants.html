@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Skyrim: Enchantments - DND 5th Edition</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="../../styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+	<header class="header-wrap">
+		<div class="header-color"></div>
+		<div class="row justify-content-center">
+			<div class="col-md-9 col-sm-12 header-text">
+				<h1>Laec's DND 5e Homebrew</h1>
+				<h3><a href="../../index.html">Home</a></h3>
+			</div>
+		</div>
+	</header>
+	<div class="row justify-content-center">
+		<div class="col-md-9 col-sm-12 main-content">
+			<div class="page-title">
+				Skyrim: Enchantments
+			</div>
+			<p>Enchantments in Skyrim replace the usual magic items, providing a more flexible framework.</p>
+
+			<h4>Soul Gems and Charges</h4>
+			<p>Some enchantments have charges, which limits how often their bonuses can be used. Though unlike regular DnD, enchanted items do not regain charges over time, instead requiring soul gems to recharge. Soul gems are crystals that store the souls of slain creatures, and are used extensively in enchanting. Each type of soul gem has a range of CRs that can be captured within itself. You can use an action to destroy a filled soul gem and restore charges in one enchanted item you are holding, with the amount of charges depending on the soul gem used. You can fill a soul gem with a soul of a lower tier, but the amount of charges recovered is based on the stored soul, not the gem itself.</p>
+			<p><strong>Black Soul Gems</strong><br>
+			Most soul gems are known as white soul gems, and can be filled with the souls of any non-humanoid creature. Humanoids, however, can only have their soul stored in a black soul gem, regardless of CR. Black soul gems are highly illegal and are seen as blatantly evil by most.</p>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="7">Soul Gems</th>
+					</tr>
+					<tr>
+						<th>Soul Gem</th>
+						<th>CRs</th>
+						<th>Charges</th>
+						<th>Filled Price</th>
+						<th>Empty Price</th>
+					</tr>
+					<tr>
+						<td>Petty</td>
+						<td>0-1/2</td>
+						<td>5</td>
+						<td>15gp</td>
+						<td>5gp</td>
+					</tr>
+					<tr>
+						<td>Lesser</td>
+						<td>1-3</td>
+						<td>10</td>
+						<td>25gp</td>
+						<td>10gp</td>
+					</tr>
+					<tr>
+						<td>Common</td>
+						<td>4-8</td>
+						<td>20</td>
+						<td>100gp</td>
+						<td>30gp</td>
+					</tr>
+					<tr>
+						<td>Greater</td>
+						<td>9-14</td>
+						<td>35</td>
+						<td>250gp</td>
+						<td>80gp</td>
+					</tr>
+					<tr>
+						<td>Grand</td>
+						<td>15+</td>
+						<td>50</td>
+						<td>500gp</td>
+						<td>200gp</td>
+					</tr>
+					<tr>
+						<td>Black</td>
+						<td>any humanoid</td>
+						<td>50</td>
+						<td>750gp</td>
+						<td>350gp</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4>Passive Enchantments</h4>
+			<p>Many enchantments do not have charges, instead providing passive effects. The strength of the enchantment is based on the rarity of the item. Each enchantment can be applied only to the listed item types in the Target Items column.</p>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="7">Passive Enchantments</th>
+					</tr>
+					<tr>
+						<th rowspan="2">Enchantment</th>
+						<th colspan="4">Effects</th>
+						<th rowspan="2">Target Items</th>
+					</tr>
+					<tr>
+						<th>Common</th>
+						<th>Uncommon</th>
+						<th>Rare</th>
+						<th>Very Rare</th>
+					</tr>
+					<tr>
+						<td>Fortify Alchemy</td>
+						<td>You gain a +1 bonus to checks using Alchemist's Tools, Herbalist's Supplies and Poisoner's Supplies.</td>
+						<td>You gain a +3 bonus to checks using Alchemist's Tools, Herbalist's Supplies and Poisoner's Supplies.</td>
+						<td>You gain a +5 bonus to checks using Alchemist's Tools, Herbalist's Supplies and Poisoner's Supplies.</td>
+						<td>You gain a +7 bonus to checks using Alchemist's Tools, Herbalist's Supplies and Poisoner's Supplies.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Alteration</td>
+						<td>You have advantage on concentration checks to maintain concentration on Transmutation spells.</td>
+						<td>You have a +1 bonus to spell attack rolls and your spell save DC for your Transmutation spells. Additionally, you have advantage on concentration checks to maintain concentration on Transmutation spells.</td>
+						<td>You have a +2 bonus to spell attack rolls and your spell save DC for your Transmutation spells. Additionally, you have advantage on concentration checks to maintain concentration on Transmutation spells.</td>
+						<td>You have a +3 bonus to spell attack rolls and your spell save DC for your Transmutation spells. Additionally, you have advantage on concentration checks to maintain concentration on Transmutation spells.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Archery</td>
+						<td>You have a +1 bonus to attack rolls using ranged weapons.</td>
+						<td>You have a +1 bonus to attack and damage rolls using ranged weapons.</td>
+						<td>You have a +2 bonus to attack and damage rolls using ranged weapons.</td>
+						<td>You have a +3 bonus to attack and damage rolls using ranged weapons.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Speech</td>
+						<td>You gain a +1 bonus to persuasion and deception checks.</td>
+						<td>You gain a +3 bonus to persuasion and deception checks.</td>
+						<td>You gain a +5 bonus to persuasion and deception checks.</td>
+						<td>You gain a +7 bonus to persuasion and deception checks.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Block</td>
+						<td>-</td>
+						<td>You gain a +1 bonus to AC while wielding a shield.</td>
+						<td>You gain a +2 bonus to AC while wielding a shield.</td>
+						<td>You gain a +3 bonus to AC while wielding a shield.</td>
+						<td><em>Armor, Clothes, Jewelry, Shields</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Conjuration</td>
+						<td>You have advantage on concentration checks to maintain concentration on Conjuration spells.</td>
+						<td>You have a +1 bonus to spell attack rolls and your spell save DC for your Conjuration spells. Additionally, you have advantage on concentration checks to maintain concentration on Conjuration spells.</td>
+						<td>You have a +2 bonus to spell attack rolls and your spell save DC for your Conjuration spells. Additionally, you have advantage on concentration checks to maintain concentration on Conjuration spells.</td>
+						<td>You have a +3 bonus to spell attack rolls and your spell save DC for your Conjuration spells. Additionally, you have advantage on concentration checks to maintain concentration on Conjuration spells.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Destruction</td>
+						<td>You have advantage on concentration checks to maintain concentration on Evocation spells.</td>
+						<td>You have a +1 bonus to spell attack rolls and your spell save DC for your Evocation spells. Additionally, you have advantage on concentration checks to maintain concentration on Evocation spells.</td>
+						<td>You have a +2 bonus to spell attack rolls and your spell save DC for your Evocation spells. Additionally, you have advantage on concentration checks to maintain concentration on Evocation spells.</td>
+						<td>You have a +3 bonus to spell attack rolls and your spell save DC for your Evocation spells. Additionally, you have advantage on concentration checks to maintain concentration on Evocation spells.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Heavy Armor</td>
+						<td>Whenever you would take bludgeoning, piercing or slashing damage while wearing heavy armor, that damage is reduced by 1. Damage cannot be reduced below 1 in this way.</td>
+						<td>Whenever you would take bludgeoning, piercing or slashing damage while wearing heavy armor, that damage is reduced by 2. Damage cannot be reduced below 1 in this way.</td>
+						<td>Whenever you would take bludgeoning, piercing or slashing damage while wearing heavy armor, that damage is reduced by 3. Damage cannot be reduced below 1 in this way.</td>
+						<td>Whenever you would take bludgeoning, piercing or slashing damage while wearing heavy armor, that damage is reduced by 4. Damage cannot be reduced below 1 in this way.</td>
+						<td><em>Armor, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Illusion</td>
+						<td>You have advantage on concentration checks to maintain concentration on Illusion spells.</td>
+						<td>You have a +1 bonus to spell attack rolls and your spell save DC for your Illusion spells. Additionally, you have advantage on concentration checks to maintain concentration on Illusion spells.</td>
+						<td>You have a +2 bonus to spell attack rolls and your spell save DC for your Illusion spells. Additionally, you have advantage on concentration checks to maintain concentration on Illusion spells.</td>
+						<td>You have a +3 bonus to spell attack rolls and your spell save DC for your Illusion spells. Additionally, you have advantage on concentration checks to maintain concentration on Illusion spells.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Light Armor</td>
+						<td>While wearing light or medium armor, you gain a +1 bonus to Dexterity saving throws and initiative.</td>
+						<td>While wearing light or medium armor, you gain a +2 bonus to Dexterity saving throws and initiative.</td>
+						<td>While wearing light or medium armor, you gain a +3 bonus to Dexterity saving throws and initiative.</td>
+						<td>While wearing light or medium armor, you gain a +5 bonus to Dexterity saving throws and initiative.</td>
+						<td><em>Armor, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Lockpicking</td>
+						<td>You gain a +1 bonus to checks using Thieve's Tools and Tinker's Tools.</td>
+						<td>You gain a +3 bonus to checks using Thieve's Tools and Tinker's Tools.</td>
+						<td>You gain a +5 bonus to checks using Thieve's Tools and Tinker's Tools.</td>
+						<td>You gain a +7 bonus to checks using Thieve's Tools and Tinker's Tools.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify One-Handed</td>
+						<td>You have a +1 bonus to damage rolls using one-handed weapons.</td>
+						<td>You have a +1 bonus to attack and damage rolls using one-handed weapons.</td>
+						<td>You have a +2 bonus to attack and damage rolls using one-handed weapons.</td>
+						<td>You have a +3 bonus to attack and damage rolls using one-handed weapons.</td>
+						<td><em>Armor, Clothes, Jewelry, One-Handed Weapons</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Pickpocket</td>
+						<td>You gain a +1 bonus to sleight of hand checks.</td>
+						<td>You gain a +3 bonus to sleight of hand checks.</td>
+						<td>You gain a +5 bonus to sleight of hand checks.</td>
+						<td>You gain a +7 bonus to sleight of hand checks.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Restoration</td>
+						<td>Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains an additional 1 hit point.</td>
+						<td>Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains an additional 2 hit points.</td>
+						<td>Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains an additional 4 hit points.</td>
+						<td>Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains an additional 6 hit points.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Smithing</td>
+						<td>You gain a +1 bonus to checks using Smith's Tools and Mason's Tools.</td>
+						<td>You gain a +3 bonus to checks using Smith's Tools and Mason's Tools.</td>
+						<td>You gain a +5 bonus to checks using Smith's Tools and Mason's Tools.</td>
+						<td>You gain a +7 bonus to checks using Smith's Tools and Mason's Tools.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Sneak</td>
+						<td>You gain a +1 bonus to stealth checks.</td>
+						<td>You gain a +3 bonus to stealth checks.</td>
+						<td>You gain a +5 bonus to stealth checks.</td>
+						<td>You gain a +7 bonus to stealth checks.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Two-Handed</td>
+						<td>You have a +1 bonus to damage rolls using two-handed weapons.</td>
+						<td>You have a +1 bonus to attack and damage rolls using two-handed weapons.</td>
+						<td>You have a +2 bonus to attack and damage rolls using two-handed weapons.</td>
+						<td>You have a +3 bonus to attack and damage rolls using two-handed weapons.</td>
+						<td><em>Armor, Clothes, Jewelry, Two-Handed Weapons</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Health Regeneration</td>
+						<td>Whenever you would expend one or more hit dice as part of a short rest, you regain an additional 1d4 hit points.</td>
+						<td>Whenever you would expend one or more hit dice as part of a short rest, you regain an additional 1d6 hit points.</td>
+						<td>Whenever you would expend one or more hit dice as part of a short rest, you regain an additional 2d6 hit points.</td>
+						<td>Whenever you would expend one or more hit dice as part of a short rest, you regain an additional 2d8 hit points.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Health</td>
+						<td>Your maximum hit points is increased by 4.</td>
+						<td>Your maximum hit points is increased by 8.</td>
+						<td>Your maximum hit points is increased by 16.</td>
+						<td>Your maximum hit points is increased by 24.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Magicka</td>
+						<td>Once per day you may cast a spell of 1st level or lower that you know or have prepared without expending a spell slot.</td>
+						<td>Once per day you may cast a spell of 2nd level or lower that you know or have prepared without expending a spell slot.</td>
+						<td>Once per day you may cast a spell of 3rd level or lower that you know or have prepared without expending a spell slot.</td>
+						<td>Once per day you may cast a spell of 4th level or lower that you know or have prepared without expending a spell slot.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Magicka Regeneration</td>
+						<td>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level of 1 or lower.</td>
+						<td>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level of 2 or lower.</td>
+						<td>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level of 3 or lower.</td>
+						<td>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level of 4 or lower.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Stamina</td>
+						<td>When you move on your turn, you can increase your speed by 10 feet until the end of the turn. Once you do so, you can’t do so again until you move 0 feet on one of your turns.</td>
+						<td>When you move on your turn, you can increase your speed by 15 feet until the end of the turn. Once you do so, you can’t do so again until you move 0 feet on one of your turns</td>
+						<td>When you move on your turn, you can double your speed until the end of the turn. Once you do so, you can’t do so again until you move 0 feet on one of your turns</td>
+						<td>Your movement speed is increased by 10 feet. Additionally, when you move on your turn, you can double your speed until the end of the turn. Once you do so, you can’t do so again until you move 0 feet on one of your turns</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Stamina Regeneration</td>
+						<td>You complete a short rest in 45 minutes.</td>
+						<td>You complete a short rest in 30 minutes.</td>
+						<td>You complete a short rest in 30 minutes. Additionally, once per day when you complete a short rest, you may lose one level of exhaustion.</td>
+						<td>You complete a short rest in 15 minutes. Additionally, once per day when you complete a short rest, you may lose one level of exhaustion.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Carry Weight</td>
+						<td>Your strength is considered 2 higher for the purposes of calculating carry capacity. Additionally, you gain a +1 bonus on athletics checks.</td>
+						<td>Your strength is considered 4 higher for the purposes of calculating carry capacity. Additionally, you gain a +3 bonus on athletics checks.</td>
+						<td>Your strength is considered 8 higher for the purposes of calculating carry capacity. Additionally, you gain a +5 bonus on athletics checks.</td>
+						<td>Your strength is considered 16 higher for the purposes of calculating carry capacity. you gain a +7 bonus on athletics checks.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Fortify Unarmed</td>
+						<td>You have a +1 bonus to damage rolls using unarmed strikes and natural weapons.</td>
+						<td>You have a +1 bonus to attack and damage rolls using unarmed strikes and natural weapons.</td>
+						<td>You have a +2 bonus to attack and damage rolls using unarmed strikes and natural weapons.</td>
+						<td>You have a +3 bonus to attack and damage rolls using unarmed strikes and natural weapons.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Resist Disease</td>
+						<td>-</td>
+						<td>You have advantage on saving throws against diseases.</td>
+						<td>-</td>
+						<td>You are immune to diseases.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Resist Fire</td>
+						<td>Whenever you would take fire damage, that damage is reduced by 2. Damage cannot be reduced below 0 in this way.</td>
+						<td>Whenever you would take fire damage, that damage is reduced by 5. Damage cannot be reduced below 0 in this way.</td>
+						<td>You have resistance to fire damage.</td>
+						<td>You are immune to fire damage.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Resist Frost</td>
+						<td>Whenever you would take cold damage, that damage is reduced by 2. Damage cannot be reduced below 0 in this way.</td>
+						<td>Whenever you would take cold damage, that damage is reduced by 5. Damage cannot be reduced below 0 in this way.</td>
+						<td>You have resistance to cold damage.</td>
+						<td>You are immune to cold damage.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Resist Magic</td>
+						<td>You have a +1 bonus on saving throws against spells.</td>
+						<td>You have a +2 bonus on saving throws against spells.</td>
+						<td>You have a +3 bonus on saving throws against spells.</td>
+						<td>You have advantage on saving throws against spells.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Resist Poison</td>
+						<td>Whenever you would take poison damage, that damage is reduced by 2. Damage cannot be reduced below 0 in this way.</td>
+						<td>Whenever you would take poison damage, that damage is reduced by 5. Damage cannot be reduced below 0 in this way.</td>
+						<td>You have resistance to poison damage.</td>
+						<td>You are immune to poison damage.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Resist Shock</td>
+						<td>Whenever you would take lightning damage, that damage is reduced by 2. Damage cannot be reduced below 0 in this way.</td>
+						<td>Whenever you would take lightning damage, that damage is reduced by 5. Damage cannot be reduced below 0 in this way.</td>
+						<td>You have resistance to lightning damage.</td>
+						<td>You are immune to lightning damage.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Dark Moon</td>
+						<td>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level of 2 or lower. Your hit point maximum is reduced by 3.</td>
+						<td>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level of 3 or lower. Your hit point maximum is reduced by 6.</td>
+						<td>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level of 4 or lower. Your hit point maximum is reduced by 12.</td>
+						<td>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level of 5 or lower. Your hit point maximum is reduced by 18.</td>
+						<td><em>Armor, Clothes, Jewelry</em></td>
+					</tr>
+					<tr>
+						<td>Waterbreathing</td>
+						<td>You can hold your breath for up to 10 minutes.</td>
+						<td>You can hold your breath for up to an hour.</td>
+						<td>You can breath in both water and air.</td>
+						<td>You do not need to breath.</td>
+						<td><em>Helmets, Jewelry</em></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4>Active Enchantments</h4>
+			<p>Active enchantments, unlike passive ones, have charges. Each item rarity has a maximum number of charges and each rarity of enchantment uses a different amount of charges. The strength of the enchantment is chosen whe nthe item is created, and cannot be changed. An item can have an active enchantment of its rarity or lower. Active enchantments can only be applied to weapons. When you deal damage to a creature using a weapon with an active enchantment, you may expend the charges listed in the description to apply the effect, provided you have enough charges.</p>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="7">Enchanted Item Charges</th>
+					</tr>
+					<tr>
+						<th>Rarity</th>
+						<th>Max Charges</th>
+					</tr>
+					<tr>
+						<td>Common</td>
+						<td>10</td>
+					</tr>
+					<tr>
+						<td>Uncommon</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>Rare</td>
+						<td>35</td>
+					</tr>
+					<tr>
+						<td>Very Rare</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>Legendary</td>
+						<td>75</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="7">Active Enchantments</th>
+					</tr>
+					<tr>
+						<th rowspan="2">Enchantment</th>
+						<th colspan="4">Effects</th>
+					</tr>
+					<tr>
+						<th>Common</th>
+						<th>Uncommon</th>
+						<th>Rare</th>
+						<th>Very Rare</th>
+					</tr>
+					<tr>
+						<td>Absorb Health</td>
+						<td>-</td>
+						<td>2 charges: The target takes an additional 1d4 necrotic damage and you regain hit points equal to the necrotic damage dealt.</td>
+						<td>4 charges: the target takes an additional 1d8 necrotic damage and you regain hit points equal to the necrotic damage dealt.</td>
+						<td>7 charges: the target takes an additional 2d6 necrotic damage and you regain hit points equal to the necrotic damage dealt.</td>
+					</tr>
+					<tr>
+						<td>Absorb Magicka</td>
+						<td>-</td>
+						<td>10 charges: If the target must make a concentration check from this attack, it makes it at disadvantage. If the target fails the check, you may recover an expended spell slot of 1st level or lower.</td>
+						<td>17 charges: If the target must make a concentration check from this attack, it makes it at disadvantage. If the target fails the check, you may recover an expended spell slot of 2nd level or lower.</td>
+						<td>25 charges: If the target must make a concentration check from this attack, it makes it at disadvantage. If the target fails the check, you may recover an expended spell slot of 3rd level or lower.</td>
+					</tr>
+					<tr>
+						<td>Absorb Stamina</td>
+						<td>-</td>
+						<td>2 charges: The target's speed is reduced by 10 feet and your speed is increased by 10 feet until the start of your next turn.</td>
+						<td>5 charges: The target's speed is reduced by 20 feet and your speed is increased by 20 feet until the start of your next turn.</td>
+						<td>10 charges: The target's speed is reduced by 30 feet and your speed is increased by 30 feet until the start of your next turn.</td>
+					</tr>
+					<tr>
+						<td>Chaos Damage</td>
+						<td>1 charge: The target suffers the effect of the common level of the Fire, Frost or Shock Damage enchantment, chosen at random.</td>
+						<td>2 charge: The target suffers the effect of the uncommon level of the Fire, Frost or Shock Damage enchantment, chosen at random.</td>
+						<td>4 charge: The target suffers the effect of the rare level of the Fire, Frost or Shock Damage enchantment, chosen at random.</td>
+						<td>7 charge: The target suffers the effect of the very rare level of the Fire, Frost or Shock Damage enchantment, chosen at random.</td>
+					</tr>
+					<tr>
+						<td>Fire Damage</td>
+						<td>1 charge: The target takes an additional 1d4 fire damage.</td>
+						<td>2 charges: The target takes an additional 1d6 fire damage.</td>
+						<td>4 charges: The target takes an additional 2d6 fire damage.</td>
+						<td>7 charges: The target takes an additional 3d6 fire damage.</td>
+					</tr>
+					<tr>
+						<td>Frost Damage</td>
+						<td>1 charge: The target takes an additional 1 cold damage and cannot take reactions until the start of your next turn.</td>
+						<td>2 charges: The target takes an additional 1d4 cold damage and cannot take reactions until the start of your next turn.</td>
+						<td>4 charges: The target takes an additional 2d4 cold damage and cannot take reactions until the start of your next turn.</td>
+						<td>7 charges: The target takes an additional 3d4 cold damage and cannot take reactions until the start of your next turn.</td>
+					</tr>
+					<tr>
+						<td>Magicka Damage</td>
+						<td>-</td>
+						<td>4 charges: The target must succeed on a DC 15 Intelligence saving throw. On a failure whenever it casts a spell using a spell slot before the start of your next turn, it must expend a spell slot one level higher than normal. If it cannot, the spell fails and the slot is not expended.</td>
+						<td>8 charges: The target must succeed on a DC 17 Intelligence saving throw. On a failure whenever it casts a spell using a spell slot before the start of your next turn, it must expend a spell slot two levels higher than normal. If it cannot, the spell fails and the slot is not expended.</td>
+						<td>16 charges: The target must succeed on a DC 19 Intelligence saving throw. On a failure whenever it casts a spell using a spell slot before the start of your next turn, it must expend a spell slot three levels higher than normal. If it cannot, the spell fails and the slot is not expended.</td>
+					</tr>
+					<tr>
+						<td>Shock Damage</td>
+						<td>1 charge: The target takes an additional 1 lightning damage. If this damage forces the target to make a concentration check, they do so at disadvantage.</td>
+						<td>2 charges: The target takes an additional 1d4 lightning damage. If this damage forces the target to make a concentration check, they do so at disadvantage.</td>
+						<td>4 charges: The target takes an additional 2d4 lightning damage. If this damage forces the target to make a concentration check, they do so at disadvantage.</td>
+						<td>7 charges: The target takes an additional 3d4 lightning damage. If this damage forces the target to make a concentration check, they do so at disadvantage.</td>
+					</tr>
+					<tr>
+						<td>Stamina Damage</td>
+						<td>-</td>
+						<td>4 charges: The target must succeed on a DC 15 Constitution saving throw. On a failure the target's speed is halved and it cannot take reactions until the start of your next turn.</td>
+						<td>8 charges: The target must succeed on a DC 17 Constitution saving throw. On a failure the target suffers the uncommon effects of this enchantment as if it failed the saving throw, and the target can take either an action or bonus action on its turn, but not both on its next turn.</td>
+						<td>16 charges: The target must succeed on a DC 19 Constitution saving throw. On a failure the target suffers the rare and uncommon effects of this enchantment as if it failed the saving throws, and the target can only make one attack on its next turn, even if it has the extra attack or multiattack feature.</td>
+					</tr>
+					<tr>
+						<td>Banish</td>
+						<td>-</td>
+						<td>-</td>
+						<td>11 charges: You cast the <a href="https://dnd5e.wikidot.com/spell:banishment">Banishment</a> spell on the target (no action or components required, save DC 17).</td>
+						<td>25 charges: You cast the <a href="https://dnd5e.wikidot.com/spell:banishment">Banishment</a> spell on the target (no action or components required, save DC 19). The spell lasts for up to 10 minutes or until you lose concentration.</td>
+					</tr>
+					<tr>
+						<td>Fear</td>
+						<td>2 charges: The target must succeed on a DC 13 Wisdom saving throw or become frightened of you until the end of your next turn.</td>
+						<td>5 charges: The target must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</td>
+						<td>11 charges: The target must make a DC 17 Wisdom saving throw. On a failure it must immediately use its reaction to move up to its speed directly away from you (though it avoids obvious dangers in its way) and it becomes frightened of you for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</td>
+						<td>25 charges: The target must make a DC 19 saving throw. On a failure it becomes frightened of your for 1 minute. While frightened in this way it must spend its movement on each of its turns moving as far away from you as it can (though it avoids obvious dangers in its way) and cannot use its action to attack. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</td>
+					</tr>
+					<tr>
+						<td>Turn Undead</td>
+						<td>2 charges: If the target is undead it must succeed on a DC 13 Wisdom saving throw or become frightened of you for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</td>
+						<td>5 charges: If the target is undead it must make a DC 15 Wisdom saving throw. On a failure it is turned as if effected by the Cleric's Turn Undead feature.</td>
+						<td>11 charges: If the target is undead it must make a DC 17 Wisdom saving throw. On a failure it is turned as if effected by the Cleric's Turn Undead feature. If an undead of CR 1 or lower fails this saving throw, it is destroyed instead.</td>
+						<td>25 charges: If the target is undead it must make a DC 19 Wisdom saving throw. On a failure it is turned as if effected by the Cleric's Turn Undead feature. If an undead of CR 4 or lower fails this saving throw, it is destroyed instead.</td>
+					</tr>
+					<tr>
+						<td>Paralyze</td>
+						<td>-</td>
+						<td>10 charges: You cast the <a href="https://dnd5e.wikidot.com/spell:hold-person">Hold Person</a> spell on the target (no action or components required, save DC 15). The spell ends at the start of your next turn, regardless of if you are still concentrating on it.</td>
+						<td>17 charges: You cast the <a href="https://dnd5e.wikidot.com/spell:hold-person">Hold Person</a> spell on the target (no action or components required, save DC 17). The spell ends at the end of your next turn, regardless of if you are still concentrating on it.</td>
+						<td>25 charges: You cast the <a href="https://dnd5e.wikidot.com/spell:hold-person">Hold Person</a> spell on the target (no action or components required, save DC 19).</td>
+					</tr>
+					<tr>
+						<td>Soul Trap</td>
+						<td>3 charges: If this attack reduces the target to 0 hit points, it immediately dies and its soul is used to fill an empty soul gem on your person, provided the gem is large enough and the correct type for the soul being captured.</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Huntsman</td>
+						<td>1 charge: If the target is a beast, it takes 1d4 additional damage.</td>
+						<td>2 charge: If the target is a beast, it takes 2d4 additional damage.</td>
+						<td>4 charge: If the target is a beast, it takes 3d4 additional damage.</td>
+						<td>7 charge: If the target is a beast, it takes 5d4 additional damage.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
