@@ -23,17 +23,51 @@
 			<div class="page-title">
 				Skyrim: Enchantments
 			</div>
-			<p>Enchantments in Skyrim replace the usual magic items, providing a more flexible framework.</p>
 
-			<h4>Soul Gems and Charges</h4>
-			<p>Some enchantments have charges, which limits how often their bonuses can be used. Though unlike regular DnD, enchanted items do not regain charges over time, instead requiring soul gems to recharge. Soul gems are crystals that store the souls of slain creatures, and are used extensively in enchanting. Each type of soul gem has a range of CRs that can be captured within itself. You can use an action to destroy a filled soul gem and restore charges in one enchanted item you are holding, with the amount of charges depending on the soul gem used. You can fill a soul gem with a soul of a lower tier, but the amount of charges recovered is based on the stored soul, not the gem itself.</p>
+			<h3>Enchanted Items</h3>
+			<p>Instead of the traditional magic items found in DnD, the world of Skyrim has enchanted items. These enchanted items provide powerful boons to those who wield them. Each enchanted item has a rarity, which decides how strong of enchantments can be on the item as well as how many charges the item has. Unlike magic items in regular DnD, enchanted items do not recover charges over time, instead requiring soul gems to recharge. All enchanted items are considered to require attunement.</p>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="2">Enchanted Items</th>
+					</tr>
+					<tr>
+						<th>Rarity</th>
+						<th>Max Charges</th>
+					</tr>
+					<tr>
+						<td>Common</td>
+						<td>10</td>
+					</tr>
+					<tr>
+						<td>Uncommon</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>Rare</td>
+						<td>35</td>
+					</tr>
+					<tr>
+						<td>Very Rare</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>Legendary</td>
+						<td>75</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4>Soul Gems</h4>
+			<p>Soul gems are crystals that store the souls of slain creatures, and are used extensively in enchanting. Each type of soul gem has a range of CRs that can be captured within itself. You can use an action to destroy a filled soul gem and restore charges in one enchanted item you are holding, with the amount of charges depending on the power of the soul used. You can fill a soul gem with a soul of a lower tier, but the amount of charges recovered is based on the stored soul, not the gem itself.</p>
 			<p><strong>Black Soul Gems</strong><br>
 			Most soul gems are known as white soul gems, and can be filled with the souls of any non-humanoid creature. Humanoids, however, can only have their soul stored in a black soul gem, regardless of CR. Black soul gems are highly illegal and are seen as blatantly evil by most.</p>
 
 			<table class="content-table">
 				<tbody>
 					<tr>
-						<th colspan="7">Soul Gems</th>
+						<th colspan="5">Soul Gems</th>
 					</tr>
 					<tr>
 						<th>Soul Gem</th>
@@ -87,18 +121,79 @@
 				</tbody>
 			</table>
 
-			<h4>Passive Enchantments</h4>
-			<p>Many enchantments do not have charges, instead providing passive effects. The strength of the enchantment is based on the rarity of the item. Each enchantment can be applied only to the listed item types in the Target Items column.</p>
+			<h4>Enchanting Items</h4>
+			<p>Creating an enchanted item takes patience, skill and plenty of arcane materials. To get started you will need access to an arcane enchanter and an unenchanted item you wish to enchant, then choose your item rarity and enchantment(s) out of the options available to you.</p>
+
+			<p><strong>Item Rarity</strong><br>
+			The rarity of item you are creating dictates how powerful the enchantments the item can have, as well as how difficult it will be to create. You can create an item of a specific rarity only if you meet its requirements and provide the necessary materials. When you complete the associated extended check for the item, it is complete. If a creature helping on the extended check does not meet the requirements for the item or does not the the formulae for the selected enchantment(s), they make the check at disadvantage.</p>
 
 			<table class="content-table">
 				<tbody>
 					<tr>
-						<th colspan="7">Passive Enchantments</th>
+						<th colspan="5">Enchanting Items</th>
+					</tr>
+					<tr>
+						<th>Rarity</th>
+						<th>Requirements</th>
+						<th>Materials</th>
+						<th>Enchantment(s)</th>
+						<th>Extended Check</th>
+					</tr>
+					<tr>
+						<td>Common</td>
+						<td><em>A bonus to Arcana of +2 or greater</em></td>
+						<td>A petty soul gem, 75gp worth of arcane materials</td>
+						<td>One common enchantment</td>
+						<td>Arcana Extended check (DC 100, 1 hour interval)</td>
+					</tr>
+					<tr>
+						<td>Uncommon</td>
+						<td><em>3rd level, a bonus to Arcana of +4 or greater</em></td>
+						<td>A lesser soul gem, 750gp worth of arcane materials</td>
+						<td>One uncommon enchantment</td>
+						<td>Arcana Extended check (DC 75, 1 day interval)</td>
+					</tr>
+					<tr>
+						<td>Rare</td>
+						<td><em>5th level, a bonus to Arcana of +6 or greater</em></td>
+						<td>A common soul gem, 2,000gp worth of arcane materials</td>
+						<td>One rare enchantment</td>
+						<td>Arcana Extended check (DC 60, 1 week interval)</td>
+					</tr>
+					<tr>
+						<td>Very Rare</td>
+						<td><em>11th level, a bonus to Arcana of +8 or greater</em></td>
+						<td>A greater soul gem, 7,500gp worth of arcane materials</td>
+						<td>One very rare enchantment</td>
+						<td>Arcana Extended check (DC 60, 1 month interval)</td>
+					</tr>
+					<tr>
+						<td>Legendary</td>
+						<td><em>17th level, a bonus to Arcana of +10 or greater</em></td>
+						<td>A grand or black soul gem, 15,000gp worth of arcane materials</td>
+						<td>Either: (a) two rare enchantments, or (b) one very rare enchantment and one uncommon enchantment.</td>
+						<td>Arcana Extended check (DC 120, 1 month interval)</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p><strong>Choosing Enchantments</strong><br>
+			When choosing enchantments you can select any enchantments whose formulae you know, can be applied to the item, and is of the correct rarity or lower (as seen in the table above). By default players do not know any formulae, but can learn new formulae by disenchanting items. Disenchanting an item requires completing an Arcana Extended check (DC 75, 10 minute interval), after which the player learns the formulae for any enchantments on the item, though the item is destroyed in the process.</p>
+
+			<h3>Enchantments</h3>
+			<p>There are two types of enchantments: apparel and weapon enchantments.</p>
+
+			<h4>Apparel Enchantments</h4>
+			<p>The following enchantments can be applied to armor, clothing, jewelry and shields.</p>
+
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th colspan="5">Apparel Enchantments</th>
 					</tr>
 					<tr>
 						<th rowspan="2">Enchantment</th>
-						<th colspan="4">Effects</th>
-						<th rowspan="2">Target Items</th>
+						<th colspan="4">Effect Rarity</th>
 					</tr>
 					<tr>
 						<th>Common</th>
@@ -112,23 +207,20 @@
 						<td>You gain a +3 bonus to checks using Alchemist's Tools, Herbalist's Supplies and Poisoner's Supplies.</td>
 						<td>You gain a +5 bonus to checks using Alchemist's Tools, Herbalist's Supplies and Poisoner's Supplies.</td>
 						<td>You gain a +7 bonus to checks using Alchemist's Tools, Herbalist's Supplies and Poisoner's Supplies.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Fortify Alteration</td>
-						<td>You have advantage on concentration checks to maintain concentration on Transmutation spells.</td>
-						<td>You have a +1 bonus to spell attack rolls and your spell save DC for your Transmutation spells. Additionally, you have advantage on concentration checks to maintain concentration on Transmutation spells.</td>
-						<td>You have a +2 bonus to spell attack rolls and your spell save DC for your Transmutation spells. Additionally, you have advantage on concentration checks to maintain concentration on Transmutation spells.</td>
-						<td>You have a +3 bonus to spell attack rolls and your spell save DC for your Transmutation spells. Additionally, you have advantage on concentration checks to maintain concentration on Transmutation spells.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
+						<td>You have advantage on concentration checks to maintain concentration on Transmutation and Divination spells.</td>
+						<td>You have a +1 bonus to spell attack rolls and your spell save DC for your Transmutation and Divination spells. Additionally, you have advantage on concentration checks to maintain concentration on Transmutation and Divination spells.</td>
+						<td>You have a +2 bonus to spell attack rolls and your spell save DC for your Transmutation and Divination spells. Additionally, you have advantage on concentration checks to maintain concentration on Transmutation and Divination spells.</td>
+						<td>You have a +3 bonus to spell attack rolls and your spell save DC for your Transmutation and Divination spells. Additionally, you have advantage on concentration checks to maintain concentration on Transmutation and Divination spells.</td>
 					</tr>
 					<tr>
-						<td>Fortify Archery</td>
+						<td>Fortify Archery*</td>
 						<td>You have a +1 bonus to attack rolls using ranged weapons.</td>
 						<td>You have a +1 bonus to attack and damage rolls using ranged weapons.</td>
 						<td>You have a +2 bonus to attack and damage rolls using ranged weapons.</td>
 						<td>You have a +3 bonus to attack and damage rolls using ranged weapons.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Fortify Speech</td>
@@ -136,7 +228,6 @@
 						<td>You gain a +3 bonus to persuasion and deception checks.</td>
 						<td>You gain a +5 bonus to persuasion and deception checks.</td>
 						<td>You gain a +7 bonus to persuasion and deception checks.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Fortify Block</td>
@@ -144,23 +235,20 @@
 						<td>You gain a +1 bonus to AC while wielding a shield.</td>
 						<td>You gain a +2 bonus to AC while wielding a shield.</td>
 						<td>You gain a +3 bonus to AC while wielding a shield.</td>
-						<td><em>Armor, Clothes, Jewelry, Shields</em></td>
 					</tr>
 					<tr>
 						<td>Fortify Conjuration</td>
-						<td>You have advantage on concentration checks to maintain concentration on Conjuration spells.</td>
-						<td>You have a +1 bonus to spell attack rolls and your spell save DC for your Conjuration spells. Additionally, you have advantage on concentration checks to maintain concentration on Conjuration spells.</td>
-						<td>You have a +2 bonus to spell attack rolls and your spell save DC for your Conjuration spells. Additionally, you have advantage on concentration checks to maintain concentration on Conjuration spells.</td>
-						<td>You have a +3 bonus to spell attack rolls and your spell save DC for your Conjuration spells. Additionally, you have advantage on concentration checks to maintain concentration on Conjuration spells.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
+						<td>You have advantage on concentration checks to maintain concentration on Conjuration and Necromancy spells.</td>
+						<td>You have a +1 bonus to spell attack rolls and your spell save DC for your Conjuration and Necromancy spells. Additionally, you have advantage on concentration checks to maintain concentration on Conjuration and Necromancy spells.</td>
+						<td>You have a +2 bonus to spell attack rolls and your spell save DC for your Conjuration and Necromancy spells. Additionally, you have advantage on concentration checks to maintain concentration on Conjuration and Necromancy spells.</td>
+						<td>You have a +3 bonus to spell attack rolls and your spell save DC for your Conjuration and Necromancy spells. Additionally, you have advantage on concentration checks to maintain concentration on Conjuration and Necromancy spells.</td>
 					</tr>
 					<tr>
 						<td>Fortify Destruction</td>
-						<td>You have advantage on concentration checks to maintain concentration on Evocation spells.</td>
-						<td>You have a +1 bonus to spell attack rolls and your spell save DC for your Evocation spells. Additionally, you have advantage on concentration checks to maintain concentration on Evocation spells.</td>
-						<td>You have a +2 bonus to spell attack rolls and your spell save DC for your Evocation spells. Additionally, you have advantage on concentration checks to maintain concentration on Evocation spells.</td>
-						<td>You have a +3 bonus to spell attack rolls and your spell save DC for your Evocation spells. Additionally, you have advantage on concentration checks to maintain concentration on Evocation spells.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
+						<td>Whenever you would roll a 20 on an attack roll with an evocation spell, the target takes an extra 1d6 damage.</td>
+						<td>You have a +1 bonus to spell attack rolls and your spell save DC for your Evocation spells. Additionally, whenever you would roll a 20 on an attack roll with an evocation spell, the target takes an extra 2d6 damage.</td>
+						<td>You have a +2 bonus to spell attack rolls and your spell save DC for your Evocation spells. Additionally, whenever you would roll a 20 on an attack roll with an evocation spell, the target takes an extra 3d6 damage.</td>
+						<td>You have a +3 bonus to spell attack rolls and your spell save DC for your Evocation spells. Additionally, whenever you would roll a 20 on an attack roll with an evocation spell, the target takes an extra 4d6 damage.</td>
 					</tr>
 					<tr>
 						<td>Fortify Heavy Armor</td>
@@ -168,15 +256,13 @@
 						<td>Whenever you would take bludgeoning, piercing or slashing damage while wearing heavy armor, that damage is reduced by 2. Damage cannot be reduced below 1 in this way.</td>
 						<td>Whenever you would take bludgeoning, piercing or slashing damage while wearing heavy armor, that damage is reduced by 3. Damage cannot be reduced below 1 in this way.</td>
 						<td>Whenever you would take bludgeoning, piercing or slashing damage while wearing heavy armor, that damage is reduced by 4. Damage cannot be reduced below 1 in this way.</td>
-						<td><em>Armor, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Fortify Illusion</td>
-						<td>You have advantage on concentration checks to maintain concentration on Illusion spells.</td>
-						<td>You have a +1 bonus to spell attack rolls and your spell save DC for your Illusion spells. Additionally, you have advantage on concentration checks to maintain concentration on Illusion spells.</td>
-						<td>You have a +2 bonus to spell attack rolls and your spell save DC for your Illusion spells. Additionally, you have advantage on concentration checks to maintain concentration on Illusion spells.</td>
-						<td>You have a +3 bonus to spell attack rolls and your spell save DC for your Illusion spells. Additionally, you have advantage on concentration checks to maintain concentration on Illusion spells.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
+						<td>You have advantage on concentration checks to maintain concentration on Illusion and Enchantment spells.</td>
+						<td>You have a +1 bonus to spell attack rolls and your spell save DC for your Illusion and Enchantment spells. Additionally, you have advantage on concentration checks to maintain concentration on Illusion and Enchantment spells.</td>
+						<td>You have a +2 bonus to spell attack rolls and your spell save DC for your Illusion and Enchantment spells. Additionally, you have advantage on concentration checks to maintain concentration on Illusion and Enchantment spells.</td>
+						<td>You have a +3 bonus to spell attack rolls and your spell save DC for your Illusion and Enchantment spells. Additionally, you have advantage on concentration checks to maintain concentration on Illusion and Enchantment spells.</td>
 					</tr>
 					<tr>
 						<td>Fortify Light Armor</td>
@@ -184,7 +270,6 @@
 						<td>While wearing light or medium armor, you gain a +2 bonus to Dexterity saving throws and initiative.</td>
 						<td>While wearing light or medium armor, you gain a +3 bonus to Dexterity saving throws and initiative.</td>
 						<td>While wearing light or medium armor, you gain a +5 bonus to Dexterity saving throws and initiative.</td>
-						<td><em>Armor, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Fortify Lockpicking</td>
@@ -192,15 +277,13 @@
 						<td>You gain a +3 bonus to checks using Thieve's Tools and Tinker's Tools.</td>
 						<td>You gain a +5 bonus to checks using Thieve's Tools and Tinker's Tools.</td>
 						<td>You gain a +7 bonus to checks using Thieve's Tools and Tinker's Tools.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
-						<td>Fortify One-Handed</td>
+						<td>Fortify One-Handed*</td>
 						<td>You have a +1 bonus to damage rolls using one-handed weapons.</td>
 						<td>You have a +1 bonus to attack and damage rolls using one-handed weapons.</td>
 						<td>You have a +2 bonus to attack and damage rolls using one-handed weapons.</td>
 						<td>You have a +3 bonus to attack and damage rolls using one-handed weapons.</td>
-						<td><em>Armor, Clothes, Jewelry, One-Handed Weapons</em></td>
 					</tr>
 					<tr>
 						<td>Fortify Pickpocket</td>
@@ -208,15 +291,13 @@
 						<td>You gain a +3 bonus to sleight of hand checks.</td>
 						<td>You gain a +5 bonus to sleight of hand checks.</td>
 						<td>You gain a +7 bonus to sleight of hand checks.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Fortify Restoration</td>
-						<td>Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains an additional 1 hit point.</td>
-						<td>Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains an additional 2 hit points.</td>
-						<td>Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains an additional 4 hit points.</td>
-						<td>Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains an additional 6 hit points.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
+						<td>You have advantage on concentration checks to maintain concentration on Abjuration spells.</td>
+						<td>Whenever you cast a spell of 1st level or higher that restores hit points to a creature, the creature regains an additional 2 hit points. Additionally, you have advantage on concentration checks to maintain concentration on Abjuration spells.</td>
+						<td>Whenever you cast a spell of 1st level or higher that restores hit points to a creature, the creature regains an additional 4 hit points. Additionally, you have advantage on concentration checks to maintain concentration on Abjuration spells.</td>
+						<td>Whenever you cast a spell of 1st level or higher that restores hit points to a creature, the creature regains an additional 6 hit points. Additionally, you have advantage on concentration checks to maintain concentration on Abjuration spells.</td>
 					</tr>
 					<tr>
 						<td>Fortify Smithing</td>
@@ -224,7 +305,6 @@
 						<td>You gain a +3 bonus to checks using Smith's Tools and Mason's Tools.</td>
 						<td>You gain a +5 bonus to checks using Smith's Tools and Mason's Tools.</td>
 						<td>You gain a +7 bonus to checks using Smith's Tools and Mason's Tools.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Fortify Sneak</td>
@@ -232,15 +312,13 @@
 						<td>You gain a +3 bonus to stealth checks.</td>
 						<td>You gain a +5 bonus to stealth checks.</td>
 						<td>You gain a +7 bonus to stealth checks.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
-						<td>Fortify Two-Handed</td>
+						<td>Fortify Two-Handed*</td>
 						<td>You have a +1 bonus to damage rolls using two-handed weapons.</td>
 						<td>You have a +1 bonus to attack and damage rolls using two-handed weapons.</td>
 						<td>You have a +2 bonus to attack and damage rolls using two-handed weapons.</td>
 						<td>You have a +3 bonus to attack and damage rolls using two-handed weapons.</td>
-						<td><em>Armor, Clothes, Jewelry, Two-Handed Weapons</em></td>
 					</tr>
 					<tr>
 						<td>Fortify Health Regeneration</td>
@@ -248,7 +326,6 @@
 						<td>Whenever you would expend one or more hit dice as part of a short rest, you regain an additional 1d6 hit points.</td>
 						<td>Whenever you would expend one or more hit dice as part of a short rest, you regain an additional 2d6 hit points.</td>
 						<td>Whenever you would expend one or more hit dice as part of a short rest, you regain an additional 2d8 hit points.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Fortify Health</td>
@@ -256,7 +333,6 @@
 						<td>Your maximum hit points is increased by 8.</td>
 						<td>Your maximum hit points is increased by 16.</td>
 						<td>Your maximum hit points is increased by 24.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Fortify Magicka</td>
@@ -264,7 +340,6 @@
 						<td>Once per day you may cast a spell of 2nd level or lower that you know or have prepared without expending a spell slot.</td>
 						<td>Once per day you may cast a spell of 3rd level or lower that you know or have prepared without expending a spell slot.</td>
 						<td>Once per day you may cast a spell of 4th level or lower that you know or have prepared without expending a spell slot.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Fortify Magicka Regeneration</td>
@@ -272,15 +347,13 @@
 						<td>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level of 2 or lower.</td>
 						<td>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level of 3 or lower.</td>
 						<td>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level of 4 or lower.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Fortify Stamina</td>
-						<td>When you move on your turn, you can increase your speed by 10 feet until the end of the turn. Once you do so, you can’t do so again until you move 0 feet on one of your turns.</td>
-						<td>When you move on your turn, you can increase your speed by 15 feet until the end of the turn. Once you do so, you can’t do so again until you move 0 feet on one of your turns</td>
-						<td>When you move on your turn, you can double your speed until the end of the turn. Once you do so, you can’t do so again until you move 0 feet on one of your turns</td>
-						<td>Your movement speed is increased by 10 feet. Additionally, when you move on your turn, you can double your speed until the end of the turn. Once you do so, you can’t do so again until you move 0 feet on one of your turns</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
+						<td>Your movement speed is increased by 5 feet.</td>
+						<td>Your movement speed is increased by 10 feet.</td>
+						<td>Your movement speed is increased by 15 feet.</td>
+						<td>Your movement speed is increased by 20 feet.</td>
 					</tr>
 					<tr>
 						<td>Fortify Stamina Regeneration</td>
@@ -288,15 +361,13 @@
 						<td>You complete a short rest in 30 minutes.</td>
 						<td>You complete a short rest in 30 minutes. Additionally, once per day when you complete a short rest, you may lose one level of exhaustion.</td>
 						<td>You complete a short rest in 15 minutes. Additionally, once per day when you complete a short rest, you may lose one level of exhaustion.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Fortify Carry Weight</td>
 						<td>Your strength is considered 2 higher for the purposes of calculating carry capacity. Additionally, you gain a +1 bonus on athletics checks.</td>
 						<td>Your strength is considered 4 higher for the purposes of calculating carry capacity. Additionally, you gain a +3 bonus on athletics checks.</td>
 						<td>Your strength is considered 8 higher for the purposes of calculating carry capacity. Additionally, you gain a +5 bonus on athletics checks.</td>
-						<td>Your strength is considered 16 higher for the purposes of calculating carry capacity. you gain a +7 bonus on athletics checks.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
+						<td>Your strength is considered 16 higher for the purposes of calculating carry capacity. Additionally, you gain a +7 bonus on athletics checks.</td>
 					</tr>
 					<tr>
 						<td>Fortify Unarmed</td>
@@ -304,7 +375,6 @@
 						<td>You have a +1 bonus to attack and damage rolls using unarmed strikes and natural weapons.</td>
 						<td>You have a +2 bonus to attack and damage rolls using unarmed strikes and natural weapons.</td>
 						<td>You have a +3 bonus to attack and damage rolls using unarmed strikes and natural weapons.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Resist Disease</td>
@@ -312,7 +382,6 @@
 						<td>You have advantage on saving throws against diseases.</td>
 						<td>-</td>
 						<td>You are immune to diseases.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Resist Fire</td>
@@ -320,7 +389,6 @@
 						<td>Whenever you would take fire damage, that damage is reduced by 5. Damage cannot be reduced below 0 in this way.</td>
 						<td>You have resistance to fire damage.</td>
 						<td>You are immune to fire damage.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Resist Frost</td>
@@ -328,7 +396,6 @@
 						<td>Whenever you would take cold damage, that damage is reduced by 5. Damage cannot be reduced below 0 in this way.</td>
 						<td>You have resistance to cold damage.</td>
 						<td>You are immune to cold damage.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Resist Magic</td>
@@ -336,7 +403,6 @@
 						<td>You have a +2 bonus on saving throws against spells.</td>
 						<td>You have a +3 bonus on saving throws against spells.</td>
 						<td>You have advantage on saving throws against spells.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Resist Poison</td>
@@ -344,7 +410,6 @@
 						<td>Whenever you would take poison damage, that damage is reduced by 5. Damage cannot be reduced below 0 in this way.</td>
 						<td>You have resistance to poison damage.</td>
 						<td>You are immune to poison damage.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Resist Shock</td>
@@ -352,7 +417,6 @@
 						<td>Whenever you would take lightning damage, that damage is reduced by 5. Damage cannot be reduced below 0 in this way.</td>
 						<td>You have resistance to lightning damage.</td>
 						<td>You are immune to lightning damage.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Dark Moon</td>
@@ -360,7 +424,6 @@
 						<td>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level of 3 or lower. Your hit point maximum is reduced by 6.</td>
 						<td>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level of 4 or lower. Your hit point maximum is reduced by 12.</td>
 						<td>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level of 5 or lower. Your hit point maximum is reduced by 18.</td>
-						<td><em>Armor, Clothes, Jewelry</em></td>
 					</tr>
 					<tr>
 						<td>Waterbreathing</td>
@@ -368,50 +431,18 @@
 						<td>You can hold your breath for up to an hour.</td>
 						<td>You can breath in both water and air.</td>
 						<td>You do not need to breath.</td>
-						<td><em>Helmets, Jewelry</em></td>
 					</tr>
 				</tbody>
 			</table>
+			<p><em>*Fortify weapon enchantments can also be applied to the weapons they improve.</em></p>
 
-			<h4>Active Enchantments</h4>
-			<p>Active enchantments, unlike passive ones, have charges. Each item rarity has a maximum number of charges and each rarity of enchantment uses a different amount of charges. The strength of the enchantment is chosen whe nthe item is created, and cannot be changed. An item can have an active enchantment of its rarity or lower. Active enchantments can only be applied to weapons. When you deal damage to a creature using a weapon with an active enchantment, you may expend the charges listed in the description to apply the effect, provided you have enough charges.</p>
+			<h4>Weapon Enchantments</h4>
+			<p>Weapon enchantments can be applied to weapons. Whenever you deal damage using the weapon, you may expend the number of charges specified in the enchantment to apply its effect, provided you have enough charges in the item.</p>
 
 			<table class="content-table">
 				<tbody>
 					<tr>
-						<th colspan="7">Enchanted Item Charges</th>
-					</tr>
-					<tr>
-						<th>Rarity</th>
-						<th>Max Charges</th>
-					</tr>
-					<tr>
-						<td>Common</td>
-						<td>10</td>
-					</tr>
-					<tr>
-						<td>Uncommon</td>
-						<td>20</td>
-					</tr>
-					<tr>
-						<td>Rare</td>
-						<td>35</td>
-					</tr>
-					<tr>
-						<td>Very Rare</td>
-						<td>50</td>
-					</tr>
-					<tr>
-						<td>Legendary</td>
-						<td>75</td>
-					</tr>
-				</tbody>
-			</table>
-
-			<table class="content-table">
-				<tbody>
-					<tr>
-						<th colspan="7">Active Enchantments</th>
+						<th colspan="7">Weapon Enchantments</th>
 					</tr>
 					<tr>
 						<th rowspan="2">Enchantment</th>
@@ -481,10 +512,10 @@
 					</tr>
 					<tr>
 						<td>Stamina Damage</td>
-						<td>-</td>
-						<td>4 charges: The target must succeed on a DC 15 Constitution saving throw. On a failure the target's speed is halved and it cannot take reactions until the start of your next turn.</td>
-						<td>8 charges: The target must succeed on a DC 17 Constitution saving throw. On a failure the target suffers the uncommon effects of this enchantment as if it failed the saving throw, and the target can take either an action or bonus action on its turn, but not both on its next turn.</td>
-						<td>16 charges: The target must succeed on a DC 19 Constitution saving throw. On a failure the target suffers the rare and uncommon effects of this enchantment as if it failed the saving throws, and the target can only make one attack on its next turn, even if it has the extra attack or multiattack feature.</td>
+						<td>1 charge: The target must succeed on a DC 13 Constitution saving throw. On a failure the target has its speed reduced by 10 feet and has disadvantage on ability checks until the start of your next turn.</td>
+						<td>4 charges: The target must succeed on a DC 15 Constitution saving throw. On a failure the target has its speed halved and has disadvantage on ability checks and attack rolls until the start of your next turn.</td>
+						<td>8 charges: The target must succeed on a DC 17 Constitution saving throw. On a failure the target has its speed halved and has disadvantage on ability checks, attack rolls and saving throws until the start of your next turn.</td>
+						<td>15 charges: The target must succeed on a DC 19 Constitution saving throw. On a failure the target has its speed reduced to 0 and has disadvantage on ability checks, attack rolls and saving throws until the start of your next turn.</td>
 					</tr>
 					<tr>
 						<td>Banish</td>
