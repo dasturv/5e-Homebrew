@@ -27,103 +27,11 @@
 			<p><em>Inspiration: Shadowrun.</em></p>
 
 			<h3>Homeowning</h3>
-			<p>Up to this point it is assumed you are renting a space to live as part of your lifestyle cost. However, owning a home can drastically save money, if you can make the upfront cost. While you live in a house, it reduces the monthly cost of it's lifestyle level or lower, as shown in the New Monthly Cost column of the Homes table.</p> 
+			<p>Up to this point it is assumed you are renting a space to live as part of your lifestyle cost. However, owning a home can drastically save money, if you can make the upfront cost. While you live in a house, it reduces the monthly cost of it's lifestyle level or lower, as shown in the New Monthly Cost column of the Homes table. If you have a wealth level that already provides the same lifestyle as a house, the base cost of that house is halved for you.</p>
+
 			<h5>Buying and Building</h5>
 			<p>When buying a house, you can either purchase one or build one, provided there is a house or land for sale (this may also be limited by a local lord or other authority.) When building, the cost is reduced but house cannot be lived in until the construction time elapses. This time is paused during winters or other periods where construction cannot happen.</p>
-			<h5>Capacity and Crowding</h5>
-			<p>Each house has a capacity. A number of humanoids can live in a house equal to this capacity. All creatures who live in a house gain the reduced cost benefit the house provides. If more creatures live within a home than its capacity, then it becomes crowded. A crowded home has its lifestyle and monthly cost benefits reduced by one level, and an additional level for two further creatures after the first.</p>
-			<p>For example, a Cottage with no upgrades becomes crowded with three creatures, reducing its lifestyle to poor. If it increases to five creatures, it is reduced again to squalid.</p>
-			<h5>Maintanence</h5>
-			<p>Additionally, houses require maintanence. While you maintain the lifestyle associated with the house, it is considered well maintained. If you ever fail to afford the given lifestyle, the house begins to fall into disrepair, reducing its cost reducing benefits down by one each month until it reaches your new lifestyle. If you improve your lifestyle, the house's cost reducing benefits increase by one level each month until it reaches your new lifestyle, up to its normal maximum. During this time you do not gain the benefits of its cost reduction. If a house's benefits are ever reduced below squalid lifestyle (usually by having no one maintaining it), it is condemned and requires an amount of gold equal to half of its total value and half its build time in order to restore it to its base benefits.</p>
-			<table class="content-table">
-				<tbody>
-					<tr>
-						<th colspan="8">Homes</th>
-					</tr>
-					<tr>
-						<th>House</th>
-						<th>Cost (Purchase)</th>
-						<th>Cost (Build)</th>
-						<th>Build Time</th>
-						<th>Upgrade Slots</th>
-						<th>Capacity</th>
-						<th>Lifestyle</th>
-						<th>New Monthly Cost</th>
-					</tr>
-					<tr>
-						<td>Hovel</td>
-						<td>15 gp</td>
-						<td>10 gp</td>
-						<td>2 weeks</td>
-						<td>-</td>
-						<td>1</td>
-						<td>Squalid</td>
-						<td>1 gp</td>
-					</tr>
-					<tr>
-						<td>Shack</td>
-						<td>75 gp</td>
-						<td>50 gp</td>
-						<td>6 weeks</td>
-						<td>-</td>
-						<td>2</td>
-						<td>Poor</td>
-						<td>5 gp</td>
-					</tr>
-					<tr>
-						<td>Cottage</td>
-						<td>125 gp</td>
-						<td>100 gp</td>
-						<td>3 months</td>
-						<td>2</td>
-						<td>2</td>
-						<td>Modest</td>
-						<td>15 gp</td>
-					</tr>
-					<tr>
-						<td>Small House</td>
-						<td>250 gp</td>
-						<td>200 gp</td>
-						<td>6 months</td>
-						<td>4</td>
-						<td>2</td>
-						<td>Comfortable</td>
-						<td>50 gp</td>
-					</tr>
-					<tr>
-						<td>Large House</td>
-						<td>1000 gp</td>
-						<td>800 gp</td>
-						<td>1 year</td>
-						<td>8</td>
-						<td>2</td>
-						<td>Wealthy</td>
-						<td>150 gp</td>
-					</tr>
-					<tr>
-						<td>Manor</td>
-						<td>5000 gp</td>
-						<td>4000 gp</td>
-						<td>2 years</td>
-						<td>12</td>
-						<td>2</td>
-						<td>Aristocratic</td>
-						<td>450 gp</td>
-					</tr>
-				</tbody>
-			</table>
-
-			<h3>Land</h3>
-			<p>Homeowners oftentimes own land surrounding their home. Each home has a number of land upgrade slots, which can be used to build special upgrades. The amount of land a home has is dependent on its locale (see below.)</p>
-
-			<h3>Locale</h3>
-			<p>Where a home is greatly effects costs and build times. A home can be in an Remote, Rural or Urban locale, with the following benefits and penalties for each:</p>
-			<p><strong>Remote.</strong> A Remote locale is far away from towns and cities, safe from prying eyes and meddlesome authorities. Examples include harsh mountaintops, deep in forested wilderness, or far in a hostile desert. A home in a Remote locale starts with a number of land slots equal to twice the base home's upgrade slots (Hovels and Shacks start with one land slot.) Additionally, the cost to build, buy or upgrade the home is increased by 50%, and the build times are doubled, as the increased privacy and costs to ship in or source materials raise the costs.</p>
-			<p><strong>Rural.</strong> A Rural locale is outside of a city or town, but close enough to make a day trip of it. Examples include a quiet countryside of farmlands, a forest just out of town, or an island just outside of a port city. A home in a Rural locale starts with a number of land slots equal to the base home's upgrade slots. The costs and build time for the house are unchanged.</p>
-			<p><strong>Urban.</strong> An Urban locale is directly within the bounds of a city or other settlement. Examples include a small townhouse in a major city, a manor with a small yard and wall in an affluent neighborhood, or a hovel near the city's docks. A home in an Urban locale starts with a number of yard upgrade slots equal to half the base home's upgrade slots (rounded down). These yard upgrade slots are considered to be land slots that have the clear land upgrade. Additionally, the time to build the house is reduced by half, as getting access to materials and laborers is quite simple.</p>
-
-			<h3>House Upgrades</h3>
-			<p>Upon purchasing, each house contains a common room and a number of bedrooms equal to one half its capacity (except a hovel, which only contains a bedroom.) The rest of the house is made up of unfurnished rooms, represented by the house's upgrade slots. <a href="house_upgrades.html">House Upgrades</a> are specialized rooms that you can put into a house, provided it meets the upgrade's requirements and you pay the costs. Each upgrade takes up a number of upgrade slots, if you do not have enough upgrade slots, you cannot select an upgrade. Each upgrade can only be used once it is completed, which takes the amount of time specified.</p>
+			<p>The price of a house is decided by its associated lifestyle and the number of rooms. A house costs its base price, plus the number of additional rooms x its room cost. Even without additional rooms, a house has enough space and furnishing for two medium creatures to live.</p>
 
 			<h3>Utility Buildings</h3>
 			<p>Sometimes you don't need all the bells and whistles included in a finished house, sometimes four walls and a roof is enough. These utility buildings do not protect from external temperatures or humidity and as such are not fit for living in. That being said, they are cheap and easy to get. Any upgrade thats use would be effected by being in an unfinished space cannot be built in a utility building.</p>
@@ -131,90 +39,78 @@
 			<table class="content-table">
 				<tbody>
 					<tr>
-						<th colspan="8">Utility Buildings</th>
+						<th colspan="5">Homes</th>
 					</tr>
 					<tr>
-						<th>Building</th>
+						<th>Lifestyle</th>
 						<th>Cost (Purchase)</th>
 						<th>Cost (Build)</th>
 						<th>Build Time</th>
-						<th>Upgrade Slots</th>
+						<th>New Monthly Cost</th>
 					</tr>
 					<tr>
-						<td>Shed</td>
-						<td>12 gp</td>
-						<td>8 gp</td>
-						<td>1 week</td>
-						<td>1</td>
+						<td>Squalid</td>
+						<td>30 gp + 30 gp per room</td>
+						<td>20 gp + 20 gp per room</td>
+						<td>1 week + 1 week per room</td>
+						<td>1 gp</td>
 					</tr>
 					<tr>
-						<td>Large Shed</td>
-						<td>60 gp</td>
-						<td>40 gp</td>
-						<td>4 weeks</td>
-						<td>2</td>
+						<td>Poor</td>
+						<td>100 gp + 50 gp per room</td>
+						<td>65 gp + 35 gp per room</td>
+						<td>1 month + 2 weeks per room</td>
+						<td>5 gp</td>
 					</tr>
 					<tr>
-						<td>Warehouse</td>
-						<td>200 gp</td>
-						<td>175 gp</td>
-						<td>2 months</td>
-						<td>4</td>
+						<td>Modest</td>
+						<td>150 gp + 75 gp per room</td>
+						<td>100 gp + 50 gp per room</td>
+						<td>2 months + 2 weeks per room</td>
+						<td>15 gp</td>
+					</tr>
+					<tr>
+						<td>Comfortable</td>
+						<td>300 gp + 100 gp per room</td>
+						<td>200 gp + 65 gp per room</td>
+						<td>4 months + 2 weeks per room</td>
+						<td>50 gp</td>
+					</tr>
+					<tr>
+						<td>Luxurious</td>
+						<td>450 gp + 150 gp per room</td>
+						<td>300 gp + 100 gp per room</td>
+						<td>8 months + 2 weeks per room</td>
+						<td>150 gp</td>
+					</tr>
+					<tr>
+						<td>Opulent</td>
+						<td>800 gp + 200 gp per room</td>
+						<td>600 gp + 150 gp per room</td>
+						<td>16 months + 2 weeks per room</td>
+						<td>450 gp</td>
+					</tr>
+					<tr>
+						<td>Utility*</td>
+						<td>25 gp per room</td>
+						<td>15 gp per room</td>
+						<td>1 week per room</td>
+						<td>-</td>
 					</tr>
 				</tbody>
 			</table>
 
-			<h3>Doing it Yourself</h3>
-			<p>Sometimes you may want to be a lot more involved in the construction of your new home. Doing so can save you labor costs, meaning you only need to pay for land and materials. When going this route, building a house requires a different amount of gp as well as extended checks in order to complete, as shown below:</p>
-			<table class="content-table">
-				<tbody>
-					<tr>
-						<th colspan="4">Building your own Home</th>
-					</tr>
-					<tr>
-						<th>House</th>
-						<th>Cost</th>
-						<th>Just Materials (No Land)</th>
-						<th>Extended Check(s)</th>
-					</tr>
-					<tr>
-						<td>Hovel</td>
-						<td>9 gp</td>
-						<td>4 gp</td>
-						<td>Intelligence (Carpenter's Tools) extended check (DC 20, 1 week interval)</td>
-					</tr>
-					<tr>
-						<td>Shack</td>
-						<td>45 gp</td>
-						<td>20 gp</td>
-						<td>Itelligence (Carpenter's Tools) extended check (DC 60, 2 week interval)</td>
-					</tr>
-					<tr>
-						<td>Cottage</td>
-						<td>80 gp</td>
-						<td>30 gp</td>
-						<td>Intelligence (Carpenter's Tools) extended check (DC 90, 1 month interval)</td>
-					</tr>
-					<tr>
-						<td>Small House</td>
-						<td>150 gp</td>
-						<td>50 gp</td>
-						<td>Intelligence (Carpenter's Tools) extended check (DC 120, 2 month interval)</td>
-					</tr>
-					<tr>
-						<td>Large House</td>
-						<td>450 gp</td>
-						<td>250 gp</td>
-						<td>Intelligence (Carpenter's Tools) extended check (DC 200, 4 month interval)</td>
-					</tr>
-					<tr>
-						<td>Manor</td>
-						<td>2750 gp</td>
-						<td>2250 gp</td>
-						<td>Intelligence (Carpenter's Tools) extended check (DC 350, 6 month interval)</td>
-					</tr>
-				</tbody>
-			</table>
+			<h3>Land</h3>
+			<p>Homeowners oftentimes own land surrounding their home. Each home has a number of land upgrade slots, which can be used to build special upgrades. The cost of land is dependent on a home's locale (see below.)</p>
+
+			<h3>Locale</h3>
+			<p>Where a home is greatly effects costs and build times. A home can be in an Remote, Rural or Urban locale, with the following benefits and penalties for each:</p>
+			<p><strong>Remote.</strong> A Remote locale is far away from towns and cities, safe from prying eyes and meddlesome authorities. Examples include harsh mountaintops, deep in forested wilderness, or far in a hostile desert. Land in a Remote locale costs 25 gp per slot. Additionally, the cost to build, buy or upgrade the home is increased by 50%, and the build times are doubled, as the increased privacy and costs to ship in or source materials raise the costs.</p>
+			<p><strong>Rural.</strong> A Rural locale is outside of a city or town, but close enough to make a day trip of it. Examples include a quiet countryside of farmlands, a forest just out of town, or an island just outside of a port city. Land in a Rural locale costs 50 gp per slot. The costs and build time for the house are unchanged.</p>
+			<p><strong>Urban.</strong> An Urban locale is directly within the bounds of a city or other settlement. Examples include a small townhouse in a major city, a manor with a small yard and wall in an affluent neighborhood, or a hovel near the city's docks. Land in a Urban locale costs 100 gp per slot, and automatically have the clear land upgrade. Additionally, the time to build the house is reduced by half, as getting access to materials and laborers is quite simple.</p>
+
+			<h3>House Upgrades</h3>
+			<p>Upon purchasing, each house contains a common room, a place to cook, eat and sleep. Any additional rooms purchased are unfurnished. Several <a href="house_upgrades.html">House Upgrades</a> are specialized rooms that can fill these additional rooms, provided it meets the upgrade's requirements and you pay the costs. Each upgrade takes up a number of rooms, if you do not have enough empty rooms, you cannot select an upgrade. Each upgrade can only be used once it is completed, which takes the amount of time specified.</p>
 		</div>
 	</div>
 </body>
